@@ -26,3 +26,16 @@ export { default as IdentityKycImg } from "./identity-kyc.svg";
 export { default as ComplianceAccessImg } from "./compliance-access.svg";
 export { default as AccountantHelpSquadImg } from "./accountant-help-squad.svg";
 export { default as GenspayImg } from "./genspay.svg";
+///products
+export { default as product1 } from "./product-1.svg";
+export { default as product2 } from "./product-2.jpg";
+export { default as product3 } from "./product-3.jpg";
+export { default as product4 } from "./product-4.jpg";
+export { default as product5 } from "./product-5.jpg";
+export { default as productC1 } from "./product-c1.svg";
+export { default as productC2 } from "./product-c2.svg";
+export { default as productC3 } from "./product-c3.svg";
+export { default as productC4 } from "./product-c4.svg";
+export { default as productC5 } from "./product-c5.svg";
+export { default as productC6 } from "./product-c6.svg";
+export { default as productBanner } from "./product-banner.svg";
