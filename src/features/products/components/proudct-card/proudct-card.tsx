@@ -183,7 +183,7 @@ const SectionPanel: React.FC<SectionPanelProps> = ({ sections }) => {
         </Card>
       ))}
       <ContactSection
-        title="Empowering Financial Innovation Through Open Banking"
+        title="A smarter, faster way to connect, manage, and move money across accounts, currencies, and customers in real time."
         description={
           "Have a question, need a demo, or want to partner with us? We’d love to hear from you."
         }

@@ -281,7 +281,7 @@ export const ViewAllFeature = () => {
       </Box>
       <Box sx={{ mb: 2, p: { xs: 2, lg: 4 } }}>
         <ContactSection
-          title="Empowering Financial Innovation Through Open Banking"
+          title="A smarter, faster way to connect, manage, and move money across accounts, currencies, and customers in real time."
           description={
             "Have a question, need a demo, or want to partner with us? We’d love to hear from you."
           }

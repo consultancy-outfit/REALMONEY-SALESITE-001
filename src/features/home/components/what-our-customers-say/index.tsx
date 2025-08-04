@@ -162,7 +162,8 @@ const WhatOurCustomersSaySection = () => {
                 fontFamily={"Inter"}
                 width={{ lg: "50%", md: "90%", xs: "100%" }}
               >
-                Empowering Financial Innovation Through Open Banking
+                A smarter, faster way to connect, manage, and move money across
+                accounts, currencies, and customers in real time.
               </Typography>
               <Typography
                 fontSize={"1.25rem"}

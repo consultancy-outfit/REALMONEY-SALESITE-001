@@ -21,7 +21,7 @@ interface ContactSectionProps {
 }
 
 const ContactSection: React.FC<ContactSectionProps> = ({
-  title = "Empowering Financial Innovation Through Open Banking",
+  title = "A smarter, faster way to connect, manage, and move money across accounts, currencies, and customers in real time.",
   description = "Have a question, need a demo, or want to partner with us? We’d love to hear from you.",
   buttonText = "Contact Us",
   buttonLink = APP_ROUTES?.CONTACT_US,

@@ -1,10 +1,10 @@
 "use client";
 
-import { Icon5 } from "@/assets/icons/common";
 import { FAGlobalLogoImage } from "@/assets/images/logo";
-import InstagramIcon from "@mui/icons-material/Instagram";
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import XIcon from "@mui/icons-material/X";
+// import { Icon5 } from "@/assets/icons/common";
+// import InstagramIcon from "@mui/icons-material/Instagram";
+// import LinkedInIcon from "@mui/icons-material/LinkedIn";
+// import XIcon from "@mui/icons-material/X";
 import { Box, Grid, IconButton, Link, Stack, Typography } from "@mui/material";
 import Image from "next/image";
 import { about, products, resources } from "./footer.data";
@@ -12,10 +12,12 @@ import { useRouter } from "next/navigation";
 
 const Footer = () => {
   const router = useRouter();
+  const currentYear = new Date().getFullYear();
+
   return (
     <Box
       sx={{
-        bgcolor: "#272835",
+        bgcolor: "#010101",
         color: "white",
         px: { xs: 5, sm: 10 },
         py: { xs: 3, sm: 5 },
@@ -23,25 +25,31 @@ const Footer = () => {
         borderRadius: "12px",
       }}
     >
-      <Grid container spacing={4}>
+      <Grid container spacing={4} mb={4}>
         {/* Logo and Description */}
-        <Grid size={{ md: 4, xs: 12 }}>
-          <Stack spacing={2}>
+        <Grid size={{ xs: 12 }}>
+          <Stack
+            spacing={2}
+            flexDirection={{ xs: "column", sm: "row" }}
+            justifyContent={"space-between"}
+            alignItems={"flex-start"}
+          >
             <Stack>
               <Image src={FAGlobalLogoImage} alt="Logo" />
             </Stack>
             <Typography
               variant="body1"
               sx={{
-                maxWidth: 300,
+                maxWidth: 550,
                 color: "#ADAEBA",
                 fontFamily: "Manrope",
                 fontSize: 16,
               }}
             >
-              Empowering Financial Innovation Through Open Banking
+              A smarter, faster way to connect, manage, and move money across
+              accounts, currencies, and customers in real time.
             </Typography>
-            <Stack direction="row" spacing={2} mt={2}>
+            {/* <Stack direction="row" spacing={2} mt={2}>
               <IconButton
                 color="inherit"
                 sx={{ backgroundColor: "#2E2E3E", p: 1 }}
@@ -66,12 +74,13 @@ const Footer = () => {
               >
                 <Image src={Icon5} alt="icon5" />
               </IconButton>
-            </Stack>
+            </Stack> */}
           </Stack>
         </Grid>
 
+        <Grid size={{ md: 2 }} display={{ xs: "none", md: "block" }}></Grid>
         {/* Products */}
-        <Grid size={{ md: 2, xs: 6 }}>
+        <Grid size={{ md: 2, xs: 12 }}>
           <Typography
             variant="subtitle1"
             color="#F6F7FF"
@@ -149,7 +158,7 @@ const Footer = () => {
         </Grid>
 
         {/* Support */}
-        <Grid size={{ md: 2, xs: 6 }}>
+        <Grid size={{ md: 2, xs: 12 }}>
           <Typography
             variant="subtitle1"
             color="#F6F7FF"
@@ -164,7 +173,7 @@ const Footer = () => {
             color="#D2D3DF"
             fontFamily="Manrope"
           >
-            Email: info@faglobalbkfinance.com
+            Email: info@realmoney.co.uk
           </Typography>
           <Typography
             variant="body1"
@@ -178,8 +187,9 @@ const Footer = () => {
       </Grid>
 
       {/* Bottom bar */}
+      <hr />
       <Box
-        mt={6}
+        mt={3}
         display="flex"
         justifyContent="space-between"
         flexDirection={{ xs: "column", sm: "row" }}
@@ -190,20 +200,31 @@ const Footer = () => {
           variant="body1"
           sx={{ color: "#EEEFFB", fontFamily: "Manrope" }}
         >
-          Copyright © 2025 FA Global. All rights reserved
+          All Rights Reserved. Copyright © {currentYear} Real Money.
         </Typography>
-        <Stack direction="row" spacing={3}>
+        <Stack direction="row" spacing={1}>
           <Link
             href="/privacy-policy"
             color="inherit"
-            sx={{ color: "#EEEFFB", fontFamily: "Manrope", fontSize: 16 }}
+            sx={{
+              color: "#EEEFFB",
+              fontFamily: "Manrope",
+              fontSize: 16,
+              textDecoration: "none",
+            }}
           >
             Privacy Policy
           </Link>
+          <Typography>|</Typography>
           <Link
             href="/terms-and-conditions"
             color="inherit"
-            sx={{ color: "#EEEFFB", fontFamily: "Manrope", fontSize: 16 }}
+            sx={{
+              color: "#EEEFFB",
+              fontFamily: "Manrope",
+              fontSize: 16,
+              textDecoration: "none",
+            }}
           >
             Terms & Conditions
           </Link>

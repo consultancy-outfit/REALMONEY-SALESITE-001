@@ -44,6 +44,10 @@ export const navLinksData = [
     path: APP_ROUTES.PRICING,
   },
   {
+    title: "Careers",
+    path: APP_ROUTES.CAREERS,
+  },
+  {
     title: "Contact Us",
     path: APP_ROUTES.CONTACT_US,
   },
