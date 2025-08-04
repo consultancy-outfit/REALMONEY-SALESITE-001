@@ -1,5 +1,5 @@
 "use client";
-import { Box, Typography, useTheme } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
@@ -12,7 +12,6 @@ import SlideUpInView from "@/components/animations/animation-scroll/slide-up-in-
 import ScaleInView from "@/components/animations/animation-scroll/scale-in-view";
 
 export const UseCaseCards = () => {
-  const theme = useTheme();
   return (
     <Box
       display={"flex"}
@@ -49,7 +48,8 @@ export const UseCaseCards = () => {
                 link={item.readMoreUrl}
                 customStyles={{
                   borderRadius: "5px",
-                  border: `1.5px solid ${theme?.palette?.primary?.main}`,
+                  border: `1.5px solid ${'rgba(108, 1, 255, 1)'}`,
+                  color:'rgba(108, 1, 255, 1)',
                   px: "24px",
                   py: "8px",
                   height: "50px",
