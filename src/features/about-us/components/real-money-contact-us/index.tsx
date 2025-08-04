@@ -15,6 +15,7 @@ import { ContactCardBgImage } from "@/assets/images/common/shapes";
 import { CommonCard } from "@/components/cards/common-card";
 import { ContactUsRealMoneyImage } from "../../assets/images";
 import { HeadingText } from "@/components/text/heading-text";
+import { CommonButton } from "@/components/buttons/common-button";
 
 export const ContactCard = (props: any) => {
   const {
@@ -35,27 +36,36 @@ export const ContactCard = (props: any) => {
         backgroundRepeat: "no-repeat",
         // backgroundPosition: "120% -100%",
         backgroundSize: "cover",
-        height: pxToRem(500),
+        height: pxToRem(550),
         width: "100%",
       }}
     >
       <Box
         sx={{
-          maxWidth: pxToRem(500),
-          marginInline: "auto",
           textAlign: "center",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          height: "100%",
         }}
       >
-        <HeadingText
-          color="common.white"
-          fontWeight="fontWeightSemiBold"
-          lineHeight={pxToRem(60)}
-          letterSpacing={pxToRem(1)}
-          customStyles={{ fontSize: pxToRem(48) }}
+        <Box
+          sx={{
+            maxWidth: "md",
+            marginInline: "auto",
+          }}
         >
-          {heading}
-        </HeadingText>
-        <Button variant="contained">Get Started</Button>
+          <HeadingText
+            color="common.white"
+            fontWeight="fontWeightSemiBold"
+            lineHeight={pxToRem(60)}
+            letterSpacing={pxToRem(1)}
+            customStyles={{ fontSize: pxToRem(48) }}
+          >
+            {heading}
+          </HeadingText>
+          <CommonButton primary>Get Started</CommonButton>
+        </Box>
       </Box>
     </Box>
   );
