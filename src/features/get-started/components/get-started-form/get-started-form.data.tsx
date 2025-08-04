@@ -24,6 +24,7 @@ export const contactUsFormFields = [
     _id: 1,
     componentProps: {
       name: "firstName",
+      label: "First Name",
       placeholder: "Enter your first name",
       required: true,
     },
@@ -34,6 +35,7 @@ export const contactUsFormFields = [
     _id: 2,
     componentProps: {
       name: "lastName",
+      label: "Last Name",
       placeholder: "Enter your last name",
       required: true,
     },
@@ -44,6 +46,7 @@ export const contactUsFormFields = [
     _id: 3,
     componentProps: {
       name: "email",
+      label: "Email",
       placeholder: "Enter your email",
       required: true,
     },
@@ -54,6 +57,7 @@ export const contactUsFormFields = [
     _id: 4,
     componentProps: {
       name: "phoneNumber",
+      label: "Phone Number",
       placeholder: "Enter phone number",
       required: true,
     },

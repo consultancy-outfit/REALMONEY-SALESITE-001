@@ -1,3 +1,4 @@
+import TextAreaFormFields from "@/components/form-fields/text-area-form-field";
 import TextFormFields from "@/components/form-fields/text-form-field";
 import * as Yup from "yup";
 
@@ -23,20 +24,11 @@ export const contactUsFormDefaultValues = {
 
 export const contactUsFormFields = [
   {
-    _id: 1,
-    componentProps: {
-      name: "firstName",
-      placeholder: "Enter your first name",
-      required: true,
-    },
-    component: TextFormFields,
-    md: 12,
-  },
-  {
     _id: 2,
     componentProps: {
-      name: "lastName",
-      placeholder: "Enter your last name",
+      name: "fullName",
+      label: "Your Name",
+      placeholder: "Enter your full name",
       required: true,
     },
     component: TextFormFields,
@@ -46,6 +38,7 @@ export const contactUsFormFields = [
     _id: 3,
     componentProps: {
       name: "email",
+      label: "Email address",
       placeholder: "Enter your email",
       required: true,
     },
@@ -56,6 +49,7 @@ export const contactUsFormFields = [
     _id: 4,
     componentProps: {
       name: "phoneNumber",
+      label: "Phone Number",
       placeholder: "Enter phone number",
       required: true,
     },
@@ -66,9 +60,10 @@ export const contactUsFormFields = [
     _id: 5,
     componentProps: {
       name: "query",
-      placeholder: "Message",
+      label: "Message",
+      placeholder: "Enter your message",
     },
-    component: TextFormFields,
+    component: TextAreaFormFields,
     md: 12,
   },
 ];
