@@ -7,6 +7,7 @@ import {
   Avatar,
 } from "@mui/material";
 import { AboutUsRealMoneyImage } from "../../assets";
+import { pxToRem } from "@/utils/styles";
 
 const Hero = () => {
   const theme = useTheme();
@@ -23,15 +24,20 @@ const Hero = () => {
       }}
     >
       <Typography
-        variant={isMobile ? "h5" : isTablet ? "h4" : "h3"}
         component="h1"
-        fontWeight="bold"
+        fontWeight={700}
         gutterBottom
         sx={{
           maxWidth: 900,
           mx: "auto",
           mb: { xs: 4, md: 6 },
           px: { xs: 2, sm: 4 },
+          background: "linear-gradient(180deg, #FFFFFF 0%, #999999 93.75%)",
+          WebkitBackgroundClip: "text",
+          WebkitTextFillColor: "transparent",
+          fontSize: { xs: pxToRem(48), md: pxToRem(60) },
+          letterSpacing: "1%",
+          lineHeight: pxToRem(72),
         }}
       >
         Powering the Future of Open Finance
