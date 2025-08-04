@@ -20,13 +20,22 @@ export const AboutUsFeature = () => {
       <Box
         sx={{
           backgroundColor: "#010101",
+          mb:4
         }}
       >
         <Hero />
-        <WhatWeDoRealMoney />
-        <AboutUsList />
-        <RealMoneyMeetTeam />
-        <ContactCard/>
+        <Box sx={{ my: 3 }}>
+          <WhatWeDoRealMoney />
+        </Box>
+        <Box sx={{ my: 3 }}>
+          <AboutUsList />
+        </Box>
+        <Box sx={{ my: 3 }}>
+          <RealMoneyMeetTeam />
+        </Box>
+        <Box sx={{ my: 3 }}>
+          <ContactCard />
+        </Box>
         {/* <TrustedBy /> */}
         {/* <ComplianceTrust /> */}
         {/* <WhatWeDo /> */}

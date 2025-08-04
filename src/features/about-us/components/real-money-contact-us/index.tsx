@@ -33,10 +33,19 @@ export const ContactCard = (props: any) => {
       sx={{
         backgroundImage: `url(${ContactUsRealMoneyImage?.src})`,
         backgroundRepeat: "no-repeat",
-        backgroundPosition: "120% -100%",
+        // backgroundPosition: "120% -100%",
+        backgroundSize: "cover",
+        height: pxToRem(500),
+        width: "100%",
       }}
     >
-      <Box>
+      <Box
+        sx={{
+          maxWidth: pxToRem(500),
+          marginInline: "auto",
+          textAlign: "center",
+        }}
+      >
         <HeadingText
           color="common.white"
           fontWeight="fontWeightSemiBold"

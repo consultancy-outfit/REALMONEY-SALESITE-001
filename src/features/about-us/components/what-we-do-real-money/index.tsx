@@ -1,3 +1,4 @@
+import { pxToRem } from "@/utils/styles";
 import { Box, Typography } from "@mui/material";
 
 export const WhatWeDoRealMoney = () => {
@@ -14,20 +15,21 @@ export const WhatWeDoRealMoney = () => {
         component="h1"
         fontWeight="bold"
         sx={{
-          color: "#ffffff",
+          color: "common.white",
+          fontSize: pxToRem(48),
+          lineHeight: pxToRem(60),
+          letterSpacing: pxToRem(1),
         }}
       >
         What We Do
       </Typography>
       <Typography
-        variant="body1"
         sx={{
-          maxWidth: 700,
-          mx: "auto",
-          mb: { xs: 4, md: 6 },
-          px: { xs: 2, sm: 4 },
           color: "#C0C0C0",
           fontWeight: 400,
+          fontSize: pxToRem(48),
+          lineHeight: pxToRem(60),
+          letterSpacing: pxToRem(1),
         }}
       >
         Real Money is a comprehensive open finance infrastructure designed to
@@ -37,14 +39,12 @@ export const WhatWeDoRealMoney = () => {
         operations through secure, compliant, and scalable APIs.
       </Typography>
       <Typography
-        variant="body1"
         sx={{
-          maxWidth: 700,
-          mx: "auto",
-          mb: { xs: 4, md: 6 },
-          px: { xs: 2, sm: 4 },
           color: "#C0C0C0",
           fontWeight: 400,
+          fontSize: pxToRem(48),
+          lineHeight: pxToRem(60),
+          letterSpacing: pxToRem(1),
         }}
       >
         We bring together four powerful product layers under one
@@ -86,19 +86,22 @@ export const WhatWeDoRealMoney = () => {
             }}
           >
             <Typography
-              variant="body1"
+              fontWeight="bold"
               sx={{
                 color: "#C0C0C0",
-                fontWeight: 700,
+                fontSize: pxToRem(48),
+                lineHeight: pxToRem(60),
+                letterSpacing: pxToRem(1),
               }}
             >
               {item?.title}
             </Typography>
             <Typography
-              variant="body1"
               sx={{
                 color: "#C0C0C0",
-                fontWeight: 400,
+                fontSize: pxToRem(18),
+                lineHeight: pxToRem(28),
+                letterSpacing: "2%",
               }}
             >
               {item?.description}

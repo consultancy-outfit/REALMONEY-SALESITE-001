@@ -6,7 +6,7 @@ const AboutUsList = () => {
   return (
     <Container maxWidth="xl">
       {aboutUsListData?.map((item: any, index: any) => (
-        <Box key={item?.id} sx={{ my: 3 }}>
+        <Box key={item?.id} sx={{ my: 6 }}>
           <GlobalBulletsListCard
             key={item?.id}
             heading={item?.heading}
