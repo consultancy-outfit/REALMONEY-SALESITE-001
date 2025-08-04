@@ -20,12 +20,12 @@ export const PrecisionConsent = () => {
     <>
       <SlideUpInView>
         <Box display={"flex"} flexDirection={"column"} gap={2} px={6}>
-          <Typography variant="h2" color="black" fontWeight={600}>
+          <Typography variant="h2" color="white" fontWeight={600}>
             Empower Every Payment with Precision Consent
           </Typography>
-          <Typography variant="body1" color="grey">
-            In regulated financial environments, control over user consent isn’t
-            just a feature—it’s a legal requirement. Centspay offers a fully
+          <Typography variant="body1" color="white">
+            In regulated financial environments, control over user consent is
+            not just a feature—its a legal requirement. Centspay offers a fully
             compliant, consent-first infrastructure for initiating payments,
             ensuring transparency, traceability, and trust at every stage of the
             payment flow.
@@ -52,7 +52,7 @@ export const PrecisionConsent = () => {
         <Typography
           fontWeight={600}
           fontSize={"30px"}
-          color="black"
+          color="white"
           textAlign={"center"}
         >
           Built for Regulated Platforms—Designed for Humans
@@ -60,7 +60,7 @@ export const PrecisionConsent = () => {
         <Typography
           fontWeight={300}
           fontSize={"15px"}
-          color="grey"
+          color="white"
           textAlign={"center"}
         >
           Whether you're building a fintech app, payroll service, or digital
@@ -71,7 +71,7 @@ export const PrecisionConsent = () => {
         <Typography
           fontWeight={300}
           fontSize={"15px"}
-          color="grey"
+          color="white"
           textAlign={"center"}
         >
           Every transaction is backed by explicit user permissions—granular,
@@ -84,12 +84,12 @@ export const PrecisionConsent = () => {
             <Typography
               fontWeight={600}
               fontSize={"30px"}
-              color="black"
+              color="white"
               textAlign={"center"}
             >
               Dynamic Consent Control in Real Time
             </Typography>
-            <Typography fontWeight={300} fontSize={"15px"} color="grey">
+            <Typography fontWeight={300} fontSize={"15px"} color="white">
               Centspays Consent Engine allows platforms to configure, monitor,
               and manage consent at a transactional or session level. Users can
               grant permissions for:
@@ -103,7 +103,7 @@ export const PrecisionConsent = () => {
                         component="span"
                         fontWeight={300}
                         fontSize={"15px"}
-                        color="grey"
+                        color="white"
                       >
                         <span style={{ fontSize: "15px", marginRight: "8px" }}>
                           ●
@@ -120,7 +120,7 @@ export const PrecisionConsent = () => {
                         component="span"
                         fontWeight={300}
                         fontSize={"15px"}
-                        color="grey"
+                        color="white"
                       >
                         <span style={{ fontSize: "15px", marginRight: "8px" }}>
                           ●
@@ -137,7 +137,7 @@ export const PrecisionConsent = () => {
                         component="span"
                         fontWeight={300}
                         fontSize={"15px"}
-                        color="grey"
+                        color="white"
                       >
                         <span style={{ fontSize: "15px", marginRight: "8px" }}>
                           ●
@@ -154,7 +154,7 @@ export const PrecisionConsent = () => {
                         component="span"
                         fontWeight={300}
                         fontSize={"15px"}
-                        color="grey"
+                        color="white"
                       >
                         <span style={{ fontSize: "15px", marginRight: "8px" }}>
                           ●
@@ -166,7 +166,7 @@ export const PrecisionConsent = () => {
                 </ListItem>
               </List>
             </Box>
-            <Typography fontWeight={300} fontSize={"15px"} color="grey">
+            <Typography fontWeight={300} fontSize={"15px"} color="white">
               Our UI kits and APIs allow easy integration of consent
               screens—ensuring frictionless journeys without regulatory
               shortcuts.
@@ -181,12 +181,13 @@ export const PrecisionConsent = () => {
             size={{ xs: 12, md: 6 }}
             p={{ xs: 0, sm: 4 }}
           >
-            <Typography fontWeight={600} fontSize={"30px"} color="black">
+            <Typography fontWeight={600} fontSize={"30px"} color="white">
               Key Capabilities
             </Typography>
             <List>
               <ListItem>
                 <ListItemText
+                  sx={{ color: "white" }}
                   primary={
                     <Typography
                       component="span"
@@ -196,11 +197,17 @@ export const PrecisionConsent = () => {
                       Multi-Layered Consent Management
                     </Typography>
                   }
-                  secondary=" Capture user permissions with different scopes (e.g., read-only, initiate payments, duration-based)."
+                  secondary={
+                    <Typography>
+                      Capture user permissions with different scopes (e.g.,
+                      read-only, initiate payments, duration-based).
+                    </Typography>
+                  }
                 />
               </ListItem>
               <ListItem>
                 <ListItemText
+                  sx={{ color: "white" }}
                   primary={
                     <Typography
                       component="span"
@@ -210,11 +217,17 @@ export const PrecisionConsent = () => {
                       Transparent Audit Trails
                     </Typography>
                   }
-                  secondary="Log every consent interaction, including IP, timestamp, user agent, and exact permission granted."
+                  secondary={
+                    <Typography>
+                      Log every consent interaction, including IP, timestamp,
+                      user agent, and exact permission granted.
+                    </Typography>
+                  }
                 />
               </ListItem>
               <ListItem>
                 <ListItemText
+                  sx={{ color: "white" }}
                   primary={
                     <Typography
                       component="span"
@@ -224,11 +237,17 @@ export const PrecisionConsent = () => {
                       Revocation & Expiry Handling
                     </Typography>
                   }
-                  secondary="Auto-expire access tokens and refresh tokens upon revocation or scheduled expiry, with alerting workflows."
+                  secondary={
+                    <Typography>
+                      Auto-expire access tokens and refresh tokens upon
+                      revocation or scheduled expiry, with alerting workflows.
+                    </Typography>
+                  }
                 />
               </ListItem>
               <ListItem>
                 <ListItemText
+                  sx={{ color: "white" }}
                   primary={
                     <Typography
                       component="span"
@@ -238,7 +257,12 @@ export const PrecisionConsent = () => {
                       FCA & PSD2-Compliant Flows
                     </Typography>
                   }
-                  secondary="Out-of-the-box support for consent-based AISP and PISP journeys."
+                  secondary={
+                    <Typography>
+                      Out-of-the-box support for consent-based AISP and PISP
+                      journeys.
+                    </Typography>
+                  }
                 />
               </ListItem>
             </List>
@@ -264,7 +288,7 @@ export const PrecisionConsent = () => {
         <Typography
           fontWeight={600}
           fontSize={"30px"}
-          color="black"
+          color="white"
           textAlign={"center"}
         >
           A Trust Layer That Scales
@@ -272,7 +296,7 @@ export const PrecisionConsent = () => {
         <Typography
           fontWeight={300}
           fontSize={"15px"}
-          color="grey"
+          color="white"
           textAlign={"center"}
         >
           Consent does not need to slow you down. Centspays infrastructure is

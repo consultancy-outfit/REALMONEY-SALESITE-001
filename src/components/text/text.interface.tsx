@@ -38,7 +38,8 @@ export interface HeadingTextPropsI {
   children: ReactNode;
   isCapital?: boolean;
   customStyles?: any;
-  letterSpacing?: string;
+  letterSpacing?: string | number;
+  lineHeight?: string | number;
 }
 
 export interface SubHeadingTextPropsI {
@@ -53,7 +54,7 @@ export interface SubHeadingTextPropsI {
   fontStyle?: string;
   lineHeight?: number | string;
   customStyles?: SxProps;
-  letterSpacing?: string;
+  letterSpacing?: string | number;
 }
 
 export interface BodyTextPropsI {
