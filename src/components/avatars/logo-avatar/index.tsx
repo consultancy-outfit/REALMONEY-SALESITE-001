@@ -32,7 +32,7 @@ export const LogoAvatar = (props: LogoAvatarPropsI) => {
       <Link href={link} passHref>
         <Avatar
           src={Logo}
-          alt={PROJECT_NAME || "Project Logo"}
+          alt={PROJECT_NAME || "Real Money"}
           sx={{
             width,
             height,

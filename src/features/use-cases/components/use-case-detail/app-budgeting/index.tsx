@@ -27,7 +27,7 @@ export const AppBudgeting = () => {
           p={6}
           bgcolor={theme?.palette?.grey?.[100]}
         >
-          <Typography variant="h2" color="black" fontWeight={600}>
+          <Typography variant="h2" color="white" fontWeight={600}>
             Personal Finance App Budgeting
           </Typography>
           <Typography variant="body1" color="grey">

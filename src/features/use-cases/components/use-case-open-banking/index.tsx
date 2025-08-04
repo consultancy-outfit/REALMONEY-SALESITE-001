@@ -23,7 +23,8 @@ export const UseCaseOpenBanking = () => {
     >
       <SlideUpInView>
         <Typography variant="h4" color="black" fontWeight={600}>
-          Empowering Financial Innovation Through Open Banking
+          A smarter, faster way to connect, manage, and move money across
+          accounts, currencies, and customers in real time.
         </Typography>
         <Typography variant="body1" color="grey">
           Have a question, need a demo, or want to partner with us? We’d love to
