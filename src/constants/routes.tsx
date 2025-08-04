@@ -47,10 +47,9 @@ export const PROJECT_WEB_APP_ROUTES = {
 };
 
 export const USE_CASE_DETAIL_ROUTES = {
-  APP_BUDGETING: "/use-cases/use-case-detail/app-budgeting",
-  DIGITAL_PLATFORM: "/use-cases/use-case-detail/digital-platform",
-  GIG_ECONOMY_WORKERS: "/use-cases/use-case-detail/gig-economy-workers",
-  PAYMENT_FLOWS: "/use-cases/use-case-detail/payment-flows",
-  REGULATE_PLATFORM: "/use-cases/use-case-detail/regulated-platform",
-  SECURE_KYC: "/use-cases/use-case-detail/secure-kyc",
+  REAL_TIME_BANK_INSIGHTS: "/use-cases/use-case-detail/real-time-bank-insights",
+  FINTECH_APPS: "/use-cases/use-case-detail/fintech-apps",
+  PAYMENTS_WITH_AHS: "/use-cases/use-case-detail/payments-with-ahs",
+  REMOTE_TEAMS: "/use-cases/use-case-detail/remote-teams",
+  PRECISION_CONSENT: "/use-cases/use-case-detail/precision-consent",
 };
