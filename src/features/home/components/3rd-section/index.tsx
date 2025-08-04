@@ -1,123 +1,114 @@
-import { Box, Grid, Stack, Typography } from "@mui/material";
-import React from "react";
-import {
-  BuiltInSecurityImage,
-  DeveloperReadyImage,
-  FullyScalableImage,
-} from "../../assets";
+import { Grid, Stack, Typography } from "@mui/material";
 import Image from "next/image";
-import SlideSidewayInView from "@/components/animations/animation-scroll/slide-sideway-in-view";
-import { HoverScaleUpDown } from "@/components/animations/hover-scale-up-down";
+import {
+  CardImage,
+  WhatWeDoIcon,
+  WhoWeAreIcon,
+  WhoWeServeIcon,
+  WhyItMattersIcon,
+} from "../../assets";
 
 const HomeThirdSection = () => {
   const data = [
     {
       id: 1,
-      image: BuiltInSecurityImage,
-      title: "Built-in Security",
-      heading: "Bank-Grade Protection",
+      image: WhoWeAreIcon,
+      heading: "Who We Are",
       description:
-        "Security is our top priority. We never store login credentials and use bank-level encryption and secure APIs to protect every data request and payment. We’re fully aligned with FCA, GDPR, and PSD2 standards, giving your customers total confidence.",
-      initialX: -50,
+        "A team of fintech experts transforming banking connectivity into smarter digital experiences for all industries.",
     },
     {
       id: 2,
-      image: DeveloperReadyImage,
-      title: "Developer Ready",
-      heading: "Easy API Integration",
+      image: WhatWeDoIcon,
+      heading: "What We Do",
       description:
-        "Get started fast with clean, well-documented APIs, test environments, and responsive support—designed for startups and enterprises alike.",
-      initialX: 100,
+        "We offer secure APIs and smart tools for real-time data access, payments, identity checks, analytics, and compliance.",
     },
     {
       id: 3,
-      image: FullyScalableImage,
-      title: "Fully Scalable",
-      heading: "Built for Growth",
+      image: WhyItMattersIcon,
+      heading: "Why It Matters",
       description:
-        "Whether you're processing hundreds or millions of transactions, our cloud-based infrastructure grows with your business. Scale without limits while maintaining peak performance, uptime, and access to deep financial data insights that unlock new revenue opportunities.",
-      initialX: -50,
+        "We help businesses reduce costs, improve customer onboarding, and deliver fast, personalised financial services.",
+    },
+    {
+      id: 4,
+      image: WhoWeServeIcon,
+      heading: "Who We Serve",
+      description:
+        "From startups to enterprises — banks, lenders, insurers, and platforms rely on us to stay competitive and compliant.",
     },
   ];
 
   return (
-    <Box px={{ xs: 2, md: 5, lg: 10 }}>
-      <Grid container spacing={10}>
-        {data.map((item, index) => (
-          <SlideSidewayInView key={item.id} initialX={item?.initialX}>
-            <Grid
-              container
-              spacing={4}
-              direction={{
-                xs: "column",
-                md: index % 2 === 0 ? "row" : "row-reverse",
-              }}
-              alignItems="center"
-              sx={{ m: "auto" }}
+    <Stack spacing={8} alignItems="center" p={2}>
+      <Stack
+        sx={{ width: { lg: "70%", xs: "100%" }, color: "#03020C" }}
+        spacing={4}
+      >
+        <Typography color="#fff" fontSize="3rem" fontWeight="bold">
+          Empowering Financial <br /> Innovation with Open Banking
+        </Typography>
+        <Stack direction={{ lg: "row", xs: "column" }}>
+          <Stack
+            sx={{
+              position: "relative",
+              top: { lg: 70, xs: 0 },
+              left: { lg: 150, xs: 0 },
+              px: { md: 0, xs: 2 },
+            }}
+          >
+            <Image src={CardImage} alt="Card Image" style={{ width: "auto" }} />
+          </Stack>
+          <Stack spacing={2}>
+            <Typography
+              color="#fff"
+              fontSize="2rem"
+              fontWeight="bold"
+              textAlign="left"
             >
-              {/* Image Section */}
-              <Grid size={{ md: 6, xs: 12 }}>
-                <HoverScaleUpDown scale={1.05}>
-                  <Box
-                    sx={{
-                      width: "100%",
-                      mx: "auto",
-                    }}
-                  >
-                    <Image
-                      src={item.image}
-                      alt={item.heading}
-                      style={{
-                        borderRadius: 25,
-                        width: "100%",
-                        height: "auto",
-                      }}
-                    />
-                  </Box>
-                </HoverScaleUpDown>
-              </Grid>
-
-              {/* Text Section */}
-              <Grid size={{ md: 6, xs: 12 }}>
-                <HoverScaleUpDown scale={1.05}>
-                  <Stack spacing={3} mx="auto">
-                    <Stack spacing={0.5}>
-                      <Typography
-                        color="#A97FFF"
-                        fontFamily="Inter"
-                        fontSize="1.25rem"
-                        fontWeight="bold"
-                        textAlign="left"
-                      >
-                        {item.title}
-                      </Typography>
-                      <Typography
-                        color="#000"
-                        fontFamily="Inter"
-                        fontSize="2.5rem"
-                        fontWeight={600}
-                        textAlign="left"
-                      >
-                        {item.heading}
-                      </Typography>
-                    </Stack>
+              Trusted. Compliant. Scalable. Secure. Reliable. Intelligent.
+            </Typography>
+            <Typography
+              color="#fff"
+              fontSize="1.125rem"
+              textAlign="left"
+              sx={{ opacity: "70%" }}
+            >
+              We provide next-generation Open Banking solutions that simplify
+              access to financial data, enhance user verification, and
+              accelerate digital payments — all under full regulatory
+              compliance.{" "}
+            </Typography>
+            <Grid container spacing={4}>
+              {data?.map((items) => (
+                <Grid size={{ md: 6, xs: 12 }} key={items?.id}>
+                  <Stack direction="row" spacing={2}>
+                    <Image src={items?.image} alt={items?.heading} />
                     <Typography
-                      color="#575757"
-                      fontFamily="Inter"
-                      fontSize="1.25rem"
-                      fontWeight={400}
+                      color="#fff"
+                      fontSize="1.125rem"
+                      fontWeight="bold"
                       textAlign="left"
                     >
-                      {item.description}
+                      {items?.heading}
+                      <Typography
+                        component={"p"}
+                        color="#8D8D8D"
+                        fontSize="1rem"
+                        textAlign="left"
+                      >
+                        {items?.description}
+                      </Typography>
                     </Typography>
                   </Stack>
-                </HoverScaleUpDown>
-              </Grid>
+                </Grid>
+              ))}
             </Grid>
-          </SlideSidewayInView>
-        ))}
-      </Grid>
-    </Box>
+          </Stack>
+        </Stack>
+      </Stack>
+    </Stack>
   );
 };
 

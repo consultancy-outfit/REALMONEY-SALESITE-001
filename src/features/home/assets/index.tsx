@@ -30,9 +30,6 @@ export { default as HomeHeroSectionImage } from "./HomeHeroSectionImage.svg";
 export { default as PatternImage } from "./Pattern.png";
 export { default as PayInstantlyImage } from "./PayInstantly.svg";
 export { default as VerifiedDataImage } from "./VerifiedData.svg";
-export { default as SaferPaymentsIcon } from "./SaferPaymentsIcon.svg";
-export { default as AlwaysCompliantIcon } from "./AlwaysCompliantIcon.svg";
-export { default as AccountantHelpSquadIcon } from "./AccountantHelpSquadIcon.svg";
 export { default as CentsPayIcon } from "./CentsPayIcon.svg";
 export { default as BuiltInSecurityImage } from "./BuiltInSecurityImage.svg";
 export { default as DeveloperReadyImage } from "./DeveloperReadyImage.svg";
@@ -43,3 +40,18 @@ export { default as Avatar3 } from "./Avatar (2).png";
 export { default as Avatar4 } from "./Avatar (3).png";
 export { default as Avatar5 } from "./Avatar (4).png";
 export { default as Avatar6 } from "./Avatar (5).png";
+export { default as AccountHelpSquadIcon } from "./AccountHelpSquadIcon.svg";
+export { default as IdentityAndComplianceIcon } from "./IdentityAndComplianceIcon.svg";
+export { default as SmartBankIcon } from "./SmartBankIcon.svg";
+export { default as CardImage } from "./CardImage.svg";
+export { default as CardImage1 } from "./CardImage1.svg";
+
+export { default as WhoWeAreIcon } from "./WhoWeAreIcon.svg";
+export { default as WhatWeDoIcon } from "./WhatWeDoIcon.svg";
+export { default as WhyItMattersIcon } from "./WhyItMattersIcon.svg";
+export { default as WhoWeServeIcon } from "./WhoWeServeIcon.svg";
+export { default as FrictionlessOnboardingImage } from "./FrictionlessOnboardingImage.svg";
+export { default as SmarterlendingImage } from "./SmarterlendingImage.svg";
+
+
+
