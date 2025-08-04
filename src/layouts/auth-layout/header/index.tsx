@@ -68,7 +68,7 @@ export const Header = () => {
           transition: { duration: 0.4 },
           boxShadow:
             "0px 3px 4px rgba(0, 0, 0, 0.1), 0px 0px 3px rgba(0, 0, 0, 0.05)",
-          backgroundColor: theme.palette.common.white,
+          backgroundColor: theme.palette.common.black,
           top: 20,
           padding: "2.8rem 1rem",
         });
@@ -132,7 +132,7 @@ export const Header = () => {
             const textColor = theme
               ? isActiveParent
                 ? theme.palette.primary.main
-                : theme.palette.text.primary
+                : theme.palette.common.white
               : "inherit";
 
             return item.children ? (
@@ -254,7 +254,7 @@ export const Header = () => {
                 width: "fit-content",
               }}
             >
-              Get Started
+              Register
             </LinkButton>
           </Stack>
           <Box

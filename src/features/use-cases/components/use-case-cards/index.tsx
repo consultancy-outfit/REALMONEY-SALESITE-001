@@ -46,14 +46,12 @@ export const UseCaseCards = () => {
           <CardActions>
             <ScaleInView>
               <LinkButton
-                link={item.exploreUrl}
+                link={item.readMoreUrl}
                 customStyles={{
-                  borderRadius: "999px",
+                  borderRadius: "5px",
                   border: `1.5px solid ${theme?.palette?.primary?.main}`,
                   px: "24px",
                   py: "8px",
-                  bgcolor: theme?.palette?.primary?.main,
-                  color: theme?.palette?.common?.white,
                   height: "50px",
                   display: "flex",
                   alignItems: "center",
@@ -61,8 +59,9 @@ export const UseCaseCards = () => {
                   width: "fit-content",
                 }}
                 endIcon={<ArrowForwardIcon />}
+                variant="outlined"
               >
-                Explore
+                Read more
               </LinkButton>
             </ScaleInView>
           </CardActions>
