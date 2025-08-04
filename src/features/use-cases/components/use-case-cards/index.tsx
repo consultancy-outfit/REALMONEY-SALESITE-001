@@ -34,10 +34,10 @@ export const UseCaseCards = () => {
                 alt="green iguana"
               />
               <CardContent>
-                <Typography fontSize={"22px"} fontWeight={600} color="black">
+                <Typography fontSize={"22px"} fontWeight={600} color="white">
                   {item.heading}
                 </Typography>
-                <Typography fontSize={"16px"} fontWeight={400} color="grey">
+                <Typography fontSize={"16px"} fontWeight={400} color="white">
                   {item.description}
                 </Typography>
               </CardContent>

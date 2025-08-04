@@ -17,10 +17,10 @@ export const FintechApps = () => {
     <>
       <SlideUpInView>
         <Box display={"flex"} flexDirection={"column"} gap={2} px={6}>
-          <Typography variant="h2" color="black" fontWeight={600}>
+          <Typography variant="h2" color="white" fontWeight={600}>
             Frictionless Onboarding for Fintech Apps
           </Typography>
-          <Typography variant="body1" color="grey">
+          <Typography variant="body1" color="white">
             A growing fintech app seeks to streamline its onboarding and KYC
             process while meeting UK regulatory standards. The app aims to
             deliver a fast and user-friendly onboarding journey that builds user
@@ -40,7 +40,7 @@ export const FintechApps = () => {
         <Typography
           fontWeight={600}
           fontSize={"30px"}
-          color="black"
+          color="white"
           textAlign={"center"}
         >
           Problem
@@ -48,7 +48,7 @@ export const FintechApps = () => {
         <Typography
           fontWeight={300}
           fontSize={"15px"}
-          color="grey"
+          color="white"
           textAlign={"center"}
         >
           Lengthy onboarding experiences requiring multiple document uploads or
@@ -68,7 +68,7 @@ export const FintechApps = () => {
         <Typography
           fontWeight={600}
           fontSize={"30px"}
-          color="black"
+          color="white"
           textAlign={"center"}
         >
           Solution
@@ -76,7 +76,7 @@ export const FintechApps = () => {
         <Typography
           fontWeight={300}
           fontSize={"15px"}
-          color="grey"
+          color="white"
           textAlign={"center"}
         >
           With Bank-Based Identity Verification, Centspay allows customers to
@@ -94,22 +94,22 @@ export const FintechApps = () => {
             size={{ xs: 12, md: 6 }}
             p={{ xs: 0, sm: 4 }}
           >
-            <Typography fontWeight={600} fontSize={"30px"} color="black" mb={1}>
+            <Typography fontWeight={600} fontSize={"30px"} color="white" mb={1}>
               Benefits
             </Typography>
-            <Typography fontWeight={400} fontSize={"20px"}>
+            <Typography fontWeight={400} fontSize={"20px"} color="white">
               Onboarding completed in under 2 minutes.
             </Typography>
 
-            <Typography fontWeight={400} fontSize={"20px"}>
+            <Typography fontWeight={400} fontSize={"20px"} color="white">
               30% reduction in customer drop-off.
             </Typography>
 
-            <Typography fontWeight={400} fontSize={"20px"}>
+            <Typography fontWeight={400} fontSize={"20px"} color="white">
               Full transparency and audit-ready records.
             </Typography>
 
-            <Typography fontWeight={400} fontSize={"20px"}>
+            <Typography fontWeight={400} fontSize={"20px"} color="white">
               Elimination of manual document verification.
             </Typography>
           </Grid>
