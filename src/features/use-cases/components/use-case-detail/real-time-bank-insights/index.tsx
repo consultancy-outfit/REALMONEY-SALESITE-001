@@ -14,10 +14,10 @@ export const RealTimeBankInsights = () => {
     <>
       <SlideUpInView>
         <Box display={"flex"} flexDirection={"column"} gap={2} px={6}>
-          <Typography variant="h2" color="black" fontWeight={600}>
+          <Typography variant="h2" color="white" fontWeight={600}>
             Smarter Lending with Real-Time Bank Insights
           </Typography>
-          <Typography variant="body1" color="grey">
+          <Typography variant="body1" color="white">
             Centspay enables lenders to assess borrower creditworthiness using
             real-time bank data instead of relying solely on traditional credit
             scores. This empowers more inclusive lending, particularly for the
@@ -45,7 +45,7 @@ export const RealTimeBankInsights = () => {
         <Typography
           fontWeight={600}
           fontSize={"30px"}
-          color="black"
+          color="white"
           textAlign={"center"}
         >
           Problem
@@ -53,7 +53,7 @@ export const RealTimeBankInsights = () => {
         <Typography
           fontWeight={300}
           fontSize={"15px"}
-          color="grey"
+          color="white"
           textAlign={"center"}
         >
           Many potential borrowers, such as freelancers or first-time
@@ -63,7 +63,7 @@ export const RealTimeBankInsights = () => {
         <Typography
           fontWeight={600}
           fontSize={"30px"}
-          color="black"
+          color="white"
           textAlign={"center"}
         >
           Solution
@@ -71,7 +71,7 @@ export const RealTimeBankInsights = () => {
         <Typography
           fontWeight={300}
           fontSize={"15px"}
-          color="grey"
+          color="white"
           textAlign={"center"}
         >
           By integrating Centspays Account Information Services (AIS), lenders
@@ -91,22 +91,22 @@ export const RealTimeBankInsights = () => {
             size={{ xs: 12, md: 6 }}
             p={{ xs: 0, sm: 4 }}
           >
-            <Typography fontWeight={600} fontSize={"30px"} color="black" mb={1}>
+            <Typography fontWeight={600} fontSize={"30px"} color="white" mb={1}>
               Implementation Flow
             </Typography>
-            <Typography fontWeight={400} fontSize={"20px"}>
+            <Typography fontWeight={400} fontSize={"20px"} color="white">
               Customer consents via secure interface.
             </Typography>
 
-            <Typography fontWeight={400} fontSize={"20px"}>
+            <Typography fontWeight={400} fontSize={"20px"} color="white">
               Bank data is fetched using AIS.
             </Typography>
 
-            <Typography fontWeight={400} fontSize={"20px"}>
+            <Typography fontWeight={400} fontSize={"20px"} color="white">
               Transaction data is categorised and enriched.
             </Typography>
 
-            <Typography fontWeight={400} fontSize={"20px"}>
+            <Typography fontWeight={400} fontSize={"20px"} color="white">
               Insights are generated and used in credit models.
             </Typography>
           </Grid>
@@ -154,22 +154,22 @@ export const RealTimeBankInsights = () => {
             size={{ xs: 12, md: 6 }}
             p={{ xs: 0, sm: 4 }}
           >
-            <Typography fontWeight={600} fontSize={"30px"} color="black" mb={1}>
+            <Typography fontWeight={600} fontSize={"30px"} color="white" mb={1}>
               Benefits
             </Typography>
-            <Typography fontWeight={400} fontSize={"20px"}>
+            <Typography fontWeight={400} fontSize={"20px"} color="white">
               Broader financial inclusion for thin-file applicants.
             </Typography>
 
-            <Typography fontWeight={400} fontSize={"20px"}>
+            <Typography fontWeight={400} fontSize={"20px"} color="white">
               Reduced loan default risk with verified behavioural data.
             </Typography>
 
-            <Typography fontWeight={400} fontSize={"20px"}>
+            <Typography fontWeight={400} fontSize={"20px"} color="white">
               Faster loan approvals with automated scoring.
             </Typography>
 
-            <Typography fontWeight={400} fontSize={"20px"}>
+            <Typography fontWeight={400} fontSize={"20px"} color="white">
               Enhanced regulatory compliance with traceable insights.
             </Typography>
           </Grid>

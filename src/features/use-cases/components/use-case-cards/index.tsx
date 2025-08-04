@@ -1,5 +1,5 @@
 "use client";
-import { Box, Typography, useTheme } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
@@ -12,7 +12,6 @@ import SlideUpInView from "@/components/animations/animation-scroll/slide-up-in-
 import ScaleInView from "@/components/animations/animation-scroll/scale-in-view";
 
 export const UseCaseCards = () => {
-  const theme = useTheme();
   return (
     <Box
       display={"flex"}
@@ -21,10 +20,10 @@ export const UseCaseCards = () => {
       flexWrap={"wrap"}
       gap={8}
       p={2}
-      m={2}
+      my={5}
     >
       {cardData.map((item: any) => (
-        <Card sx={{ maxWidth: 420, borderRadius: 3 }} key={item.id}>
+        <Card sx={{ maxWidth: 420, bgcolor:'black' }} key={item.id}>
           <SlideUpInView>
             <CardActionArea>
               <CardMedia
@@ -34,10 +33,10 @@ export const UseCaseCards = () => {
                 alt="green iguana"
               />
               <CardContent>
-                <Typography fontSize={"22px"} fontWeight={600} color="black">
+                <Typography fontSize={"22px"} fontWeight={600} color="white">
                   {item.heading}
                 </Typography>
-                <Typography fontSize={"16px"} fontWeight={400} color="grey">
+                <Typography fontSize={"16px"} fontWeight={400} color="white">
                   {item.description}
                 </Typography>
               </CardContent>
@@ -49,7 +48,8 @@ export const UseCaseCards = () => {
                 link={item.readMoreUrl}
                 customStyles={{
                   borderRadius: "5px",
-                  border: `1.5px solid ${theme?.palette?.primary?.main}`,
+                  border: `1.5px solid ${'rgba(108, 1, 255, 1)'}`,
+                  color:'rgba(108, 1, 255, 1)',
                   px: "24px",
                   py: "8px",
                   height: "50px",
