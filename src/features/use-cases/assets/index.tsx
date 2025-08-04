@@ -1,0 +1,12 @@
+export { default as PersonFinanceImage } from "./Image1.png";
+export { default as FrictionlessCustomerImage } from "./Image2.png";
+export { default as ConsentManagementImage } from "./Image3.png";
+export { default as TimeSupportImage } from "./Image4.png";
+export { default as IncomeVerificationImage } from "./Image5.png";
+export { default as InstantlyKycImage } from "./Image6.png";
+export { default as PersonFinanceDetailImage } from "./Image1.1.png";
+export { default as FrictionlessCustomerDetailImage } from "./Image2.2.png";
+export { default as ConsentManagementDetailImage } from "./Image3.3.png";
+export { default as TimeSupportDetailImage } from "./Image4.4.png";
+export { default as IncomeVerificationDetailImage } from "./Image5.5.png";
+export { default as InstantlyKycDetailImage } from "./Image6.6.png";

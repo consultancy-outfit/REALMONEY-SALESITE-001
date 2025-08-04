@@ -1,0 +1,85 @@
+"use client";
+import { Box } from "@mui/material";
+import {
+  dataIntelligenceimg1,
+  dataIntelligenceimg2,
+  dataIntelligenceimg3,
+} from "../../assets/images";
+import HeroCustomSection from "../hero/hero";
+import SectionPanel from "../proudct-card/proudct-card";
+
+export const DataIntelligenceFeature = () => {
+  const sections = [
+    {
+      id: "account-information",
+      title: "Account Information",
+      subtitle: "Empower decisions with real-time banking data.",
+      description: `Account Information services (AIS) provide seamless, real-time connectivity to a customer's financial tapestry, including current balances, transaction records, and account identity. This data can be retrieved across multiple banks and accounts, ensuring a 360-degree view of personal or business finances. AIS empowers customers and businesses to make informed decisions by providing real-time data for financial insights. By leveraging robust analytics and AI, we transform raw data into actionable intelligence for budgeting, spending patterns, wealth management tools, and fraud detection engines. With powerful categorization and enrichment layers, the raw data becomes actionable insights in seconds. Our AIS infrastructure supports all types of financial data, including transaction details, account balances, and personal information, allowing for comprehensive financial analysis. Businesses can benefit from enhanced credit assessments, personalized product offerings, and automated reconciliation, leading to improved cash flow forecasting and optimizing working capital. Consumers enjoy a holistic view of their finances, simplified budgeting, and personalized financial advice. AIS enables smarter financial experiences from the ground up.`,
+      features: [
+        "Up to the minute Account Balances",
+        "Full Transaction History Retrieval",
+        "Multi-Bank Data Aggregation",
+        "Verified Account Ownership",
+        "Smart Spending & Budget Analysis",
+        "Recognition of Recurring Payments",
+        "Dynamic Expense Management",
+        "Full PSD2 Regulatory Alignment",
+        "Broadcast & Full Banking Network",
+      ],
+      imageUrl: dataIntelligenceimg1.src,
+      featuresHeading: "Account Information Services:",
+    },
+    {
+      id: "secure-payment-initiation",
+      title: "Secure Payment Initiation",
+      subtitle: "Initiate payments instantly. No cards. No delays.",
+      description: `Empower users and businesses to initiate secure, real-time payments directly from their bank accounts. Payment Initiation Services (PIS) eliminate the friction of traditional card processing, offering a faster and more cost-effective alternative. Our secure payment gateway ensures every transaction is protected, reducing the risk of fraud and chargebacks. Instant payment confirmations enhance cash flow and provide immediate proof of payment. PIS is ideal for a wide range of uses, from e-commerce checkouts and utility bill payments to peer-to-peer transfers and financial vehicle disbursements. Refunds are streamlined, and payment disputes are minimized. By directly linking to bank accounts, PIS services offer a seamless and integrated payment experience, minimizing reconciliation efforts and improving overall financial efficiency. Experience simpler, safer, and smarter payments with PIS.`,
+      features: [
+        "Instant Bank Transfers",
+        "One-Off & Recurring Payments",
+        "Strong Customer Authentication (SCA)",
+        "Payment Status Tracking",
+        "Refund Handling",
+        "Customizable Consent Flows",
+        "Compliance with PSD2 Regulations",
+        "Integrated Payment UX/UI",
+        "Developer-Friendly APIs",
+      ],
+      imageUrl: dataIntelligenceimg2.src,
+      featuresHeading: "Payment Initiation Features:",
+    },
+    {
+      id: "bank-connectivity-data-aggregation",
+      title: "Bank Connectivity & Data Aggregation",
+      subtitle: "Connect once. Scale everywhere. Built for open finance.",
+      description: `Experience seamless connectivity to an extensive network of banks through our robust and high-speed API integrations. Our platform ensures seamless connectivity with both traditional and challenger banks across multiple regions, simplifying data retrieval and aggregation. Leverage our unified API to integrate with diverse financial institutions, enabling real-time access to critical financial data. The platform unifies fragmented data into a consistent format, optimizing monitoring and smart routing to ensure reliability and performance, even during high-demand periods. With advanced security and encryption protocols, we ensure the integrity and confidentiality of all data, providing a secure and reliable foundation for financial services. Designed for developers and businesses alike, our hassle-free connectivity minimizes technical efforts so you can innovate with confidence. Scale globally as we handle the infrastructure behind the scenes.`,
+      features: [
+        "Access to Major UK & EU Banks",
+        "Uptime Monitoring & Connection Health",
+        "Multi-Bank Data Aggregation Capabilities",
+        "Unified Data Normalization Layer",
+        "Developer-Friendly SDKs & Sandbox",
+        "Smart Routing & Failover Support",
+        "Instant Onboarding & Connectivity",
+      ],
+      imageUrl: dataIntelligenceimg3.src,
+      featuresHeading: "Connectivity & Aggregation Services:",
+    },
+  ];
+
+  return (
+    <>
+      <Box sx={{ bgcolor: "#ffffff" }}>
+        <HeroCustomSection
+          subtitle="Data Intelligence & Enrichment"
+          title="Smarter decisions from enriched data."
+          description="Our data intelligence & enrichment engine transforms raw financial data into a meaningful, actionable, and insightful resource. Whether you're building a personal finance tool, a lending platform, or an accounting engine, we'll help you unlock the full potential of your data. Gain deeper insights into spending habits, optimize for your specific market needs, bring smarter workflows and enable a better customer journey."
+          textColor="#FFFFFF"
+        />
+        <SectionPanel sections={sections} />
+      </Box>
+    </>
+  );
+};
+
+export default DataIntelligenceFeature;

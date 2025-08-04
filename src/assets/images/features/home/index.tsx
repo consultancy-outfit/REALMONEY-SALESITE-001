@@ -1,0 +1,10 @@
+export { default as FeaturesHomeStarImage } from "./star-image.svg";
+export { default as HomeImage } from "./HomeImage.svg";
+export { default as AboutImage } from "./AboutImage.svg";
+export { default as ContactImage } from "./ContactImage.svg";
+export { default as UseCaseImage } from "./UseCaseImage.svg";
+export { default as LoginImage } from "./LoginImage.svg";
+export { default as GetStartedImage } from "./GetStartedImage.svg";
+export { default as PrivacyPolicyImage } from "./PrivacyPolicyImage.svg";
+export { default as TermsImage } from "./TermsImage.svg";
+export { default as CareersImage } from "./CareersImage.svg";

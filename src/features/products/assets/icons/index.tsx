@@ -1,0 +1,14 @@
+export { default as ServiceCheckMyDBSIcon } from "./service-check-my-dbs-icon";
+export { default as ServiceDigitalIDVerificationIcon } from "./service-digital-id-verification-icon";
+export { default as ServiceRightToWorkIcon } from "./service-right-to-work-icon";
+export { default as ServiceSocialMediaChecksIcon } from "./service-social-media-checks-icon";
+export { default as ServiceKnowYourCustomerIcon } from "./service-know-your-customer-icon";
+export { default as ServiceIdentityInvestigationIcon } from "./service-identity-investigation-icon";
+export { default as ServiceKnowYourBusinessIcon } from "./service-know-your-business-icon";
+export { default as ServicePreEmploymentScreeningIcon } from "./service-pre-employment-screening-icon";
+export { default as ServiceAMLComplianceIcon } from "./service-aml-compliance-icon";
+export { default as ServiceReferenceChecksIcon } from "./service-reference-checks-icon";
+export { default as ServiceSmsSignatureIcon } from "./service-sms-signature-icon";
+export { default as BasicDbsCheckIcon } from "./basic-dbs-check-icon";
+export { default as StandardDbsCheckIcon } from "./standard-dbs-check-icon";
+export { default as EnhancedDbsCheckIcon } from "./enhanced-dbs-check-icon";

@@ -1,0 +1,15 @@
+export { default as BotBubbleIcon } from "./bot-bubble-icon.png";
+export { default as CloseChatIcon } from "./close-chat-icon";
+export { default as ChatbotIcon } from "./chatbot-icon.png";
+export { default as ChatHeaderIcon } from "./chat-header-icon.png";
+export { default as SendIcon } from "./send-icon.png";
+export { default as MicrophoneIcon } from "./microphone.png";
+export { default as SearchIcon } from "./search-icon";
+export { default as NewChatIcon } from "./new-chat-icon";
+export { default as LogoTextNameImage } from "./logo-text-name.svg";
+export { default as ChatBotAgenticLogoImage } from "./chat-bot-agentic-logo.svg";
+export { default as MinimizeIcon } from "./minimize-icon";
+export { default as CommonUIStatesRestrictedAccessImage } from "./restricted-access-image.png";
+export { default as ChatSearchChatsIcons } from "./chat-search-chats-icons";
+export { default as ChatbotChatsIcons } from "./chatbot-chat-button.gif";
+export { default as ChatBubblesLoaderIcons } from "./chat-bubbles-loader.gif";

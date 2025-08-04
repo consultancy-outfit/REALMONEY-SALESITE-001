@@ -1,0 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+
+.chat-bot-font-family {
+  font-family: "Nunito", sans-serif !important;
+}
+
+a {
+  color: #0056d2;
+  text-decoration: underline;
+  font-weight: 800;
+}
+
+ul {
+  padding-left: 1rem;
+}

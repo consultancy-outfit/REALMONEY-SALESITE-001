@@ -1,0 +1,9 @@
+export { default as Hero } from "./hero";
+export { default as WhyChooseUs } from "./why-choose-us";
+export { default as OurServices } from "./our-services";
+export { default as Transparency } from "./transparency";
+export { default as Testimonials } from "./testimonials";
+export { default as ExpertsTeam } from "./experts-team";
+export { default as Pricing } from "./pricing";
+export { default as RequestDemo } from "./request-demo";
+export { default as RealTimeAccess } from "./real-time-access";
