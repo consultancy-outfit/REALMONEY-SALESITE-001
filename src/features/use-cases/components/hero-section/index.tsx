@@ -16,7 +16,7 @@ export const HeroSection = () => {
         px={2}
         m={2}
       >
-        <Typography variant="h2" fontWeight={600} color="white">
+        <Typography variant="h2" fontWeight={600} width={'60%'} textAlign={'center'} color="white">
           Real Solutions for Real-Time Finance
         </Typography>
         <Image

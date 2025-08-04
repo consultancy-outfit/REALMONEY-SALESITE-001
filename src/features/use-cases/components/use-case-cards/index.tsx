@@ -21,10 +21,10 @@ export const UseCaseCards = () => {
       flexWrap={"wrap"}
       gap={8}
       p={2}
-      m={2}
+      my={5}
     >
       {cardData.map((item: any) => (
-        <Card sx={{ maxWidth: 420, borderRadius: 3 }} key={item.id}>
+        <Card sx={{ maxWidth: 420, bgcolor:'black' }} key={item.id}>
           <SlideUpInView>
             <CardActionArea>
               <CardMedia
