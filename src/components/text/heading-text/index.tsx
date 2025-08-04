@@ -12,6 +12,7 @@ export const HeadingText = (props: HeadingTextPropsI) => {
     children,
     customStyles = {},
     letterSpacing = "normal",
+    lineHeight = 1.5,
   } = props;
 
   return (
@@ -23,6 +24,7 @@ export const HeadingText = (props: HeadingTextPropsI) => {
         textTransform: isCapital ? "capitalize" : "none",
         wordBreak: "break-word",
         letterSpacing,
+        lineHeight,
         ...customStyles,
       }}
       component={component}
