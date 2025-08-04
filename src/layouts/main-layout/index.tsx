@@ -9,7 +9,7 @@ export const MainLayout = (props: any) => {
     <>
       <Header />
       <Box sx={{ height: 110 }} />
-      <main>{children}</main>
+      <main style={{ backgroundColor: "#010101" }}>{children}</main>
       <Footer />
     </>
   );

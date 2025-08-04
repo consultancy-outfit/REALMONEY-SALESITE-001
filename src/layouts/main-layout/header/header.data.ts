@@ -178,6 +178,10 @@ export const navLinksData: NavLinkItem[] = [
     title: "Use Cases",
     path: APP_ROUTES.PRICING,
   },
+  {
+    title: "Careers",
+    path: APP_ROUTES.CAREERS,
+  },
   // {
   //   title: "Developers",
   //   path: "",
@@ -195,10 +199,6 @@ export const navLinksData: NavLinkItem[] = [
   //       path: APP_ROUTES.Comming_Soon,
   //     },
   //   ],
-  // },
-  // {
-  //   title: "Careers",
-  //   path: APP_ROUTES.CAREERS,
   // },
   {
     title: "Contact Us",

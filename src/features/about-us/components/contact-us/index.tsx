@@ -26,7 +26,8 @@ const ContactUs = () => {
           fontWeight={700}
           gutterBottom
         >
-          Empowering Financial Innovation Through Open Banking
+          A smarter, faster way to connect, manage, and move money across
+          accounts, currencies, and customers in real time.
         </Typography>
         <Typography
           fontSize={"20px"}

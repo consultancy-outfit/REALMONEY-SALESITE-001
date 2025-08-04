@@ -1,60 +1,51 @@
 import { USE_CASE_DETAIL_ROUTES } from "@/constants/routes";
 import {
-  ConsentManagementImage,
-  FrictionlessCustomerImage,
-  IncomeVerificationImage,
-  InstantlyKycImage,
-  PersonFinanceImage,
-  TimeSupportImage,
+  Card1Image,
+  Card2Image,
+  Card3Image,
+  Card4Image,
+  Card5Image,
 } from "../../assets";
 
 export const cardData = [
   {
     id: 1,
-    heading: "Personal Finance App Budgeting",
+    heading: "Smarter Lending with Real-Time Bank Insights",
     description:
-      "Personal finance apps can connect directly to users’ bank accounts through Core Services, enabling real-time transaction syncing and account balance access.",
-    image: PersonFinanceImage.src,
-    exploreUrl: USE_CASE_DETAIL_ROUTES?.APP_BUDGETING,
+      "A digital lending platform wants to enhance its underwriting model to serve customers with limited credit histories.",
+    image: Card1Image.src,
+    readMoreUrl: USE_CASE_DETAIL_ROUTES?.REAL_TIME_BANK_INSIGHTS,
   },
   {
     id: 2,
-    heading: "Frictionless Customer Onboarding",
+    heading: "Frictionless Onboarding for Fintech Apps",
     description:
-      "Platforms can skip the need for uploading utility bills or ID scans by using bank-verified KYC processes. When users link their bank accounts, Identity & KYC services confirm ownership, recent activity, and even residency.",
-    image: FrictionlessCustomerImage.src,
-    exploreUrl: USE_CASE_DETAIL_ROUTES?.DIGITAL_PLATFORM,
+      "A growing fintech app seeks to streamline its onboarding and KYC process while meeting UK regulatory standards.",
+    image: Card2Image.src,
+    readMoreUrl: USE_CASE_DETAIL_ROUTES?.FINTECH_APPS,
   },
   {
     id: 3,
-    heading: "Consent Management for Regulated Platforms",
+    heading: "Streamlining Business Payments with AHS",
     description:
-      "Financial platforms operating under open banking must allow users to grant, review, or revoke data access at any time. Compliance & Access enables this through robust APIs for consent capture, expiry tracking, and audit trails.",
-    image: ConsentManagementImage.src,
-    exploreUrl: USE_CASE_DETAIL_ROUTES?.REGULATE_PLATFORM,
+      "A medium-sized enterprise needs to modernize its financial operations, replacing spreadsheets and manual tools with automated, accurate, and scalable systems.",
+    image: Card3Image.src,
+    readMoreUrl: USE_CASE_DETAIL_ROUTES?.PAYMENTS_WITH_AHS,
   },
   {
     id: 4,
-    heading: "Time Support During Payment Flows",
+    heading: "Cross-Border P2P Transfers for Remote Teams",
     description:
-      "During payment initiation flows (e.g., paying a bill or transferring money), users may face errors like session timeouts, incorrect details, or failed authentication.",
-    image: TimeSupportImage.src,
-    exploreUrl: USE_CASE_DETAIL_ROUTES?.PAYMENT_FLOWS,
+      "A globally distributed startup requires a flexible, instant, and affordable way to pay freelancers and contractors across multiple countries and currencies.",
+    image: Card4Image.src,
+    readMoreUrl: USE_CASE_DETAIL_ROUTES?.REMOTE_TEAMS,
   },
   {
     id: 5,
-    heading: "Income Verification for Gig Economy Workers",
+    heading: "Regulated Payments with Consent Control",
     description:
-      "Enable platforms to verify income stability and trends for freelancers and gig economy workers by analysing transaction data directly from their bank accounts.",
-    image: IncomeVerificationImage.src,
-    exploreUrl: USE_CASE_DETAIL_ROUTES?.GIG_ECONOMY_WORKERS,
-  },
-  {
-    id: 6,
-    heading: "Instant KYC for Crypto Onboarding",
-    description:
-      "Accelerate user onboarding for crypto platforms by using bank-based identity verification that meets AML regulations without document uploads.",
-    image: InstantlyKycImage.src,
-    exploreUrl: USE_CASE_DETAIL_ROUTES?.SECURE_KYC,
+      "A corporate payment platform needs to enable its users to make direct bank payments while managing compliance, permissions, and audit trails.",
+    image: Card5Image.src,
+    readMoreUrl: USE_CASE_DETAIL_ROUTES?.PRECISION_CONSENT,
   },
 ];

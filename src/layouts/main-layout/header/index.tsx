@@ -1,4 +1,5 @@
 "use client";
+
 import {
   Box,
   Stack,
@@ -156,7 +157,7 @@ export const Header = () => {
           transition: { duration: 0.4 },
           boxShadow:
             "0px 3px 4px rgba(0, 0, 0, 0.1), 0px 0px 3px rgba(0, 0, 0, 0.05)",
-          backgroundColor: theme.palette.common.white,
+          backgroundColor: theme.palette.common.black,
           top: 20,
           padding: "1.5rem 1rem",
         });
@@ -165,7 +166,7 @@ export const Header = () => {
           width: "90%",
           transition: { duration: 0.4 },
           boxShadow: "none",
-          backgroundColor: "transparent",
+          backgroundColor: theme.palette.common.black,
           top: 0,
           padding: "2.5rem 1rem",
         });
@@ -192,7 +193,7 @@ export const Header = () => {
         animate={controls}
         initial={{
           width: "90%",
-          backgroundColor: "transparent",
+          backgroundColor: "#010101",
           boxShadow: "none",
           top: 0,
         }}
@@ -231,7 +232,7 @@ export const Header = () => {
             const textColor = theme
               ? isActiveParent
                 ? theme.palette.primary.main
-                : theme.palette.text.primary
+                : theme.palette.common.white
               : "inherit";
 
             if (item.title === "Products") {
@@ -606,7 +607,7 @@ export const Header = () => {
               color="secondary"
               customStyles={{
                 borderRadius: "999px",
-                border: "1px solid #F2F2F2",
+                border: "2px solid #464646",
                 px: "24px",
                 py: "8px",
                 height: "50px",
@@ -614,8 +615,8 @@ export const Header = () => {
                 alignItems: "center",
                 justifyContent: "center",
                 width: "fit-content",
-                bgcolor: theme?.palette?.common?.white,
-                color: theme?.palette?.text?.primary,
+                bgcolor: theme?.palette?.common?.black,
+                color: theme?.palette?.common?.white,
               }}
             >
               Login
@@ -624,10 +625,10 @@ export const Header = () => {
               link={APP_ROUTES?.Get_STARTED}
               customStyles={{
                 borderRadius: "999px",
-                border: `1.5px solid ${theme?.palette?.primary?.main}`,
+                border: `1.5px solid linear-gradient(0deg, #009BCC 0%, #47D3FF 100%)`,
                 px: "24px",
                 py: "8px",
-                bgcolor: theme?.palette?.primary?.main,
+                background: "linear-gradient(0deg, #009BCC 0%, #47D3FF 100%)",
                 color: theme?.palette?.common?.white,
                 height: "50px",
                 display: "flex",
@@ -636,7 +637,7 @@ export const Header = () => {
                 width: "fit-content",
               }}
             >
-              Get Started
+              Register
             </LinkButton>
           </Stack>
           <Box
