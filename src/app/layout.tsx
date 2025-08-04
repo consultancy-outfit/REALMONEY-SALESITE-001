@@ -4,9 +4,11 @@ import RootProvidersLayout from "@/layouts/root-providers-layout";
 import { outfitFontFamily } from "@/assets/fonts/outfit";
 
 export const metadata: Metadata = {
-  title: "FA Global | Smarter Open Banking & Financial Data Solutions",
-  description:
-    "Explore FA Global’s powerful suite of open banking APIs and financial intelligence tools. From Account Information to Payment Initiation, KYC, and data enrichment—enable seamless, secure, and compliant financial experiences for your users across the UK and EU.",
+  title:
+    "Real Money – Instant Payments, Wallets & Smart Financial Tools | Centspay",
+  description: `Experience Real Money with Centspay, built for instant, cardless payments and seamless digital wallets.
+    Save smarter, spend globally, and send money in real-time with full security and control.
+    From micro-transactions to multi-currency transfers, power your everyday finance effortlessly.`,
   icons: {
     icon: [
       { rel: "icon", url: "/favicon.ico", type: "image/x-icon" },
@@ -31,17 +33,21 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "FA Global | Smarter Open Banking & Financial Data Solutions",
-    description:
-      "Explore FA Global’s powerful suite of open banking APIs and financial intelligence tools. From Account Information to Payment Initiation, KYC, and data enrichment—enable seamless, secure, and compliant financial experiences for your users across the UK and EU.",
+    title:
+      "Real Money – Instant Payments, Wallets & Smart Financial Tools | Centspay",
+    description: `Experience Real Money with Centspay, built for instant, cardless payments and seamless digital wallets.
+      Save smarter, spend globally, and send money in real-time with full security and control.
+      From micro-transactions to multi-currency transfers, power your everyday finance effortlessly.`,
     type: "website",
     images: [
       {
-        url: "https://faglobal.netlify.app/og-logo.png",
+        url: "https://realmon.netlify.app/og-logo.png",
         type: "image/png",
         width: 1200,
         height: 630,
-        alt: "Explore FA Global’s powerful suite of open banking APIs and financial intelligence tools. From Account Information to Payment Initiation, KYC, and data enrichment—enable seamless, secure, and compliant financial experiences for your users across the UK and EU.",
+        alt: `Experience Real Money with Centspay, built for instant, cardless payments and seamless digital wallets.
+          Save smarter, spend globally, and send money in real-time with full security and control.
+          From micro-transactions to multi-currency transfers, power your everyday finance effortlessly.`,
       },
     ],
   },
@@ -54,7 +60,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${outfitFontFamily.className} subpixel-antialiased`}>
+      <body
+        className={`${outfitFontFamily.className} subpixel-antialiased`}
+        style={{ backgroundColor: "#010101" }}
+      >
         <RootProvidersLayout>{children}</RootProvidersLayout>
       </body>
     </html>

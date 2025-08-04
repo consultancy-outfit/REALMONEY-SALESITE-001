@@ -379,7 +379,7 @@ export const MobileHeader: React.FC<MobileHeaderProps> = ({
                 }}
                 onClick={handleClose}
               >
-                Get Started
+                Register
               </CustomLinkButton>
             </Stack>
           </Stack>
