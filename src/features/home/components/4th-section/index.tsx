@@ -1,6 +1,6 @@
-import { Button, Grid, Stack, Typography } from "@mui/material";
-import { FrictionlessOnboardingImage, SmarterlendingImage } from "../../assets";
+import { Button, Stack, Typography } from "@mui/material";
 import Image from "next/image";
+import { FrictionlessOnboardingImage, SmarterlendingImage } from "../../assets";
 
 const UseCasesHome = () => {
   const data = [
@@ -20,8 +20,8 @@ const UseCasesHome = () => {
     },
   ];
   return (
-    <Stack sx={{ color: "#03020C" }} alignItems="center">
-      <Stack sx={{ width: { lg: "70%", xs: "100%" } }}>
+    <Stack sx={{ color: "#03020C" }} alignItems="center" px={{ lg: 0, xs: 3 }}>
+      <Stack sx={{ width: { lg: "70%", xs: "100%" } }} spacing={4}>
         <Stack
           direction="row"
           justifyContent={"space-between"}
@@ -46,19 +46,23 @@ const UseCasesHome = () => {
             View More
           </Button>
         </Stack>
-        <Grid container spacing={2}>
+        <Stack direction={{ md: "row", xs: "column" }} spacing={2}>
           {data?.map((items) => (
-            <Grid size={{ md: 6, xs: 12 }} key={items?.id}>
-              <Stack spacing={2}>
+            <Stack key={items?.id}>
+              <Stack spacing={{ md: 2, xs: 1 }}>
                 <Stack>
-                  <Image src={items?.image} alt={items?.heading} />
+                  <Image
+                    src={items?.image}
+                    alt={items?.heading}
+                    style={{ width: "100%" }}
+                  />
                 </Stack>
                 <Typography
                   color="#fff"
                   fontFamily="Red Hat Display"
                   fontSize="1.25rem"
                   fontWeight={500}
-                  textAlign="left"
+                  textAlign={{ md: "left", xs: "center" }}
                 >
                   {items?.heading}
                 </Typography>
@@ -67,14 +71,14 @@ const UseCasesHome = () => {
                   fontFamily="Red Hat Display"
                   fontSize="1rem"
                   sx={{ opacity: "70%" }}
-                  textAlign="left"
+                  textAlign={{ md: "left", xs: "center" }}
                 >
                   {items?.description}
                 </Typography>
               </Stack>
-            </Grid>
+            </Stack>
           ))}
-        </Grid>
+        </Stack>
       </Stack>
     </Stack>
   );

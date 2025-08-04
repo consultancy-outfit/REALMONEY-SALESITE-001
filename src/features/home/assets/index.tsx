@@ -53,5 +53,9 @@ export { default as WhoWeServeIcon } from "./WhoWeServeIcon.svg";
 export { default as FrictionlessOnboardingImage } from "./FrictionlessOnboardingImage.svg";
 export { default as SmarterlendingImage } from "./SmarterlendingImage.svg";
 
-
-
+export { default as FinancialIcon } from "./FinancialIcon.svg";
+export { default as InvestmentIcon } from "./InvestmentIcon.svg";
+export { default as SavingIcon } from "./SavingIcon.svg";
+export { default as CryptoIcon } from "./CryptoIcon.svg";
+export { default as CreditIcon } from "./CreditIcon.svg";
+export { default as GoldIcon } from "./GoldIcon.svg";

@@ -43,7 +43,7 @@ const RealTimeAccess = () => {
   ];
   return (
     <ScaleInView initialScale={0.5}>
-      <Stack spacing={8} alignItems="center">
+      <Stack spacing={8} alignItems="center" px={{ md: 0, xs: 3 }}>
         <Stack sx={{ width: { lg: "50%", xs: "100%" } }} spacing={1}>
           <Typography
             color="#fff"
@@ -60,16 +60,8 @@ const RealTimeAccess = () => {
             fontWeight={500}
             sx={{ opacity: "70%" }}
           >
-            Explore our suite of secure, compliant, and intelligent Open
-          </Typography>
-          <Typography
-            color="#fff"
-            fontFamily="Inter"
-            fontSize="1.25rem"
-            fontWeight={500}
-            sx={{ opacity: "70%" }}
-          >
-            Banking solutions tailored for modern businesses.
+            Explore our suite of secure, compliant, and intelligent Open Banking
+            solutions tailored for modern businesses.
           </Typography>
         </Stack>
         <Grid container spacing={3} sx={{ width: { xs: "100%", sm: "70%" } }}>

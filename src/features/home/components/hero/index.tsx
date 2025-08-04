@@ -7,7 +7,7 @@ const Hero = () => {
     <Stack alignItems="center" spacing={2}>
       <Typography
         textAlign="center"
-        fontSize={{ md: "3.75rem", xs: "2.5rem" }}
+        fontSize={{ md: "3.75rem", xs: "2rem" }}
         fontWeight={"bold"}
         fontFamily="Red Hat Display"
         width={{ md: "50%", xs: "100%" }}

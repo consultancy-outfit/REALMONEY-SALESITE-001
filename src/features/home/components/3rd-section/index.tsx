@@ -41,20 +41,20 @@ const HomeThirdSection = () => {
   ];
 
   return (
-    <Stack spacing={8} alignItems="center" p={2}>
+    <Stack spacing={8} alignItems="center" px={{ lg: 0, xs: 3 }}>
       <Stack
-        sx={{ width: { lg: "70%", xs: "100%" }, color: "#03020C" }}
+        sx={{ width: { lg: "90%", xs: "100%" }, color: "#03020C" }}
         spacing={4}
       >
-        <Typography color="#fff" fontSize="3rem" fontWeight="bold">
+        <Typography color="#fff" fontSize={{md:"3rem",xs:"2.5rem"}} fontWeight="bold">
           Empowering Financial <br /> Innovation with Open Banking
         </Typography>
         <Stack direction={{ lg: "row", xs: "column" }}>
           <Stack
             sx={{
               position: "relative",
-              top: { lg: 70, xs: 0 },
-              left: { lg: 150, xs: 0 },
+              bottom: { xl: "3rem", xs: 0 },
+              left: { xl: "10rem", xs: 0 },
               px: { md: 0, xs: 2 },
             }}
           >
