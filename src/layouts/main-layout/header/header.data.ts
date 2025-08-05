@@ -2,22 +2,23 @@ import { APP_ROUTES } from "@/constants/routes";
 import React from "react";
 
 import {
-  AccountInformationIcon,
-  PaymentInitiationIcon,
-  BankConnectivityIcon,
-  DataExplorersIcon,
-  DataInsightsIcon,
-  DebitCorpIcon,
-  IdentityVerificationIcon,
-  EnterpriseConfirmationIcon,
-  FraudConfirmationIcon,
-  KycAmlRegulatorsIcon,
-  WideNormalCoverageIcon,
-  FinancialInclusionIcon,
-  DigitalWalletsIcon,
-  DebitNotificationsIcon,
-  VirtualMeasureIcon,
-  AccountExpertsIcon,
+  RiskCreditScoringIcon,
+  IncomeExpenseInsightsIcon,
+  DataEnrichmentIcon,
+  TransactionCategorisationIcon,
+  BankDataAggregationIcon,
+  PaymentInitiationServicesIcon,
+  AccountInformationServicesIcon,
+  AccountantHelpSquadIcon,
+  BankBasedIdentityVerificationIcon,
+  AccountOwnershipValidationIcon,
+  ConsentFlowManagementIcon,
+  PSDAndFCAComplianceIcon,
+  MultiCurrencyWalletIcon,
+  RealTimeMicroPaymentsIcon,
+  CurrencyExchangeIcon,
+  SavingsWithCentsIcon,
+  PeerToPeerTransfersIcon,
 } from "@/assets/icons/common";
 
 type IconComponentType = React.FC<any>;
@@ -43,134 +44,138 @@ export const navLinksData: NavLinkItem[] = [
     path: "", // Changed to empty string to disable navigation
     children: [
       {
-        title: "Core Services",
+        title: "Smart Bank Data Layer",
         path: APP_ROUTES.PRODUCT_1,
         children: [
           {
-            title: "Account Activation",
+            title: "Account Information Services(AIS)",
             path: APP_ROUTES.PRODUCT_1,
-            icon: AccountInformationIcon,
+            icon: AccountInformationServicesIcon,
           },
           {
-            title: "Approval Walters",
+            title: "Payment Initiation Services(PIS)",
             path: APP_ROUTES.PRODUCT_1,
-            icon: PaymentInitiationIcon,
+            icon: PaymentInitiationServicesIcon,
           },
           {
-            title: "Bank Connectivity & Data Aggregation",
+            title: "Bank Data Aggregation",
             path: APP_ROUTES.PRODUCT_1,
-            icon: BankConnectivityIcon,
+            icon: BankDataAggregationIcon,
+          },
+          {
+            title: "Transaction Categorisation",
+            path: APP_ROUTES.PRODUCT_1,
+            icon: TransactionCategorisationIcon,
+          },
+          {
+            title: "Data Enrichment",
+            path: APP_ROUTES.PRODUCT_1,
+            icon: DataEnrichmentIcon,
+          },
+          {
+            title: "Income & Expense Insights",
+            path: APP_ROUTES.PRODUCT_1,
+            icon: IncomeExpenseInsightsIcon,
+          },
+          {
+            title: "Risk & Credit Scoring",
+            path: APP_ROUTES.PRODUCT_1,
+            icon: RiskCreditScoringIcon,
           },
         ],
       },
       {
-        title: "Data Intelligence & Enrichment",
+        title: "Identity & Compliance",
         path: APP_ROUTES.PRODUCT_2,
         children: [
           {
-            title: "Bancana Data Explorers",
+            title: "Bank-Based Identity Verification",
             path: APP_ROUTES.PRODUCT_2,
-            icon: DataExplorersIcon,
+            icon: BankBasedIdentityVerificationIcon,
           },
           {
-            title: "Normal Data Insights",
+            title: "Account Ownership Validation",
             path: APP_ROUTES.PRODUCT_2,
-            icon: DataInsightsIcon,
+            icon: AccountOwnershipValidationIcon,
           },
           {
-            title: "Debit & Corp with Affinity Score",
+            title: "Consent Flow Management",
             path: APP_ROUTES.PRODUCT_2,
-            icon: DebitCorpIcon,
-          },
-        ],
-      },
-      {
-        title: "Identity & KYC",
-        path: APP_ROUTES.PRODUCT_3,
-        children: [
-          {
-            title: "Bancana Identity Verification",
-            path: APP_ROUTES.PRODUCT_3,
-            icon: IdentityVerificationIcon,
+            icon: ConsentFlowManagementIcon,
           },
           {
-            title: "Normal Enterprise Confirmation",
-            path: APP_ROUTES.PRODUCT_3,
-            icon: EnterpriseConfirmationIcon,
-          },
-          {
-            title: "Normal Fraud Confirmation",
-            path: APP_ROUTES.PRODUCT_3,
-            icon: FraudConfirmationIcon,
-          },
-        ],
-      },
-      {
-        title: "Compliance & Access",
-        path: APP_ROUTES.PRODUCT_4,
-        children: [
-          {
-            title: "KYC & AML Regulators",
-            path: APP_ROUTES.PRODUCT_4,
-            icon: KycAmlRegulatorsIcon,
-          },
-          {
-            title: "Wide Normal Coverage",
-            path: APP_ROUTES.PRODUCT_4,
-            icon: WideNormalCoverageIcon,
-          },
-          {
-            title: "Financial Inclusion for Identity",
-            path: APP_ROUTES.PRODUCT_4,
-            icon: FinancialInclusionIcon,
+            title: "PSD2 & FCA Compliance",
+            path: APP_ROUTES.PRODUCT_2,
+            icon: PSDAndFCAComplianceIcon,
           },
         ],
       },
       {
         title: "Centspay",
-        path: APP_ROUTES.PRODUCT_5,
+        path: APP_ROUTES.PRODUCT_3,
         children: [
           {
-            title: "Digital Wallets",
-            path: APP_ROUTES.PRODUCT_5,
-            icon: DigitalWalletsIcon,
+            title: "Multi-Currency Wallet",
+            path: APP_ROUTES.PRODUCT_3,
+            icon: MultiCurrencyWalletIcon,
           },
           {
-            title: "Debit Notifications",
-            path: APP_ROUTES.PRODUCT_5,
-            icon: DebitNotificationsIcon,
+            title: "Real-Time Micro-Payments",
+            path: APP_ROUTES.PRODUCT_3,
+            icon: RealTimeMicroPaymentsIcon,
           },
           {
-            title: "Virtual Measure",
-            path: APP_ROUTES.PRODUCT_5,
-            icon: VirtualMeasureIcon,
+            title: "Currency Exchange & Conversion",
+            path: APP_ROUTES.PRODUCT_3,
+            icon: CurrencyExchangeIcon,
+          },
+          {
+            title: "Savings with Cents",
+            path: APP_ROUTES.PRODUCT_3,
+            icon: SavingsWithCentsIcon,
+          },
+          {
+            title: "Peer-to-Peer Transfers",
+            path: APP_ROUTES.PRODUCT_3,
+            icon: PeerToPeerTransfersIcon,
           },
         ],
       },
       {
         title: "Accountant Help Squad",
-        path: APP_ROUTES.PRODUCT_6,
+        path: APP_ROUTES.PRODUCT_4,
         children: [
           {
-            title: "Account Experts",
-            path: APP_ROUTES.PRODUCT_6,
-            icon: AccountExpertsIcon,
+            title: "Accounts Payable",
+            path: APP_ROUTES.PRODUCT_4,
+            icon: AccountantHelpSquadIcon,
           },
           {
-            title: "Account Analysts",
-            path: APP_ROUTES.PRODUCT_6,
-            icon: AccountExpertsIcon,
+            title: "Accounts Receivable",
+            path: APP_ROUTES.PRODUCT_4,
+            icon: AccountantHelpSquadIcon,
           },
           {
-            title: "Account Profilers",
-            path: APP_ROUTES.PRODUCT_6,
-            icon: AccountExpertsIcon,
+            title: "Cash Flow & Forecasting",
+            path: APP_ROUTES.PRODUCT_4,
+            icon: AccountantHelpSquadIcon,
+          },
+          {
+            title: "Expense Management",
+            path: APP_ROUTES.PRODUCT_4,
+            icon: AccountantHelpSquadIcon,
+          },
+          {
+            title: "Customer Assistance Hub",
+            path: APP_ROUTES.PRODUCT_4,
+            icon: AccountantHelpSquadIcon,
           },
         ],
       },
+
       {
         title: "View All",
-        path: APP_ROUTES.PRODUCT_7,
+        path: APP_ROUTES.PRODUCT_5,
       },
     ],
   },
