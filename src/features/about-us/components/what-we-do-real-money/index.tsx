@@ -7,10 +7,14 @@ export const WhatWeDoRealMoney = () => {
   return (
     <Box
       sx={{
-        px: { xs: "10px", md: "50px" },
-        mx: { xs: "20px", md: "50px", lg: "100px" },
-        py: { md: 8 },
+        px: { xs: 2, xl: 4 },
         textAlign: "center",
+        maxWidth: { xs: pxToRem(1280), xl: "none" },
+        marginInline: "auto",
+        // display: "flex",
+        // alignItems: "center",
+        // justifyContent: "center",
+        // flexDirection: "column",
       }}
     >
       <SlideUpInView>
@@ -20,6 +24,7 @@ export const WhatWeDoRealMoney = () => {
             color: "common.white",
             lineHeight: pxToRem(60),
             letterSpacing: "1%",
+            textAlign: "center",
           }}
         >
           What We Do
@@ -33,7 +38,7 @@ export const WhatWeDoRealMoney = () => {
             color: "#C0C0C0",
             fontWeight: 400,
             lineHeight: pxToRem(60),
-            letterSpacing: "1%",
+            letterSpacing: pxToRem(0.48),
           }}
         >
           Real Money is a comprehensive open finance infrastructure designed to
@@ -50,7 +55,7 @@ export const WhatWeDoRealMoney = () => {
             color: "#C0C0C0",
             fontWeight: 400,
             lineHeight: pxToRem(60),
-            letterSpacing: "1%",
+            letterSpacing: pxToRem(0.48),
             my: 3,
           }}
         >
