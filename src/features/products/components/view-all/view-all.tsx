@@ -204,6 +204,7 @@ const Section = ({
 };
 
 export const ViewAllFeature = () => {
+   const router =useRouter()
   return (
     <>
       <Box sx={{ bgcolor: "#010101" }}>
@@ -1062,7 +1063,7 @@ export const ViewAllFeature = () => {
               display: "flex",
               justifyContent: "space-around",
               alignItems: "center",
-              px:30
+              px:{xl:30,md:10,sm:5,xs:2},
             }}
           >
             <Stack gap={2} alignItems={"center"} mt={5}>
@@ -1089,6 +1090,7 @@ export const ViewAllFeature = () => {
                 disableRipple
                 disableTouchRipple
                 disableFocusRipple
+                 onClick={() => router.push(APP_ROUTES?.Get_STARTED)}
               >
                 Get Started
               </Button>
