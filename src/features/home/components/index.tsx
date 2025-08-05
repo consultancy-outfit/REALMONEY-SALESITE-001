@@ -6,4 +6,4 @@ export { default as Testimonials } from "./testimonials";
 export { default as ExpertsTeam } from "./experts-team";
 export { default as Pricing } from "./pricing";
 export { default as RequestDemo } from "./request-demo";
-export { default as RealTimeAccess } from "./real-time-access";
+export { default as RealTimeAccess } from "./2nd-section";

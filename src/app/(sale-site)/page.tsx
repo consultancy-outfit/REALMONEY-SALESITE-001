@@ -1,5 +1,6 @@
-'use client'
-import { Hero, RealTimeAccess } from "@/features/home/components";
+"use client";
+import { Hero } from "@/features/home/components";
+import OurServicesHome from "@/features/home/components/2nd-section";
 import HomeThirdSection from "@/features/home/components/3rd-section";
 import UseCasesHome from "@/features/home/components/4th-section";
 import WhyChooseRealMoney from "@/features/home/components/5th-section";
@@ -12,12 +13,12 @@ export default function Home() {
     <>
       <Stack spacing={8} textAlign="center">
         <Hero />
-        <RealTimeAccess />
+        <OurServicesHome />
         <HomeThirdSection />
         <UseCasesHome />
-        <WhyChooseRealMoney/>
-        <TestimonialSectionHome/>
-        <LastSectionHome/>
+        <WhyChooseRealMoney />
+        <TestimonialSectionHome />
+        <LastSectionHome />
       </Stack>
     </>
   );
