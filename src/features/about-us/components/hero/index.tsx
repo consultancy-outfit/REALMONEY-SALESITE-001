@@ -10,8 +10,7 @@ const Hero = () => {
   return (
     <Box
       sx={{
-        px: { xs: "10px", md: "50px" },
-        mx: { xs: "20px", md: "50px", lg: "100px" },
+        px: { xs: 2, sm: 4 },
         textAlign: "center",
       }}
     >
@@ -19,7 +18,7 @@ const Hero = () => {
         <HeadingText
           variant="h2"
           customStyles={{
-            maxWidth: 900,
+            maxWidth: pxToRem(846),
             mx: "auto",
             mb: { xs: 4, md: 6 },
             px: { xs: 2, sm: 4 },
@@ -49,6 +48,7 @@ const Hero = () => {
               verticalAlign: "middle",
               display: "block",
               fontStyle: "italic",
+              borderRadius: pxToRem(32),
             }}
           />
         </ScaleInView>

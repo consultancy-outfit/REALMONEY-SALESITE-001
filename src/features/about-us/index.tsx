@@ -16,7 +16,9 @@ export const AboutUsFeature = () => {
           width: "100%",
         }}
       >
-        <Hero />
+        <Box sx={{ my: { xs: 5, md: 10 } }}>
+          <Hero />
+        </Box>
         <Box sx={{ my: { xs: 5, md: 10 } }}>
           <WhatWeDoRealMoney />
         </Box>
