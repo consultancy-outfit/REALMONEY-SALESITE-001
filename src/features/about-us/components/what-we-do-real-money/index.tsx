@@ -7,7 +7,7 @@ export const WhatWeDoRealMoney = () => {
   return (
     <Box
       sx={{
-        px: { xs: 2, xl: 4 },
+        px: { xs: 3, md: 4, xl: 8 },
         textAlign: "center",
         maxWidth: { xs: pxToRem(1280), xl: "none" },
         marginInline: "auto",
