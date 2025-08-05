@@ -26,3 +26,52 @@ export { default as IdentityKycImg } from "./identity-kyc.svg";
 export { default as ComplianceAccessImg } from "./compliance-access.svg";
 export { default as AccountantHelpSquadImg } from "./accountant-help-squad.svg";
 export { default as GenspayImg } from "./genspay.svg";
+///products
+export { default as product1 } from "./product-1.svg";
+export { default as product2 } from "./product-2.jpg";
+export { default as product3 } from "./product-3.jpg";
+export { default as product4 } from "./product-4.jpg";
+export { default as product5 } from "./product-5.jpg";
+export { default as productC1 } from "./product-c1.svg";
+export { default as productC2 } from "./product-c2.svg";
+export { default as productC3 } from "./product-c3.svg";
+export { default as productC4 } from "./product-c4.svg";
+export { default as productC5 } from "./product-c5.svg";
+export { default as productC6 } from "./product-c6.svg";
+export { default as productBanner } from "./product-banner.svg";
+// Sbdl
+export { default as spdl1 } from "./spdl-1.jpg";
+export { default as spdl2 } from "./spdl-2.jpg";
+export { default as spdl3 } from "./spdl-3.jpg";
+export { default as spdl4 } from "./spdl-4.jpg";
+export { default as spdl5 } from "./spdl-5.jpg";
+export { default as spdl6 } from "./spdl-6.jpg";
+export { default as spdl7 } from "./spdl-7.jpg";
+export { default as spdl8 } from "./spdl-8.jpg";
+export { default as spdl9 } from "./spdl-9.jpg";
+// spdl-sub
+export { default as spdlSub1 } from "./spdl-sub-1.png";
+export { default as spdlSub2 } from "./spdl-sub-2.jpg";
+export { default as spdlSub3 } from "./spdl-sub-3.jpg";
+export { default as spdlSub4 } from "./spdl-sub-4.jpg";
+export { default as spdlSub5 } from "./spdl-sub-5.jpg";
+//i&C
+export { default as ic1 } from "./ic1.jpg";
+export { default as ic2 } from "./ic2.jpg";
+export { default as ic3 } from "./ic3.jpg";
+export { default as ic4 } from "./ic4.jpg";
+export { default as ic5 } from "./ic5.jpg";
+// ahs
+export { default as ahs1 } from "./ahs-1.png";
+export { default as ahs2 } from "./ahs-2.jpg";
+export { default as ahs3 } from "./ahs-3.jpg";
+export { default as ahs4 } from "./ahs-4.jpg";
+export { default as ahs5 } from "./ahs-5.jpg";
+export { default as ahs6 } from "./ahs-6.jpg";
+//cp
+export { default as cp1 } from "./cp1.jpg";
+export { default as cp2 } from "./cp2.jpg";
+export { default as cp3 } from "./cp3.jpg";
+export { default as cp4 } from "./cp4.jpg";
+export { default as cp5 } from "./cp5.jpg";
+export { default as cp6 } from "./cp6.png";

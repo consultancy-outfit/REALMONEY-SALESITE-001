@@ -67,7 +67,7 @@ const common = {
   textfield_grey: "#F4F4F4",
   periwinkle_tint: "#C4C8EE",
   text_underline: "#FBE7A1",
-  light_background: "#f9f9fd",
+  light_background: "#010101",
   bg_brown: "#FDF9F4",
   lightest_gray_border: "#D9D9D9",
   light_pink: "#FFC3BB",

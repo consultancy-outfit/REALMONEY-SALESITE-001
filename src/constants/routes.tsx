@@ -21,7 +21,7 @@ export const APP_ROUTES = {
   SECURITY_AND_COMPLIANCE_POLICY: "/security-and-compliance-policy",
   PRIVACY_POLICY: "/privacy-policy",
   TERM_AND_CONDITION: "/terms-and-conditions",
-  PRODUCT_1: "/smart-bank-data-layer",
+  PRODUCT_1: "/smart-back-data-layer",
   PRODUCT_2: "/identity-and-compliance",
   PRODUCT_3: "/centspay",
   PRODUCT_4: "/accountant-help-squad",
