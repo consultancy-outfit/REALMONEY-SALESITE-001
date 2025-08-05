@@ -1,5 +1,5 @@
-import { CentsPayFeature } from "@/features/products/components";
+import CentspayFeature from "@/features/products/components/centspay-new/centspay";
 
 export default function PartnerWithUs() {
-  return <CentsPayFeature />;
+  return <CentspayFeature />;
 }

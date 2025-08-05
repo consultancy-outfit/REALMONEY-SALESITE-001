@@ -61,3 +61,17 @@ export { default as ic2 } from "./ic2.jpg";
 export { default as ic3 } from "./ic3.jpg";
 export { default as ic4 } from "./ic4.jpg";
 export { default as ic5 } from "./ic5.jpg";
+// ahs
+export { default as ahs1 } from "./ahs-1.png";
+export { default as ahs2 } from "./ahs-2.jpg";
+export { default as ahs3 } from "./ahs-3.jpg";
+export { default as ahs4 } from "./ahs-4.jpg";
+export { default as ahs5 } from "./ahs-5.jpg";
+export { default as ahs6 } from "./ahs-6.jpg";
+//cp
+export { default as cp1 } from "./cp1.jpg";
+export { default as cp2 } from "./cp2.jpg";
+export { default as cp3 } from "./cp3.jpg";
+export { default as cp4 } from "./cp4.jpg";
+export { default as cp5 } from "./cp5.jpg";
+export { default as cp6 } from "./cp6.png";
