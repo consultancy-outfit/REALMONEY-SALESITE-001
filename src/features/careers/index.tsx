@@ -1,6 +1,5 @@
 import { Box } from "@mui/material";
 import { Hero } from "./components/hero";
-import { CAREER_PORTAL_BASE_URL } from "@/configs/env";
 
 export const CareersFeature = () => {
   return (
