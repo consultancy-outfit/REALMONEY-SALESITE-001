@@ -1,3 +1,5 @@
+import SlideUpInView from "@/components/animations/animation-scroll/slide-up-in-view";
+import { HeadingText } from "@/components/text/heading-text";
 import { pxToRem } from "@/utils/styles";
 import { Box, Typography } from "@mui/material";
 
@@ -11,53 +13,60 @@ export const WhatWeDoRealMoney = () => {
         textAlign: "center",
       }}
     >
-      <Typography
-        component="h1"
-        fontWeight="bold"
-        sx={{
-          color: "common.white",
-          fontSize: pxToRem(48),
-          lineHeight: pxToRem(60),
-          letterSpacing: pxToRem(1),
-        }}
-      >
-        What We Do
-      </Typography>
-      <Typography
-        sx={{
-          color: "#C0C0C0",
-          fontWeight: 400,
-          fontSize: pxToRem(48),
-          lineHeight: pxToRem(60),
-          letterSpacing: pxToRem(1),
-        }}
-      >
-        Real Money is a comprehensive open finance infrastructure designed to
-        empower fintechs, banks, and businesses with intelligent financial
-        services. Our mission is simple: to simplify access to real-time
-        financial data, optimise money movement, and automate back-office
-        operations through secure, compliant, and scalable APIs.
-      </Typography>
-      <Typography
-        sx={{
-          color: "#C0C0C0",
-          fontWeight: 400,
-          fontSize: pxToRem(48),
-          lineHeight: pxToRem(60),
-          letterSpacing: pxToRem(1),
-        }}
-      >
-        We bring together four powerful product layers under one
-        platform—SmartBank Data Layer, Identity & Compliance, Account Help Squad
-        (AHS), and Cents—allowing our partners to launch innovative financial
-        products faster, smarter, and safer.
-      </Typography>
+      <SlideUpInView>
+        <HeadingText
+          variant="h3"
+          customStyles={{
+            color: "common.white",
+            lineHeight: pxToRem(60),
+            letterSpacing: "1%",
+          }}
+        >
+          What We Do
+        </HeadingText>
+      </SlideUpInView>
+      <br />
+      <SlideUpInView>
+        <HeadingText
+          variant="h3"
+          customStyles={{
+            color: "#C0C0C0",
+            fontWeight: 400,
+            lineHeight: pxToRem(60),
+            letterSpacing: "1%",
+          }}
+        >
+          Real Money is a comprehensive open finance infrastructure designed to
+          empower fintechs, banks, and businesses with intelligent financial
+          services. Our mission is simple: to simplify access to real-time
+          financial data, optimise money movement, and automate back-office
+          operations through secure, compliant, and scalable APIs.
+        </HeadingText>
+      </SlideUpInView>
+      <SlideUpInView>
+        <HeadingText
+          variant="h3"
+          customStyles={{
+            color: "#C0C0C0",
+            fontWeight: 400,
+            lineHeight: pxToRem(60),
+            letterSpacing: "1%",
+            my: 3,
+          }}
+        >
+          We bring together four powerful product layers under one
+          platform—SmartBank Data Layer, Identity & Compliance, Account Help
+          Squad (AHS), and Cents—allowing our partners to launch innovative
+          financial products faster, smarter, and safer.
+        </HeadingText>
+      </SlideUpInView>
       <Box
         sx={{
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
           gap: 5,
+          flexWrap: "wrap",
         }}
       >
         {[
@@ -85,27 +94,30 @@ export const WhatWeDoRealMoney = () => {
               paddingX: 2,
             }}
           >
-            <Typography
-              fontWeight="bold"
-              sx={{
-                color: "#C0C0C0",
-                fontSize: pxToRem(48),
-                lineHeight: pxToRem(60),
-                letterSpacing: pxToRem(1),
-              }}
-            >
-              {item?.title}
-            </Typography>
-            <Typography
-              sx={{
-                color: "#C0C0C0",
-                fontSize: pxToRem(18),
-                lineHeight: pxToRem(28),
-                letterSpacing: "2%",
-              }}
-            >
-              {item?.description}
-            </Typography>
+            <SlideUpInView>
+              <HeadingText
+                variant="h3"
+                customStyles={{
+                  color: "#C0C0C0",
+                  lineHeight: pxToRem(60),
+                  letterSpacing: pxToRem(1),
+                }}
+              >
+                {item?.title}
+              </HeadingText>
+            </SlideUpInView>
+            <SlideUpInView>
+              <Typography
+                sx={{
+                  color: "#C0C0C0",
+                  fontSize: pxToRem(18),
+                  lineHeight: pxToRem(28),
+                  letterSpacing: "2%",
+                }}
+              >
+                {item?.description}
+              </Typography>
+            </SlideUpInView>
           </Box>
         ))}
       </Box>
