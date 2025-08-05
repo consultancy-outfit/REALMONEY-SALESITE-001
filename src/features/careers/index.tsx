@@ -20,7 +20,7 @@ export const CareersFeature = () => {
         }}
       >
         <iframe
-          src={CAREER_PORTAL_BASE_URL}
+          src={`https://recruiting.peoplescreed.ai//job-boards?boardName=PersonalBoard-1746179395943`}
           width="100%"
           height="100%"
           title="Jobs Widget"
