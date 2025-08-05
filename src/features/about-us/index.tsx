@@ -5,7 +5,7 @@ import { Hero } from "./components";
 import { WhatWeDoRealMoney } from "./components/what-we-do-real-money";
 import AboutUsList from "./components/about-us-list";
 import { RealMoneyMeetTeam } from "./components/real-money-meet-team";
-import { ContactCard } from "./components/real-money-contact-us";
+import { RealMoneyContactCard } from "./components/real-money-contact-us";
 
 export const AboutUsFeature = () => {
   return (
@@ -32,7 +32,7 @@ export const AboutUsFeature = () => {
             px: { xs: 3, xl: 4 },
           }}
         >
-          <ContactCard />
+          <RealMoneyContactCard />
         </Box>
       </Box>
     </>
