@@ -89,7 +89,14 @@ const WhyChooseRealMoney = () => {
         <Grid container spacing={2}>
           {data?.map((items) => (
             <Grid size={{ xl: 4, md: 6, xs: 12 }} key={items?.id}>
-              <Card sx={{ backgroundColor: "#151515", p: 2, borderRadius: 5 }}>
+              <Card
+                sx={{
+                  backgroundColor: "#151515",
+                  p: 2,
+                  borderRadius: 5,
+                  height: "8rem",
+                }}
+              >
                 <Stack direction="row" spacing={2}>
                   <Image src={items?.image} alt={items?.heading} />
                   <Typography

@@ -59,3 +59,8 @@ export { default as SavingIcon } from "./SavingIcon.svg";
 export { default as CryptoIcon } from "./CryptoIcon.svg";
 export { default as CreditIcon } from "./CreditIcon.svg";
 export { default as GoldIcon } from "./GoldIcon.svg";
+export { default as leftArrowIcon } from "./leftArrowIcon.svg";
+export { default as RightArrowIcon } from "./RightArrowIcon.svg";
+export { default as CEOImage } from "./CEOImage.svg";
+export { default as VectorIcon } from "./VectorIcon.svg";
+export { default as LastSectionBackgroundImage } from "./LastSectionBackgroundImage.svg";
