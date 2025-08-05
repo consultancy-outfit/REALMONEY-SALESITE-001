@@ -16,10 +16,10 @@ export const typography = {
     fontSize: pxToRem(84),
   },
   h2: {
-    fontSize: pxToRem(72),
+    fontSize: pxToRem(60),
   },
   h3: {
-    fontSize: pxToRem(52),
+    fontSize: pxToRem(48),
   },
   h4: {
     fontSize: pxToRem(40),
@@ -59,7 +59,7 @@ export const typography = {
   button: {
     fontSize: pxToRem(16),
     fontWeight: 500,
-    lineHeight: pxToRem(22),
+    lineHeight: pxToRem(24),
     textTransform: "capitalize",
   },
 };

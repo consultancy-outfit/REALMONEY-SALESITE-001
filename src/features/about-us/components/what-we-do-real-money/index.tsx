@@ -1,3 +1,4 @@
+import { HeadingText } from "@/components/text/heading-text";
 import { pxToRem } from "@/utils/styles";
 import { Box, Typography } from "@mui/material";
 
@@ -11,25 +12,24 @@ export const WhatWeDoRealMoney = () => {
         textAlign: "center",
       }}
     >
-      <Typography
-        component="h1"
-        fontWeight="bold"
-        sx={{
+      <HeadingText
+        variant="h3"
+        customStyles={{
           color: "common.white",
-          fontSize: pxToRem(48),
           lineHeight: pxToRem(60),
-          letterSpacing: pxToRem(1),
+          letterSpacing: "1%",
         }}
       >
         What We Do
-      </Typography>
-      <Typography
-        sx={{
+      </HeadingText>
+      <br />
+      <HeadingText
+        variant="h3"
+        customStyles={{
           color: "#C0C0C0",
           fontWeight: 400,
-          fontSize: pxToRem(48),
           lineHeight: pxToRem(60),
-          letterSpacing: pxToRem(1),
+          letterSpacing: "1%",
         }}
       >
         Real Money is a comprehensive open finance infrastructure designed to
@@ -37,27 +37,29 @@ export const WhatWeDoRealMoney = () => {
         services. Our mission is simple: to simplify access to real-time
         financial data, optimise money movement, and automate back-office
         operations through secure, compliant, and scalable APIs.
-      </Typography>
-      <Typography
-        sx={{
+      </HeadingText>
+      <HeadingText
+        variant="h3"
+        customStyles={{
           color: "#C0C0C0",
           fontWeight: 400,
-          fontSize: pxToRem(48),
           lineHeight: pxToRem(60),
-          letterSpacing: pxToRem(1),
+          letterSpacing: "1%",
+          my: 3,
         }}
       >
         We bring together four powerful product layers under one
         platform—SmartBank Data Layer, Identity & Compliance, Account Help Squad
         (AHS), and Cents—allowing our partners to launch innovative financial
         products faster, smarter, and safer.
-      </Typography>
+      </HeadingText>
       <Box
         sx={{
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
           gap: 5,
+          flexWrap: "wrap",
         }}
       >
         {[
@@ -85,17 +87,16 @@ export const WhatWeDoRealMoney = () => {
               paddingX: 2,
             }}
           >
-            <Typography
-              fontWeight="bold"
-              sx={{
+            <HeadingText
+              variant="h3"
+              customStyles={{
                 color: "#C0C0C0",
-                fontSize: pxToRem(48),
                 lineHeight: pxToRem(60),
                 letterSpacing: pxToRem(1),
               }}
             >
               {item?.title}
-            </Typography>
+            </HeadingText>
             <Typography
               sx={{
                 color: "#C0C0C0",
