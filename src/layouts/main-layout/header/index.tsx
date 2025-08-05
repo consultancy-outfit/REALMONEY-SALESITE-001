@@ -255,6 +255,7 @@ export const Header = () => {
                       },
                       padding: "6px 8px",
                       minWidth: "auto",
+                      backgroundColor: "#010101",
                     }}
                     endIcon={
                       openProductsMenu ? (
@@ -312,7 +313,7 @@ export const Header = () => {
                     <Box
                       sx={{
                         flexGrow: 1,
-                        bgcolor: "background.paper",
+                        bgcolor: "#010101",
                         display: "flex",
                         minHeight: 300,
                       }}
@@ -335,7 +336,7 @@ export const Header = () => {
                             textTransform: "none",
                             fontSize: "0.9rem",
                             fontWeight: theme.typography.fontWeightMedium,
-                            color: theme.palette.text.secondary,
+                            color: theme.palette.common.white,
                             "&.Mui-selected": {
                               color: theme.palette.primary.main,
                               backgroundColor: theme.palette.action.hover,
@@ -384,7 +385,7 @@ export const Header = () => {
                               textTransform: "none",
                               fontSize: "0.9rem",
                               fontWeight: theme.typography.fontWeightMedium,
-                              color: theme.palette.text.secondary,
+                              color: theme.palette.common.white,
                               "&:hover": {
                                 backgroundColor: theme.palette.action.hover,
                               },
@@ -413,7 +414,7 @@ export const Header = () => {
                             index={index}
                             key={mainOffering.title}
                           >
-                            <Typography variant="h6" gutterBottom>
+                            <Typography variant="h6" sx={{color: "white"}} gutterBottom>
                               {mainOffering.title}
                             </Typography>
                             <Stack spacing={1}>
@@ -427,7 +428,7 @@ export const Header = () => {
                                     color:
                                       pathname === childItem.path
                                         ? theme.palette.primary.main
-                                        : theme.palette.text.primary,
+                                        : theme.palette.common.white,
                                     fontWeight:
                                       pathname === childItem.path
                                         ? theme.typography.fontWeightBold

@@ -21,29 +21,26 @@ export { default as TikTokIcon } from "./tiktok-icon";
 export { default as YoutubeIcon } from "./youtube-icon";
 export { default as Icon5 } from "./icon5.svg";
 // Core Services
-export { default as AccountInformationIcon } from "./accountInformationIcon";
-export { default as PaymentInitiationIcon } from "./paymentInitiationIcon";
-export { default as BankConnectivityIcon } from "./bankConnectivityIcon";
+export { default as RiskCreditScoringIcon } from "./RiskCreditScoringIcon";
+export { default as IncomeExpenseInsightsIcon } from "./IncomeExpenseInsightsIcon";
+export { default as DataEnrichmentIcon } from "./DataEnrichmentIcon";
+export { default as TransactionCategorisationIcon } from "./TransactionCategorisationIcon";
+export { default as BankDataAggregationIcon } from "./BankDataAggregationIcon";
+export { default as PaymentInitiationServicesIcon } from "./PaymentInitiationServicesIcon";
+export { default as AccountInformationServicesIcon } from "./AccountInformationServicesIcon";
 
-// Data Intelligence & Enrichment
-export { default as DataExplorersIcon } from "./dataExplorersIcon";
-export { default as DataInsightsIcon } from "./dataInsightsIcon";
-export { default as DebitCorpIcon } from "./debitCorpIcon";
-
-// Identity & KYC
-export { default as IdentityVerificationIcon } from "./identityVerificationIcon";
-export { default as EnterpriseConfirmationIcon } from "./enterpriseConfirmationIcon";
-export { default as FraudConfirmationIcon } from "./fraudConfirmationIcon";
-
-// Compliance & Access
-export { default as KycAmlRegulatorsIcon } from "./kycAmlRegulatorsIcon";
-export { default as WideNormalCoverageIcon } from "./wideNormalCoverageIcon";
-export { default as FinancialInclusionIcon } from "./financialInclusionIcon";
+// Identity and Compliance
+export { default as BankBasedIdentityVerificationIcon } from "./BankBasedIdentityVerificationIcon";
+export { default as AccountOwnershipValidationIcon } from "./AccountOwnershipValidationIcon";
+export { default as ConsentFlowManagementIcon } from "./ConsentFlowManagementIcon";
+export { default as PSDAndFCAComplianceIcon } from "./PSDAndFCAComplianceIcon";
 
 // Centspay
-export { default as DigitalWalletsIcon } from "./digitalWalletsIcon";
-export { default as DebitNotificationsIcon } from "./debitNotificationsIcon";
-export { default as VirtualMeasureIcon } from "./virtualMeasureIcon";
+export { default as MultiCurrencyWalletIcon } from "./MultiCurrencyWalletIcon";
+export { default as RealTimeMicroPaymentsIcon } from "./RealTimeMicroPaymentsIcon";
+export { default as CurrencyExchangeIcon } from "./CurrencyExchangeIcon";
+export { default as SavingsWithCentsIcon } from "./SavingsWithCentsIcon";
+export { default as PeerToPeerTransfersIcon } from "./PeerToPeerTransfersIcon";
 
 // Accountant Help Squad
-export { default as AccountExpertsIcon } from "./accountExpertsIcon";
+export { default as AccountantHelpSquadIcon } from "./AccountantHelpSquadIcon";
