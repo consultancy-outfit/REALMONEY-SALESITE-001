@@ -12,7 +12,7 @@ import {
 } from "@mui/material";
 import Image from "next/image";
 
-export const FintechApps = () => {
+export const FinTechApps = () => {
   return (
     <>
       <SlideUpInView>

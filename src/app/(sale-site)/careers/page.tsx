@@ -19,11 +19,15 @@ export default function Careers() {
           <Typography variant="h2" color="white" fontWeight={600}>
             Join Our Team
           </Typography>
-          <Typography variant="body1" color="grey" sx={{ mb: 3 }}>
+          <Typography
+            variant="body1"
+            color="grey"
+            sx={{ mb: 3, textAlign: "center" }}
+          >
             We’re on a mission to redefine how fintech companies find the
             perfect domain name to launch and scale. At the intersection of
-            innovation, finance, and branding — your work will make a real
-            impact.
+            innovation, finance, and <br /> branding — your work will make a
+            real impact.
           </Typography>
           <Image
             src={CareersImage}

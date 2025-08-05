@@ -5,10 +5,10 @@ import { FAGlobalLogoImage } from "@/assets/images/logo";
 // import InstagramIcon from "@mui/icons-material/Instagram";
 // import LinkedInIcon from "@mui/icons-material/LinkedIn";
 // import XIcon from "@mui/icons-material/X";
-import { Box, Grid, IconButton, Link, Stack, Typography } from "@mui/material";
+import { Box, Grid, Link, Stack, Typography } from "@mui/material";
 import Image from "next/image";
-import { about, products, resources } from "./footer.data";
 import { useRouter } from "next/navigation";
+import { about, products, resources } from "./footer.data";
 
 const Footer = () => {
   const router = useRouter();

@@ -1,4 +1,5 @@
-import { ComplianceacccessFeature } from "@/features/products/components";
+import { ComplianceAccessFeature } from "@/features/products/components";
+
 export default function PartnerWithUs() {
-  return <ComplianceacccessFeature />;
+  return <ComplianceAccessFeature />;
 }
