@@ -33,7 +33,7 @@ const BankBasedIdentityVerificationIcon: React.FC<SvgIconProps> = () => {
       <g clip-path="url(#clip0_211_155)">
         <mask
           id="mask0_211_155"
-          style="mask-type:luminance"
+          mask-type="luminance"
           maskUnits="userSpaceOnUse"
           x="7"
           y="6"

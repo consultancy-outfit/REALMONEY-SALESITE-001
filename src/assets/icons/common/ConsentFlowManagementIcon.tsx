@@ -33,7 +33,7 @@ const ConsentFlowManagementIcon: React.FC<SvgIconProps> = () => {
       <g clip-path="url(#clip0_211_175)">
         <mask
           id="mask0_211_175"
-          style="mask-type:luminance"
+          mask-type="luminance"
           maskUnits="userSpaceOnUse"
           x="7"
           y="6"

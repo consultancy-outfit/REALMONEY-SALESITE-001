@@ -286,6 +286,7 @@ export const Header = () => {
                     slotProps={{
                       paper: {
                         sx: {
+                          bgcolor: "#010101",
                           overflow: "visible",
                           filter: "drop-shadow(0px 2px 8px rgba(0,0,0,0.32))",
                           mt: 1.5,
@@ -299,7 +300,7 @@ export const Header = () => {
                             left: 14,
                             width: 10,
                             height: 10,
-                            bgcolor: "background.paper",
+                            bgcolor: "#010101",
                             transform: "translateY(-50%) rotate(45deg)",
                             zIndex: 0,
                           },
@@ -414,7 +415,11 @@ export const Header = () => {
                             index={index}
                             key={mainOffering.title}
                           >
-                            <Typography variant="h6" sx={{color: "white"}} gutterBottom>
+                            <Typography
+                              variant="h6"
+                              sx={{ color: "white" }}
+                              gutterBottom
+                            >
                               {mainOffering.title}
                             </Typography>
                             <Stack spacing={1}>
