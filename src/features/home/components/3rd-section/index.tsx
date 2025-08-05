@@ -7,6 +7,7 @@ import {
   WhoWeServeIcon,
   WhyItMattersIcon,
 } from "../../assets";
+import SlideUpInView from "@/components/animations/animation-scroll/slide-up-in-view";
 
 const HomeThirdSection = () => {
   const data = [
@@ -41,74 +42,84 @@ const HomeThirdSection = () => {
   ];
 
   return (
-    <Stack spacing={8} alignItems="center" px={{ lg: 0, xs: 3 }}>
-      <Stack
-        sx={{ width: { lg: "90%", xs: "100%" }, color: "#03020C" }}
-        spacing={4}
-      >
-        <Typography color="#fff" fontSize={{md:"3rem",xs:"2.5rem"}} fontWeight="bold">
-          Empowering Financial <br /> Innovation with Open Banking
-        </Typography>
-        <Stack direction={{ lg: "row", xs: "column" }}>
-          <Stack
-            sx={{
-              position: "relative",
-              bottom: { xl: "3rem", xs: 0 },
-              left: { xl: "10rem", xs: 0 },
-              px: { md: 0, xs: 2 },
-            }}
+    <SlideUpInView initialY={-80}>
+      <Stack spacing={8} alignItems="center" px={{ lg: 0, xs: 3 }}>
+        <Stack
+          sx={{ width: { lg: "90%", xs: "100%" }, color: "#03020C" }}
+          spacing={4}
+        >
+          <Typography
+            color="#fff"
+            fontSize={{ md: "3rem", xs: "2.5rem" }}
+            fontWeight="bold"
           >
-            <Image src={CardImage} alt="Card Image" style={{ width: "auto" }} />
-          </Stack>
-          <Stack spacing={2}>
-            <Typography
-              color="#fff"
-              fontSize="2rem"
-              fontWeight="bold"
-              textAlign="left"
+            Empowering Financial <br /> Innovation with Open Banking
+          </Typography>
+          <Stack direction={{ lg: "row", xs: "column" }}>
+            <Stack
+              sx={{
+                position: "relative",
+                bottom: { xl: "3rem", xs: 0 },
+                left: { xl: "10rem", xs: 0 },
+                px: { md: 0, xs: 2 },
+              }}
             >
-              Trusted. Compliant. Scalable. Secure. Reliable. Intelligent.
-            </Typography>
-            <Typography
-              color="#fff"
-              fontSize="1.125rem"
-              textAlign="left"
-              sx={{ opacity: "70%" }}
-            >
-              We provide next-generation Open Banking solutions that simplify
-              access to financial data, enhance user verification, and
-              accelerate digital payments — all under full regulatory
-              compliance.{" "}
-            </Typography>
-            <Grid container spacing={4}>
-              {data?.map((items) => (
-                <Grid size={{ md: 6, xs: 12 }} key={items?.id}>
-                  <Stack direction="row" spacing={2}>
-                    <Image src={items?.image} alt={items?.heading} />
-                    <Typography
-                      color="#fff"
-                      fontSize="1.125rem"
-                      fontWeight="bold"
-                      textAlign="left"
-                    >
-                      {items?.heading}
+              <Image
+                src={CardImage}
+                alt="Card Image"
+                style={{ width: "auto" }}
+              />
+            </Stack>
+            <Stack spacing={2}>
+              <Typography
+                color="#fff"
+                fontSize="2rem"
+                fontWeight="bold"
+                textAlign="left"
+              >
+                Trusted. Compliant. Scalable. Secure. Reliable. Intelligent.
+              </Typography>
+              <Typography
+                color="#fff"
+                fontSize="1.125rem"
+                textAlign="left"
+                sx={{ opacity: "70%" }}
+              >
+                We provide next-generation Open Banking solutions that simplify
+                access to financial data, enhance user verification, and
+                accelerate digital payments — all under full regulatory
+                compliance.{" "}
+              </Typography>
+              <Grid container spacing={4}>
+                {data?.map((items) => (
+                  <Grid size={{ md: 6, xs: 12 }} key={items?.id}>
+                    <Stack direction="row" spacing={2}>
+                      <Image src={items?.image} alt={items?.heading} />
                       <Typography
-                        component={"p"}
-                        color="#8D8D8D"
-                        fontSize="1rem"
+                        color="#fff"
+                        fontSize="1.125rem"
+                        fontWeight="bold"
                         textAlign="left"
                       >
-                        {items?.description}
+                        {items?.heading}
+                        <Typography
+                          component={"p"}
+                          color="#8D8D8D"
+                          fontSize="1rem"
+                          textAlign="left"
+                        >
+                          {items?.description}
+                        </Typography>
                       </Typography>
-                    </Typography>
-                  </Stack>
-                </Grid>
-              ))}
-            </Grid>
+                    </Stack>
+                  </Grid>
+                ))}
+              </Grid>
+            </Stack>
           </Stack>
         </Stack>
       </Stack>
-    </Stack>
+    </SlideUpInView>
   );
 };
 

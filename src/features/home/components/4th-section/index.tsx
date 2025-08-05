@@ -1,6 +1,8 @@
 import { Button, Stack, Typography } from "@mui/material";
 import Image from "next/image";
 import { FrictionlessOnboardingImage, SmarterlendingImage } from "../../assets";
+import SlideSidewayInView from "@/components/animations/animation-scroll/slide-sideway-in-view";
+import { HoverScaleUpDown } from "@/components/animations/hover-scale-up-down";
 
 const UseCasesHome = () => {
   const data = [
@@ -20,67 +22,77 @@ const UseCasesHome = () => {
     },
   ];
   return (
-    <Stack sx={{ color: "#03020C" }} alignItems="center" px={{ lg: 0, xs: 3 }}>
-      <Stack sx={{ width: { lg: "70%", xs: "100%" } }} spacing={4}>
-        <Stack
-          direction="row"
-          justifyContent={"space-between"}
-          alignItems={"center"}
-        >
-          <Typography
-            color="#fff"
-            fontWeight={"bold"}
-            fontSize={"3rem"}
-            fontFamily="Red Hat Display"
+    <SlideSidewayInView>
+      <Stack
+        sx={{ color: "#03020C" }}
+        alignItems="center"
+        px={{ lg: 0, xs: 3 }}
+      >
+        <Stack sx={{ width: { lg: "70%", xs: "100%" } }} spacing={4}>
+          <Stack
+            direction="row"
+            justifyContent={"space-between"}
+            alignItems={"center"}
           >
-            Use Cases
-          </Typography>
-          <Button
-            sx={{
-              color: "#fff",
-              backgroundColor: "#272727",
-              p: 2,
-              borderRadius: "2.5rem",
-            }}
-          >
-            View More
-          </Button>
-        </Stack>
-        <Stack direction={{ md: "row", xs: "column" }} spacing={2}>
-          {data?.map((items) => (
-            <Stack key={items?.id}>
-              <Stack spacing={{ md: 2, xs: 1 }}>
-                <Stack>
-                  <Image
-                    src={items?.image}
-                    alt={items?.heading}
-                    style={{ width: "100%" }}
-                  />
-                </Stack>
-                <Typography
-                  color="#fff"
-                  fontFamily="Red Hat Display"
-                  fontSize="1.25rem"
-                  fontWeight={500}
-                  textAlign={{ md: "left", xs: "center" }}
-                >
-                  {items?.heading}
-                </Typography>
-                <Typography
-                  color="#fff"
-                  fontFamily="Red Hat Display"
-                  fontSize="1rem"
-                  sx={{ opacity: "70%" }}
-                  textAlign={{ md: "left", xs: "center" }}
-                >
-                  {items?.description}
-                </Typography>
+            <Typography
+              color="#fff"
+              fontWeight={"bold"}
+              fontSize={"3rem"}
+              fontFamily="Red Hat Display"
+            >
+              Use Cases
+            </Typography>
+            <HoverScaleUpDown scale={1.1}>
+              <Button
+                sx={{
+                  color: "#fff",
+                  backgroundColor: "#272727",
+                  p: 2,
+                  borderRadius: "2.5rem",
+                }}
+              >
+                View More
+              </Button>
+            </HoverScaleUpDown>
+          </Stack>
+          <Stack direction={{ md: "row", xs: "column" }} spacing={2}>
+            {data?.map((items) => (
+              <Stack key={items?.id}>
+                <HoverScaleUpDown scale={1.01}>
+                  <Stack spacing={{ md: 2, xs: 1 }}>
+                    <Stack>
+                      <Image
+                        src={items?.image}
+                        alt={items?.heading}
+                        style={{ width: "100%" }}
+                      />
+                    </Stack>
+                    <Typography
+                      color="#fff"
+                      fontFamily="Red Hat Display"
+                      fontSize="1.25rem"
+                      fontWeight={500}
+                      textAlign={{ md: "left", xs: "center" }}
+                    >
+                      {items?.heading}
+                    </Typography>
+                    <Typography
+                      color="#fff"
+                      fontFamily="Red Hat Display"
+                      fontSize="1rem"
+                      sx={{ opacity: "70%" }}
+                      textAlign={{ md: "left", xs: "center" }}
+                    >
+                      {items?.description}
+                    </Typography>
+                  </Stack>
+                </HoverScaleUpDown>
               </Stack>
-            </Stack>
-          ))}
+            ))}
+          </Stack>
         </Stack>
       </Stack>
-    </Stack>
+    </SlideSidewayInView>
   );
 };
 

@@ -10,7 +10,7 @@ import {
   SmartBankIcon,
 } from "../../assets";
 
-const RealTimeAccess = () => {
+const OurServicesHome = () => {
   const data = [
     {
       id: 1,
@@ -112,4 +112,4 @@ const RealTimeAccess = () => {
   );
 };
 
-export default RealTimeAccess;
+export default OurServicesHome;
