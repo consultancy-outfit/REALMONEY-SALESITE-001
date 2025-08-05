@@ -13,7 +13,7 @@ export const CareersFeature = () => {
         data-lenis-prevent
         sx={{
           maxWidth: "100%",
-          height: "80vh",
+          height: "100vh",
           margin: "auto",
           marginBottom: "4rem",
         }}
