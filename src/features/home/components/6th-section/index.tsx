@@ -7,6 +7,8 @@ import {
   RightArrowIcon,
   VectorIcon,
 } from "../../assets";
+import ScaleInView from "@/components/animations/animation-scroll/scale-in-view";
+import { HoverScaleUpDown } from "@/components/animations/hover-scale-up-down";
 
 const TestimonialSectionHome = () => {
   const [index, setIndex] = useState(0);
@@ -29,90 +31,101 @@ const TestimonialSectionHome = () => {
     },
   ];
   return (
-    <Stack sx={{ color: "#03020C" }} alignItems="center" px={{ lg: 0, xs: 3 }}>
-      <Stack sx={{ width: { lg: "70%", xs: "100%" } }} spacing={2}>
-        <Stack
-          direction="row"
-          justifyContent="space-between"
-          alignItems="center"
-        >
-          <Typography
-            color="#fff"
-            fontFamily="Red Hat Display"
-            fontWeight={700}
-            fontSize={{ md: "3rem", xs: "2.5rem" }}
+    <ScaleInView initialY={50}>
+      <Stack
+        sx={{ color: "#03020C" }}
+        alignItems="center"
+        px={{ lg: 0, xs: 3 }}
+      >
+        <Stack sx={{ width: { lg: "70%", xs: "100%" } }} spacing={2}>
+          <Stack
+            direction="row"
+            justifyContent="space-between"
+            alignItems="center"
           >
-            Testimonial
-          </Typography>
-          <Stack direction="row" alignItems="center">
-            <IconButton
-              onClick={() => {
-                setIndex(index - 1);
-              }}
-              disabled={index === 0}
-            >
-              <Image src={leftArrowIcon} alt="" />
-            </IconButton>
-            <IconButton
-              onClick={() => {
-                setIndex(index + 1);
-              }}
-              disabled={index === data?.length - 1}
-            >
-              <Image src={RightArrowIcon} alt="" />
-            </IconButton>
-          </Stack>
-        </Stack>
-        <Stack direction={{ lg: "row", xs: "column" }} spacing={3}>
-          <Stack m="auto">
-            <Image src={data[index].image} alt="CEO Image" />
-          </Stack>
-          <Stack>
             <Typography
               color="#fff"
               fontFamily="Red Hat Display"
-              fontWeight={500}
-              fontSize="2.25rem"
-              textAlign="left"
+              fontWeight={700}
+              fontSize={{ md: "3rem", xs: "2.5rem" }}
             >
-              {data[index].comments}
+              Testimonial
             </Typography>
-            <Stack
-              mt="auto"
-              direction="row"
-              alignItems="center"
-              justifyContent="space-between"
-            >
+            <Stack direction="row" alignItems="center">
+              <HoverScaleUpDown scale={1.09}>
+                <IconButton
+                  onClick={() => {
+                    setIndex(index - 1);
+                  }}
+                  disabled={index === 0}
+                >
+                  <Image src={leftArrowIcon} alt="" />
+                </IconButton>
+              </HoverScaleUpDown>
+              <HoverScaleUpDown scale={1.09}>
+
+              <IconButton
+                onClick={() => {
+                  setIndex(index + 1);
+                }}
+                disabled={index === data?.length - 1}
+              >
+                <Image src={RightArrowIcon} alt="" />
+              </IconButton>
+              </HoverScaleUpDown>
+            </Stack>
+          </Stack>
+          <Stack direction={{ lg: "row", xs: "column" }} spacing={3}>
+            <Stack m="auto">
+              <Image src={data[index].image} alt="CEO Image" />
+            </Stack>
+            <Stack>
               <Typography
                 color="#fff"
                 fontFamily="Red Hat Display"
-                fontWeight={700}
-                fontSize="1.25rem"
+                fontWeight={500}
+                fontSize="2.25rem"
                 textAlign="left"
               >
-                {data[index].name}
+                {data[index].comments}
+              </Typography>
+              <Stack
+                mt="auto"
+                direction="row"
+                alignItems="center"
+                justifyContent="space-between"
+              >
                 <Typography
                   color="#fff"
                   fontFamily="Red Hat Display"
-                  fontSize="1rem"
-                  sx={{ opacity: "70%" }}
+                  fontWeight={700}
+                  fontSize="1.25rem"
                   textAlign="left"
                 >
-                  {data[index].role}
+                  {data[index].name}
+                  <Typography
+                    color="#fff"
+                    fontFamily="Red Hat Display"
+                    fontSize="1rem"
+                    sx={{ opacity: "70%" }}
+                    textAlign="left"
+                  >
+                    {data[index].role}
+                  </Typography>
                 </Typography>
-              </Typography>
-              <Stack>
-                <Image
-                  src={VectorIcon}
-                  alt="Vector Icon"
-                  style={{ opacity: "20%", width: "4rem" }}
-                />
+                <Stack>
+                  <Image
+                    src={VectorIcon}
+                    alt="Vector Icon"
+                    style={{ opacity: "20%", width: "4rem" }}
+                  />
+                </Stack>
               </Stack>
             </Stack>
           </Stack>
         </Stack>
       </Stack>
-    </Stack>
+    </ScaleInView>
   );
 };
 
