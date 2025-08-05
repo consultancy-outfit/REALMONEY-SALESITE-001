@@ -7,51 +7,61 @@ import { ContactUsRealMoneyImage } from "../../assets/images";
 import { HeadingText } from "@/components/text/heading-text";
 import { LinkButton } from "@/components/buttons/link-button";
 
-export const ContactCard = (props: any) => {
+export const RealMoneyContactCard = (props: any) => {
   const { heading = `Get Started with ${PROJECT_NAME} Today!` } = props;
 
   return (
-    <Box
-      sx={{
-        backgroundImage: `url(${ContactUsRealMoneyImage?.src})`,
-        backgroundRepeat: "no-repeat",
-        backgroundSize: "cover",
-        height: pxToRem(500),
-        width: "100%",
-        px: { xs: 2, xl: 4 },
-      }}
-    >
+    <ScaleInView>
       <Box
         sx={{
-          textAlign: "center",
+          backgroundImage: `url(${ContactUsRealMoneyImage?.src})`,
+          backgroundRepeat: "no-repeat",
+          backgroundSize: "cover",
+          height: pxToRem(500),
+          width: "100%",
+          backgroundPosition: "center",
+          boxShadow: "none",
+          borderRadius: { md: "35px", xs: "12px" },
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
-          height: "100%",
+          px: { xs: 2, xl: 4 },
+          maxWidth: { xs: pxToRem(1280), xl: "none" },
+          marginInline: "auto",
         }}
       >
         <Box
           sx={{
-            maxWidth: pxToRem(588),
-            marginInline: "auto",
+            textAlign: "center",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            height: "100%",
           }}
         >
-          <HeadingText
-            variant="h3"
-            color="common.white"
-            fontWeight="fontWeightSemiBold"
-            lineHeight={pxToRem(60)}
-            letterSpacing={pxToRem(1)}
+          <Box
+            sx={{
+              maxWidth: pxToRem(588),
+              marginInline: "auto",
+            }}
           >
-            {heading}
-          </HeadingText>
-          <br />
-          <br />
-          <LinkButton link={"/get-started"} primary>
-            Get Started
-          </LinkButton>
+            <HeadingText
+              variant="h3"
+              color="common.white"
+              fontWeight="fontWeightSemiBold"
+              lineHeight={pxToRem(60)}
+              letterSpacing={pxToRem(1)}
+            >
+              {heading}
+            </HeadingText>
+            <br />
+            <br />
+            <LinkButton link={"/get-started"} primary>
+              Get Started
+            </LinkButton>
+          </Box>
         </Box>
       </Box>
-    </Box>
+    </ScaleInView>
   );
 };
