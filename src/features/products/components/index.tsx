@@ -1,9 +1,9 @@
-export { default as ContactSection } from "./contect-section/contect-section";
+export { default as ContactSection } from "./contact-section/contact-section";
 export { default as HeroCustomSection } from "./hero/hero";
-export { default as SectionPanel } from "./proudct-card/proudct-card";
+export { default as SectionPanel } from "./product-card/product-card";
 export { default as CoreServicesFeature } from "./core-services/core-services";
 export { default as DataIntelligenceFeature } from "./data-intelligence-enrichment/data-intelligence-enrichment";
-export { default as ComplianceacccessFeature } from "./compliance-acccess/compliance-acccess";
+export { default as ComplianceAccessFeature } from "./compliance-access/compliance-access";
 export { default as AccountHelpSquadFeature } from "./account-help-squad/account-help-squad";
 export { default as IdentityKycFeature } from "./Identity-kyc/Identity-kyc";
-export { default as CentspayFeature } from "./centspay/centspay";
+export { default as CentsPayFeature } from "./centspay/centspay";

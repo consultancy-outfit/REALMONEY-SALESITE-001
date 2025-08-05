@@ -1,8 +1,12 @@
 "use client";
-
-import { Box, Typography, useTheme, useMediaQuery } from "@mui/material";
-import Image from "next/image";
-import { HeroImage } from "../../assets";
+import {
+  Box,
+  Typography,
+  useTheme,
+  useMediaQuery,
+  Avatar,
+} from "@mui/material";
+import { AboutUsRealMoneyImage } from "../../assets";
 
 const Hero = () => {
   const theme = useTheme();
@@ -32,7 +36,7 @@ const Hero = () => {
       >
         Powering the Future of Open Finance
       </Typography>
-      <Typography
+      {/* <Typography
         variant="body1"
         sx={{
           maxWidth: 700,
@@ -47,17 +51,25 @@ const Hero = () => {
         At FA Global, we’re building the infrastructure that connects financial
         institutions, businesses, and consumers through secure, real-time access
         to financial data and payments.
-      </Typography>
+      </Typography> */}
       <Box>
-        <Image
-          src={HeroImage}
+        <Avatar
+          src={AboutUsRealMoneyImage?.src}
           alt="Finance Illustration"
-          width={1200}
-          height={600}
-          layout="responsive"
+          variant="rounded"
+          sx={{
+            width: { xs: "100%" },
+            height: { xs: "auto" },
+            maxWidth: "100%",
+            objectFit: "cover",
+            backgroundColor: "transparent",
+            margin: "auto",
+            verticalAlign: "middle",
+            display: "block",
+            fontStyle: "italic",
+          }}
         />
       </Box>
-      =
     </Box>
   );
 };

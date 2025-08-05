@@ -7,30 +7,34 @@ import { CommonCard } from "@/components/cards/common-card";
 import { CommonLoadingButton } from "@/components/buttons/common-loading-button";
 import { CommonCircularProgress } from "@/components/progress-bars/common-circular-progress";
 import { HeadingText } from "@/components/text/heading-text";
-import { SubHeadingText } from "@/components/text/sub-heading-text";
+import { CustomText } from "@/components/text/custom-text";
+import { Box } from "@mui/material";
 
 const ContactForm = () => {
   const { methods, handleSubmit, submitContactUs, isLoading } = useContactUs();
 
   return (
-    <CommonCard
-      paddingX={{ xs: 1.5, sm: 2, md: 4 }}
-      boxShadow="none"
-      customStyles={{
-        pt: { md: 8, sm: 4, xs: 2 },
-        m: 6,
-        backgroundColor: "common.bg_dull",
-        borderRadius: 15,
-      }}
-    >
+    <Box>
       <HeadingText
         variant="h4"
         fontWeight="fontWeightMedium"
         color="common.white"
-        customStyles={{ textAlign: "center" }}
+        customStyles={{ width: { md: "70%", xs: "100%" } }}
       >
-        Tell us about yourself and we&apos;ll get back to you shortly.
+        Get in Touch with Real Money
       </HeadingText>
+      <CustomText
+        variant="subtitle2"
+        color="grey.400"
+        customStyles={{
+          width: { md: "90%", xs: "100%" },
+          mt: 1,
+        }}
+      >
+        Whether you're ready to integrate, want a demo, or just have
+        questions—our team is here to help you move faster and build smarter.
+        Let’s talk finance, reimagined.
+      </CustomText>
       <br />
       <CustomFormProvider
         methods={methods}
@@ -47,21 +51,11 @@ const ContactForm = () => {
           disabled={isLoading}
           customStyles={{ p: "1rem 1.5rem", fontSize: 20, borderRadius: 12 }}
           onClick={() => handleSubmit(submitContactUs)}
-          fullWidth
         >
-          {isLoading ? <CommonCircularProgress /> : "Contact Sales"}
+          {isLoading ? <CommonCircularProgress /> : "Submit "}
         </CommonLoadingButton>
-        <SubHeadingText
-          variant="subtitle1"
-          marginTop={3}
-          color="grey.600"
-          fontWeight="fontWeightThin"
-        >
-          By submitting this form, you agree to FA Global Terms of Service and
-          Privacy Policy.
-        </SubHeadingText>
       </CustomFormProvider>
-    </CommonCard>
+    </Box>
   );
 };
 

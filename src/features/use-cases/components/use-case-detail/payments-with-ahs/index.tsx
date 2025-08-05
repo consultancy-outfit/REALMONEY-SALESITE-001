@@ -20,10 +20,10 @@ export const PaymentWithAhs = () => {
     <>
       <SlideUpInView>
         <Box display={"flex"} flexDirection={"column"} gap={2} px={6}>
-          <Typography variant="h2" color="black" fontWeight={600}>
+          <Typography variant="h2" color="white" fontWeight={600}>
             Streamlining Business Payments with AHS
           </Typography>
-          <Typography variant="body1" color="grey">
+          <Typography variant="body1" color="white">
             A medium-sised enterprise needs to modernise its financial
             operations, replacing spreadsheets and manual tools with automated,
             accurate, and scalable systems.
@@ -50,7 +50,7 @@ export const PaymentWithAhs = () => {
         <Typography
           fontWeight={600}
           fontSize={"30px"}
-          color="black"
+          color="white"
           textAlign={"center"}
         >
           Problem
@@ -58,7 +58,7 @@ export const PaymentWithAhs = () => {
         <Typography
           fontWeight={300}
           fontSize={"15px"}
-          color="grey"
+          color="white"
           textAlign={"center"}
         >
           Manual accounts payable and receivable processes often lead to lost
@@ -69,7 +69,7 @@ export const PaymentWithAhs = () => {
         <Typography
           fontWeight={600}
           fontSize={"30px"}
-          color="black"
+          color="white"
           textAlign={"center"}
         >
           Solution
@@ -77,7 +77,7 @@ export const PaymentWithAhs = () => {
         <Typography
           fontWeight={300}
           fontSize={"15px"}
-          color="grey"
+         color="white"
           textAlign={"center"}
         >
           Accounts Payable: Digitises invoice intake, approval workflows, and
@@ -86,7 +86,7 @@ export const PaymentWithAhs = () => {
         <Typography
           fontWeight={300}
           fontSize={"15px"}
-          color="grey"
+          color="white"
           textAlign={"center"}
         >
           Accounts Receivable: Automates invoicing, tracks outstanding balances,
@@ -95,7 +95,7 @@ export const PaymentWithAhs = () => {
         <Typography
           fontWeight={300}
           fontSize={"15px"}
-          color="grey"
+          color="white"
           textAlign={"center"}
         >
           Cash Flow & Forecasting: Uses bank transaction data to predict future
@@ -104,7 +104,7 @@ export const PaymentWithAhs = () => {
         <Typography
           fontWeight={300}
           fontSize={"15px"}
-          color="grey"
+          color="white"
           textAlign={"center"}
         >
           Expense Management: Captures, categorises, and enforces expense
@@ -119,7 +119,7 @@ export const PaymentWithAhs = () => {
             size={{ xs: 12, md: 6 }}
             p={{ xs: 0, sm: 4 }}
           >
-            <Typography fontWeight={600} fontSize={"30px"} color="black" mb={1}>
+            <Typography fontWeight={600} fontSize={"30px"} color="white" mb={1}>
               Implementation Flow
             </Typography>
             <Box
@@ -129,10 +129,10 @@ export const PaymentWithAhs = () => {
               justifyContent={"start"}
               gap={1}
             >
-              <Typography fontWeight={400} fontSize={"20px"}>
+              <Typography fontWeight={400} fontSize={"20px"} color="white">
                 1.
               </Typography>
-              <Typography fontWeight={400} fontSize={"20px"}>
+              <Typography fontWeight={400} fontSize={"20px"} color="white">
                 Finance team uploads invoices or connects accounting software.
               </Typography>
             </Box>
@@ -143,10 +143,10 @@ export const PaymentWithAhs = () => {
               justifyContent={"start"}
               gap={1}
             >
-              <Typography fontWeight={400} fontSize={"20px"}>
+              <Typography fontWeight={400} fontSize={"20px"} color="white">
                 2.
               </Typography>
-              <Typography fontWeight={400} fontSize={"20px"}>
+              <Typography fontWeight={400} fontSize={"20px"} color="white">
                 Payables and receivables are auto-populated and scheduled.
               </Typography>
             </Box>
@@ -157,10 +157,10 @@ export const PaymentWithAhs = () => {
               justifyContent={"start"}
               gap={1}
             >
-              <Typography fontWeight={400} fontSize={"20px"}>
+              <Typography fontWeight={400} fontSize={"20px"} color="white">
                 3.
               </Typography>
-              <Typography fontWeight={400} fontSize={"20px"}>
+              <Typography fontWeight={400} fontSize={"20px"} color="white">
                 Real-time cash position is calculated based on actual bank
                 transactions.
               </Typography>
@@ -172,10 +172,10 @@ export const PaymentWithAhs = () => {
               justifyContent={"start"}
               gap={1}
             >
-              <Typography fontWeight={400} fontSize={"20px"}>
+              <Typography fontWeight={400} fontSize={"20px"} color="white">
                 4.
               </Typography>
-              <Typography fontWeight={400} fontSize={"20px"}>
+              <Typography fontWeight={400} fontSize={"20px"} color="white">
                 Dashboards show historical and predictive financial trends.
               </Typography>
             </Box>
@@ -201,7 +201,7 @@ export const PaymentWithAhs = () => {
         <Typography
           fontWeight={600}
           fontSize={"30px"}
-          color="black"
+          color="white"
           textAlign={"center"}
         >
           Key Benefits:
@@ -214,7 +214,7 @@ export const PaymentWithAhs = () => {
                   component="span"
                   fontWeight={300}
                   fontSize={"15px"}
-                  color="grey"
+                  color="white"
                 >
                   <span style={{ fontSize: "15px", marginRight: "8px" }}>
                     ●
@@ -231,7 +231,7 @@ export const PaymentWithAhs = () => {
                   component="span"
                   fontWeight={300}
                   fontSize={"15px"}
-                  color="grey"
+                  color="white"
                 >
                   <span style={{ fontSize: "15px", marginRight: "8px" }}>
                     ●
@@ -248,7 +248,7 @@ export const PaymentWithAhs = () => {
                   component="span"
                   fontWeight={300}
                   fontSize={"15px"}
-                  color="grey"
+                  color="white"
                 >
                   <span style={{ fontSize: "15px", marginRight: "8px" }}>
                     ●
@@ -265,7 +265,7 @@ export const PaymentWithAhs = () => {
                   component="span"
                   fontWeight={300}
                   fontSize={"15px"}
-                  color="grey"
+                  color="white"
                 >
                   <span style={{ fontSize: "15px", marginRight: "8px" }}>
                     ●

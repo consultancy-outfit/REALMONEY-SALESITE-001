@@ -1,8 +1,8 @@
 export const products = [
-  { id: 1, link: "/", label: "Smart Bank Data Layer" },
-  { id: 2, link: "/", label: "Identity & Compliance" },
-  { id: 3, link: "/", label: "Accountant Help Squad" },
-  { id: 4, link: "/", label: "centspay" },
+  { id: 1, link: "#", label: "Smart Bank Data Layer" },
+  { id: 2, link: "#", label: "Identity & Compliance" },
+  { id: 3, link: "#", label: "Accountant Help Squad" },
+  { id: 4, link: "#", label: "Centspay" },
 ];
 
 export const about = [

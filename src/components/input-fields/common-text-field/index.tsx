@@ -17,7 +17,7 @@ export const CommonTextField = (props: any) => {
     endIcon = undefined,
     placeholder,
     backgroundColor = "transparent",
-    borderRadius = 3,
+    borderRadius = 8,
     border = "1px solid",
     color = "common.white",
     borderColor = "grey.600",

@@ -5,13 +5,15 @@ import { FAGlobalLogoImage } from "@/assets/images/logo";
 // import InstagramIcon from "@mui/icons-material/Instagram";
 // import LinkedInIcon from "@mui/icons-material/LinkedIn";
 // import XIcon from "@mui/icons-material/X";
-import { Box, Grid, IconButton, Link, Stack, Typography } from "@mui/material";
+import { Box, Grid, Link, Stack, Typography } from "@mui/material";
 import Image from "next/image";
-import { about, products, resources } from "./footer.data";
 import { useRouter } from "next/navigation";
+import { about, products, resources } from "./footer.data";
 
 const Footer = () => {
   const router = useRouter();
+  const currentYear = new Date().getFullYear();
+
   return (
     <Box
       sx={{
@@ -28,7 +30,7 @@ const Footer = () => {
         <Grid size={{ xs: 12 }}>
           <Stack
             spacing={2}
-            flexDirection={"row"}
+            flexDirection={{ xs: "column", sm: "row" }}
             justifyContent={"space-between"}
             alignItems={"flex-start"}
           >
@@ -76,9 +78,9 @@ const Footer = () => {
           </Stack>
         </Grid>
 
-        <Grid size={{ md: 2, xs: 6 }}></Grid>
+        <Grid size={{ md: 2 }} display={{ xs: "none", md: "block" }}></Grid>
         {/* Products */}
-        <Grid size={{ md: 2, xs: 6 }}>
+        <Grid size={{ md: 2, xs: 12 }}>
           <Typography
             variant="subtitle1"
             color="#F6F7FF"
@@ -156,7 +158,7 @@ const Footer = () => {
         </Grid>
 
         {/* Support */}
-        <Grid size={{ md: 2, xs: 6 }}>
+        <Grid size={{ md: 2, xs: 12 }}>
           <Typography
             variant="subtitle1"
             color="#F6F7FF"
@@ -198,7 +200,7 @@ const Footer = () => {
           variant="body1"
           sx={{ color: "#EEEFFB", fontFamily: "Manrope" }}
         >
-          All Rights Reserved. Copyright © 2025 Real Money.
+          All Rights Reserved. Copyright © {currentYear} Real Money.
         </Typography>
         <Stack direction="row" spacing={1}>
           <Link
