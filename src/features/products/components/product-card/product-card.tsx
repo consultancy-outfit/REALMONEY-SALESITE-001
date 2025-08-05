@@ -11,7 +11,7 @@ import {
 } from "@mui/material";
 import SlideUpInView from "@/components/animations/animation-scroll/slide-up-in-view";
 import SlideSidewayInView from "@/components/animations/animation-scroll/slide-sideway-in-view";
-import ContactSection from "../contect-section/contect-section";
+import ContactSection from "../contact-section/contact-section";
 
 interface SectionData {
   id: string;

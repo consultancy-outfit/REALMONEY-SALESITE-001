@@ -1,4 +1,5 @@
 "use client";
+
 import { HeadingText } from "@/components/text/heading-text";
 import { usePathname } from "next/navigation";
 import { PoliciesLayoutHeadingData } from "../policies-layout.data";
