@@ -5,7 +5,7 @@ import {
   complianceAcccessimg2,
   complianceAcccessimg3,
 } from "../../assets/images";
-import SectionPanel from "../proudct-card/proudct-card";
+import SectionPanel from "../product-card/product-card";
 import HeroCustomSection from "../hero/hero";
 
 interface SectionData {
@@ -18,7 +18,7 @@ interface SectionData {
   featuresHeading?: string;
 }
 
-export const ComplianceacccessFeature = () => {
+export const ComplianceAccessFeature = () => {
   const sections: SectionData[] = [
     {
       id: "fca-psd2-regulatory-alignment",
@@ -99,4 +99,4 @@ with regulatory compliance"
   );
 };
 
-export default ComplianceacccessFeature;
+export default ComplianceAccessFeature;

@@ -6,7 +6,7 @@ import {
   Centspayimg3, // Assuming this will be the image for Money Movement
 } from "../../assets/images"; // Make sure these paths are correct relative to this file
 import HeroCustomSection from "../hero/hero";
-import SectionPanel from "../proudct-card/proudct-card";
+import SectionPanel from "../product-card/product-card";
 
 interface SectionData {
   id: string;

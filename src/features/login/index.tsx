@@ -1,15 +1,15 @@
 "use client";
 import { Grid } from "@mui/material";
-import { LoginForm, LoginInfo } from "./components";
+import { LoginForm } from "./components";
+import ScaleInView from "@/components/animations/animation-scroll/scale-in-view";
 
 export const Login = () => {
   return (
-    <Grid container spacing={2} height={"90dvh"}>
-      <Grid size={{ md: 6, xs: 12 }}>
-        <LoginForm />
-      </Grid>
-      <Grid size={{ md: 6, xs: 12 }}>
-        <LoginInfo />
+    <Grid container spacing={2} justifyContent={"center"}>
+      <Grid size={{ md: 4, xs: 12 }}>
+        <ScaleInView>
+          <LoginForm />
+        </ScaleInView>
       </Grid>
     </Grid>
   );

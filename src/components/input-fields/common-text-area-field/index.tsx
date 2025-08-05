@@ -16,15 +16,16 @@ const CommonTextAreaField = (props: any) => {
     startIcon = undefined,
     endIcon = undefined,
     placeholder,
-    backgroundColor,
-    borderRadius = 4,
+    backgroundColor = "transparent",
+    borderRadius = 8,
     border = "1px solid",
-    color,
-    borderColor = "#CCCCE9",
+    color = "common.white",
+    borderColor = "grey.600",
     name,
     ref,
     id = name,
-    rows = 3,
+    rows = 5,
+    labelColor = "grey.600",
     required = false,
   } = props;
 
@@ -32,7 +33,7 @@ const CommonTextAreaField = (props: any) => {
     <>
       {label && (
         <label htmlFor={name}>
-          <FieldLabel label={label} required={required} />
+          <FieldLabel label={label} required={required} color={labelColor} />
         </label>
       )}
       <TextField
