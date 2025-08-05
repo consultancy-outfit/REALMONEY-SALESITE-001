@@ -61,6 +61,7 @@ const LoginForm = () => {
         <TextFormFields
           name="email"
           label="Email"
+          required
           placeholder="Username or email"
         />
         <Box sx={{ mt: 2 }}>
@@ -68,6 +69,7 @@ const LoginForm = () => {
             name="password"
             label="Password"
             placeholder="Password"
+            required
             sx={{ mt: 2 }}
           />
         </Box>

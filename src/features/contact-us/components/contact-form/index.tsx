@@ -8,20 +8,13 @@ import { CommonLoadingButton } from "@/components/buttons/common-loading-button"
 import { CommonCircularProgress } from "@/components/progress-bars/common-circular-progress";
 import { HeadingText } from "@/components/text/heading-text";
 import { CustomText } from "@/components/text/custom-text";
+import { Box } from "@mui/material";
 
 const ContactForm = () => {
   const { methods, handleSubmit, submitContactUs, isLoading } = useContactUs();
 
   return (
-    <CommonCard
-      paddingX={{ xs: 1.5, sm: 2, md: 4 }}
-      boxShadow="none"
-      customStyles={{
-        pt: { md: 4, xs: 2 },
-        m: { md: 6, xs: 1 },
-        maxWidth: 750,
-      }}
-    >
+    <Box>
       <HeadingText
         variant="h4"
         fontWeight="fontWeightMedium"
@@ -62,7 +55,7 @@ const ContactForm = () => {
           {isLoading ? <CommonCircularProgress /> : "Submit "}
         </CommonLoadingButton>
       </CustomFormProvider>
-    </CommonCard>
+    </Box>
   );
 };
 
