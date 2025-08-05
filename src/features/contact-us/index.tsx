@@ -8,7 +8,7 @@ export const ContactUsFeature = () => {
   return (
     <Box>
       <Container
-        maxWidth="xl"
+        maxWidth="md"
         sx={{ display: "flex", flexDirection: "column", alignItems: "center" }}
       >
         <ScaleInView>

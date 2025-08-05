@@ -3,8 +3,7 @@ import TextFormFields from "@/components/form-fields/text-form-field";
 import * as Yup from "yup";
 
 export const contactUsFormValidationSchema = Yup?.object()?.shape({
-  firstName: Yup?.string()?.trim()?.required("First name is required"),
-  lastName: Yup?.string()?.trim()?.required("Last name is required"),
+  fullName: Yup?.string()?.trim()?.required("First name is required"),
   email: Yup?.string()
     ?.trim()
     ?.email("Invalid email")
@@ -15,8 +14,7 @@ export const contactUsFormValidationSchema = Yup?.object()?.shape({
 });
 
 export const contactUsFormDefaultValues = {
-  firstName: "",
-  lastName: "",
+  fullName: "",
   email: "",
   query: "",
   phoneNumber: "",
