@@ -29,7 +29,7 @@ export const LogoAvatar = (props: LogoAvatarPropsI) => {
 
   return (
     <Box>
-      <Link href={link} passHref>
+      <Link href={link}>
         <Avatar
           src={Logo}
           alt={PROJECT_NAME || "Real Money"}
