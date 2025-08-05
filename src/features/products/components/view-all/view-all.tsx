@@ -21,7 +21,7 @@ import {
 import SlideSidewayInView from "@/components/animations/animation-scroll/slide-sideway-in-view";
 import { APP_ROUTES } from "@/constants/routes";
 import { useRouter } from "next/navigation";
-import ContactSection from "../contect-section/contect-section";
+import ContactSection from "../contact-section/contact-section";
 import HeroCustomSection from "../hero/hero";
 
 interface SectionData {

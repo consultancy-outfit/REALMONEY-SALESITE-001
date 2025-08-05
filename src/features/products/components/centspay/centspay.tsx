@@ -6,7 +6,7 @@ import {
   Centspayimg3, // Corresponds to Money Movement
 } from "../../assets/images";
 import HeroCustomSection from "../hero/hero";
-import SectionPanel from "../proudct-card/proudct-card";
+import SectionPanel from "../product-card/product-card";
 
 interface SectionData {
   id: string;
@@ -18,7 +18,7 @@ interface SectionData {
   featuresHeading?: string;
 }
 
-export const CentspayFeature = () => {
+export const CentsPayFeature = () => {
   const sections: SectionData[] = [
     {
       id: "digital-wallet-accounts",
@@ -95,4 +95,4 @@ export const CentspayFeature = () => {
   );
 };
 
-export default CentspayFeature;
+export default CentsPayFeature;

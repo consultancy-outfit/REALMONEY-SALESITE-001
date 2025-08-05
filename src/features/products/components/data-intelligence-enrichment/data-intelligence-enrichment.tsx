@@ -6,7 +6,7 @@ import {
   dataIntelligenceimg3,
 } from "../../assets/images";
 import HeroCustomSection from "../hero/hero";
-import SectionPanel from "../proudct-card/proudct-card";
+import SectionPanel from "../product-card/product-card";
 
 export const DataIntelligenceFeature = () => {
   const sections = [
