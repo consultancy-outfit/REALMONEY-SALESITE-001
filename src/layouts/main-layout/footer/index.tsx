@@ -38,12 +38,12 @@ const Footer = () => {
               <Image src={FAGlobalLogoImage} alt="Logo" />
             </Stack>
             <Typography
-              variant="body1"
+              variant="subtitle2"
               sx={{
-                maxWidth: 550,
+                maxWidth: 557,
                 color: "#ADAEBA",
                 fontFamily: "Manrope",
-                fontSize: 16,
+                fontSize: 18,
               }}
             >
               A smarter, faster way to connect, manage, and move money across
@@ -92,7 +92,7 @@ const Footer = () => {
           {products.map((item) => (
             <Typography
               key={item?.id}
-              variant="body1"
+              variant="subtitle2"
               color="#D2D3DF"
               fontFamily="Manrope"
               sx={{ mt: 1.5, cursor: "pointer" }}
@@ -118,7 +118,7 @@ const Footer = () => {
           {about.map((item) => (
             <Typography
               key={item?.id}
-              variant="body1"
+              variant="subtitle2"
               color="#D2D3DF"
               fontFamily="Manrope"
               sx={{ mt: 1.5, cursor: "pointer" }}
@@ -144,7 +144,7 @@ const Footer = () => {
           {resources.map((item) => (
             <Typography
               key={item?.id}
-              variant="body1"
+              variant="subtitle2"
               color="#D2D3DF"
               fontFamily="Manrope"
               sx={{ mt: 1.5, cursor: "pointer" }}
@@ -168,7 +168,7 @@ const Footer = () => {
             Support
           </Typography>
           <Typography
-            variant="body1"
+            variant="subtitle2"
             sx={{ mt: 1.5, cursor: "pointer" }}
             color="#D2D3DF"
             fontFamily="Manrope"
@@ -176,7 +176,7 @@ const Footer = () => {
             Email: info@realmoney.co.uk
           </Typography>
           <Typography
-            variant="body1"
+            variant="subtitle2"
             sx={{ mt: 1.5, cursor: "pointer" }}
             color="#D2D3DF"
             fontFamily="Manrope"
@@ -197,7 +197,7 @@ const Footer = () => {
         gap={2}
       >
         <Typography
-          variant="body1"
+          variant="subtitle1"
           sx={{ color: "#EEEFFB", fontFamily: "Manrope" }}
         >
           All Rights Reserved. Copyright © {currentYear} Real Money.
@@ -209,7 +209,7 @@ const Footer = () => {
             sx={{
               color: "#EEEFFB",
               fontFamily: "Manrope",
-              fontSize: 16,
+              fontSize: 18,
               textDecoration: "none",
             }}
           >
@@ -222,7 +222,7 @@ const Footer = () => {
             sx={{
               color: "#EEEFFB",
               fontFamily: "Manrope",
-              fontSize: 16,
+              fontSize: 18,
               textDecoration: "none",
             }}
           >

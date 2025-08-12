@@ -177,23 +177,25 @@ export const Header = () => {
                   }}
                   sx={{ zIndex: 2000 }}
                 >
-                  {item.children.map((childItem) => (
-                    <MenuItem
-                      key={childItem.title}
-                      onClick={handleProductsClose}
-                      component={Link}
-                      href={childItem.path}
-                      sx={{
-                        color: theme
-                          ? pathname === childItem.path
-                            ? theme.palette.primary.main
-                            : theme.palette.text.primary
-                          : "inherit",
-                      }}
-                    >
-                      {childItem.title}
-                    </MenuItem>
-                  ))}
+                  {item?.children?.map((childItem) =>
+                    childItem?.path ? (
+                      <MenuItem
+                        key={childItem.title}
+                        onClick={handleProductsClose}
+                        component={Link}
+                        href={childItem.path}
+                        sx={{
+                          color: theme
+                            ? pathname === childItem.path
+                              ? theme.palette.primary.main
+                              : theme.palette.text.primary
+                            : "inherit",
+                        }}
+                      >
+                        {childItem.title}
+                      </MenuItem>
+                    ) : null,
+                  )}
                 </Menu>
               </React.Fragment>
             ) : (
