@@ -23,7 +23,13 @@ export const PaymentWithAhs = () => {
           <Typography variant="h2" color="white" fontWeight={600}>
             Streamlining Business Payments with AHS
           </Typography>
-          <Typography variant="body1" color="white">
+          <Typography variant="body1" color="white"
+          sx={{
+              color: "#C0C0C0",
+              fontWeight: 500,
+              fontSize: "25px",
+            }}
+          >
             A medium-sised enterprise needs to modernise its financial
             operations, replacing spreadsheets and manual tools with automated,
             accurate, and scalable systems.
@@ -60,6 +66,11 @@ export const PaymentWithAhs = () => {
           fontSize={"15px"}
           color="white"
           textAlign={"center"}
+            sx={{
+              color: "#C0C0C0",
+              fontWeight: 500,
+              fontSize: "25px",
+            }}
         >
           Manual accounts payable and receivable processes often lead to lost
           invoices, payment delays, and inefficient reconciliation. Cash flow
@@ -79,6 +90,11 @@ export const PaymentWithAhs = () => {
           fontSize={"15px"}
          color="white"
           textAlign={"center"}
+            sx={{
+              color: "#C0C0C0",
+              fontWeight: 500,
+              fontSize: "25px",
+            }}
         >
           Accounts Payable: Digitises invoice intake, approval workflows, and
           payment scheduling to avoid late fees and manual entry errors.
@@ -88,6 +104,11 @@ export const PaymentWithAhs = () => {
           fontSize={"15px"}
           color="white"
           textAlign={"center"}
+            sx={{
+              color: "#C0C0C0",
+              fontWeight: 500,
+              fontSize: "25px",
+            }}
         >
           Accounts Receivable: Automates invoicing, tracks outstanding balances,
           and accelerates collections with smart reminders.
@@ -97,6 +118,11 @@ export const PaymentWithAhs = () => {
           fontSize={"15px"}
           color="white"
           textAlign={"center"}
+            sx={{
+              color: "#C0C0C0",
+              fontWeight: 500,
+              fontSize: "25px",
+            }}
         >
           Cash Flow & Forecasting: Uses bank transaction data to predict future
           financial positions, liquidity gaps, or surpluses.
@@ -106,6 +132,11 @@ export const PaymentWithAhs = () => {
           fontSize={"15px"}
           color="white"
           textAlign={"center"}
+            sx={{
+              color: "#C0C0C0",
+              fontWeight: 500,
+              fontSize: "25px",
+            }}
         >
           Expense Management: Captures, categorises, and enforces expense
           policies through automated review and tagging.

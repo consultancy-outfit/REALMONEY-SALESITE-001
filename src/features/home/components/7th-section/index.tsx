@@ -1,9 +1,11 @@
 import { Button, Card, Stack, Typography } from "@mui/material";
 import React from "react";
+import { useRouter } from "next/navigation";
 import { LastSectionBackgroundImage } from "../../assets";
 import SlideUpInView from "@/components/animations/animation-scroll/slide-up-in-view";
 
 const LastSectionHome = () => {
+    const router = useRouter();
   return (
     <SlideUpInView>
       <Stack
@@ -56,6 +58,7 @@ const LastSectionHome = () => {
                   fontFamily: "Red Hat Display",
                   textTransform: "none",
                 }}
+                onClick={() => router.push("/get-started")}
               >
                 Get Started
               </Button>

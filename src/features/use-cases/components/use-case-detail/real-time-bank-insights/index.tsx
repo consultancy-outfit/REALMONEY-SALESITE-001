@@ -17,7 +17,16 @@ export const RealTimeBankInsights = () => {
           <Typography variant="h2" color="white" fontWeight={600}>
             Smarter Lending with Real-Time Bank Insights
           </Typography>
-          <Typography variant="body1" color="white">
+          <Typography
+            variant="body1"
+            color="white"
+             sx={{
+              color: "#C0C0C0",
+              fontWeight: 500,
+              fontSize: "25px",
+              letterSpacing:"1px"
+            }}
+          >
             Centspay enables lenders to assess borrower creditworthiness using
             real-time bank data instead of relying solely on traditional credit
             scores. This empowers more inclusive lending, particularly for the
@@ -55,6 +64,12 @@ export const RealTimeBankInsights = () => {
           fontSize={"15px"}
           color="white"
           textAlign={"center"}
+           sx={{
+              color: "#C0C0C0",
+              fontWeight: 500,
+              fontSize: "25px",
+              letterSpacing:"1px"
+            }}
         >
           Many potential borrowers, such as freelancers or first-time
           applicants, lack traditional credit histories. Financial institutions
@@ -73,6 +88,12 @@ export const RealTimeBankInsights = () => {
           fontSize={"15px"}
           color="white"
           textAlign={"center"}
+           sx={{
+              color: "#C0C0C0",
+              fontWeight: 500,
+              fontSize: "25px",
+              letterSpacing:"1px"
+            }}
         >
           By integrating Centspays Account Information Services (AIS), lenders
           securely access bank transactions across institutions. The system

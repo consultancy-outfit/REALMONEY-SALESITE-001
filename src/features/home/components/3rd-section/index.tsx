@@ -52,17 +52,21 @@ const HomeThirdSection = () => {
             color="#fff"
             fontSize={{ md: "3rem", xs: "2.5rem" }}
             fontWeight="bold"
+          //  sx={{padding:"10px"}}
           >
             Empowering Financial <br /> Innovation with Open Banking
           </Typography>
-          <Stack direction={{ lg: "row", xs: "column" }}>
+          <Stack direction={{ lg: "row", xs: "column" }} sx={{paddingTop:"20px"}}>
             <Stack
               sx={{
                 position: "relative",
                 bottom: { xl: "3rem", xs: 0 },
                 left: { xl: "10rem", xs: 0 },
                 px: { md: 0, xs: 2 },
+                // paddingTop:"50px"
+               
               }}
+               mt={4}
             >
               <Image
                 src={CardImage}

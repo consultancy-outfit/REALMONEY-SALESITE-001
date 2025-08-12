@@ -22,7 +22,7 @@ export default function Careers() {
           <Typography
             variant="body1"
             color="grey"
-            sx={{ mb: 3, textAlign: "center" }}
+            sx={{ mb: 3, textAlign: "center", fontSize:"18px" }}
           >
             We’re on a mission to redefine how fintech companies find the
             perfect domain name to launch and scale. At the intersection of

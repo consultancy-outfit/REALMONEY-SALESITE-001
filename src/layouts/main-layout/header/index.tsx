@@ -614,7 +614,7 @@ export const Header = () => {
               customStyles={{
                 borderRadius: "999px",
                 border: "2px solid #464646",
-                px: "24px",
+                px: "30px",
                 py: "8px",
                 height: "50px",
                 display: "flex",

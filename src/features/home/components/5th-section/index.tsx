@@ -44,16 +44,16 @@ const WhyChooseRealMoney = () => {
     {
       id: 5,
       image: CreditIcon,
-      heading: "Financial",
+      heading: "Credit",
       description:
-        "Get access to reliable tools for seamless financial planning and real-time transaction monitoring.",
+        "Credit Streamline lending workflows with automated checks, eligibility insights, and smart approvals.",
     },
     {
       id: 6,
       image: GoldIcon,
-      heading: "Investment",
+      heading: "Gold",
       description:
-        "Make confident decisions with portfolio tracking, forecasting tools, and advisory integrations.",
+        "Gold Digitally invest in gold with live pricing, instant transactions, and secure storage options.",
     },
   ];
   return (
