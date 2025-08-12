@@ -56,7 +56,7 @@ export { default as spdlSub3 } from "./spdl-sub-3.jpg";
 export { default as spdlSub4 } from "./spdl-sub-4.jpg";
 export { default as spdlSub5 } from "./spdl-sub-5.jpg";
 //i&C
-export { default as ic1 } from "./ic1.jpg";
+export { default as ic1 } from "./product-3One.svg";
 export { default as ic2 } from "./ic2.jpg";
 export { default as ic3 } from "./ic3.jpg";
 export { default as ic4 } from "./ic4.jpg";

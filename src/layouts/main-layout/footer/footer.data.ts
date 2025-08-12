@@ -1,8 +1,8 @@
 export const products = [
-  { id: 1, link: "#", label: "Smart Bank Data Layer" },
-  { id: 2, link: "#", label: "Identity & Compliance" },
-  { id: 3, link: "#", label: "Accountant Help Squad" },
-  { id: 4, link: "#", label: "Centspay" },
+  { id: 1, link: "/smart-back-data-layer", label: "Smart Bank Data Layer" },
+  { id: 2, link: "/identity-and-compliance", label: "Identity & Compliance" },
+  { id: 3, link: "/accountant-help-squad", label: "Accountant Help Squad" },
+  { id: 4, link: "/centspay", label: "Centspay" },
 ];
 
 export const about = [
@@ -15,6 +15,6 @@ export const about = [
 
 export const resources = [
   { id: 1, link: "/use-cases", label: "Use Cases" },
-  { id: 2, link: "/", label: "Developers" },
-  { id: 3, link: "/", label: "FAQ's" },
+  // { id: 2, link: "/", label: "Developers" },
+  // { id: 3, link: "/", label: "FAQ's" },
 ];

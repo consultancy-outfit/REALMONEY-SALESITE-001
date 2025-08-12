@@ -69,6 +69,7 @@ function CentspayFeature() {
                 <Box
                   sx={{
                     width: "100%",
+                    maxWidth: "1400px",
                     height: { xs: 250, sm: 350, md: 600 },
                     backgroundImage: `url(${cp1.src})`,
                     backgroundSize: "cover",
