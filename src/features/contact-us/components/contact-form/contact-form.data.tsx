@@ -60,6 +60,7 @@ export const contactUsFormFields = [
       name: "query",
       label: "Message",
       placeholder: "Enter your message",
+      required: true,
     },
     component: TextAreaFormFields,
     md: 12,

@@ -1,9 +1,11 @@
 import { Button, Stack, Typography } from "@mui/material";
+import { useRouter } from "next/navigation";
 import Image from "next/image";
 import { HomeHeroSectionImage } from "../../assets";
 import SlideUpInView from "@/components/animations/animation-scroll/slide-up-in-view";
 
 const Hero = () => {
+    const router = useRouter();
   return (
     <SlideUpInView>
       <Stack alignItems="center" spacing={2}>
@@ -47,6 +49,7 @@ const Hero = () => {
               fontSize: "1rem",
               fontFamily: "Red Hat Display",
             }}
+            onClick={() => router.push("/view-all")}
           >
             Explore Our Products
           </Button>
@@ -61,6 +64,7 @@ const Hero = () => {
               fontSize: "1rem",
               fontFamily: "Red Hat Display",
             }}
+            onClick={() => router.push("/contact-us")}
           >
             Contact Us
           </Button>

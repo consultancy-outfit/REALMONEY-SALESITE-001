@@ -23,7 +23,13 @@ export const PrecisionConsent = () => {
           <Typography variant="h2" color="white" fontWeight={600}>
             Empower Every Payment with Precision Consent
           </Typography>
-          <Typography variant="body1" color="white">
+          <Typography variant="body1" color="white"
+               sx={{
+              color: "#C0C0C0",
+              fontWeight: 500,
+              fontSize: "25px",
+            }}
+          >
             In regulated financial environments, control over user consent is
             not just a feature—its a legal requirement. Centspay offers a fully
             compliant, consent-first infrastructure for initiating payments,
@@ -62,6 +68,11 @@ export const PrecisionConsent = () => {
           fontSize={"15px"}
           color="white"
           textAlign={"center"}
+               sx={{
+              color: "#C0C0C0",
+              fontWeight: 500,
+              fontSize: "25px",
+            }}
         >
           Whether you're building a fintech app, payroll service, or digital
           wallet, managing user consent for payments and data access is
@@ -73,6 +84,11 @@ export const PrecisionConsent = () => {
           fontSize={"15px"}
           color="white"
           textAlign={"center"}
+               sx={{
+              color: "#C0C0C0",
+              fontWeight: 500,
+              fontSize: "25px",
+            }}
         >
           Every transaction is backed by explicit user permissions—granular,
           time-bound, and revocable. This ensures your operations remain
@@ -89,7 +105,13 @@ export const PrecisionConsent = () => {
             >
               Dynamic Consent Control in Real Time
             </Typography>
-            <Typography fontWeight={300} fontSize={"15px"} color="white">
+            <Typography fontWeight={300} fontSize={"15px"} color="white"
+                 sx={{
+              color: "#C0C0C0",
+              fontWeight: 500,
+              fontSize: "25px",
+            }}
+            >
               Centspays Consent Engine allows platforms to configure, monitor,
               and manage consent at a transactional or session level. Users can
               grant permissions for:
@@ -298,6 +320,11 @@ export const PrecisionConsent = () => {
           fontSize={"15px"}
           color="white"
           textAlign={"center"}
+               sx={{
+              color: "#C0C0C0",
+              fontWeight: 500,
+              fontSize: "25px",
+            }}
         >
           Consent does not need to slow you down. Centspays infrastructure is
           scalable, flexible, and secure—enabling you to move funds while

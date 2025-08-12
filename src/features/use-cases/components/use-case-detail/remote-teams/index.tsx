@@ -23,13 +23,25 @@ export const RemoteTeams = () => {
           <Typography variant="h2" color="white" fontWeight={600}>
             Cross-Border P2P Transfers for Remote Teams
           </Typography>
-          <Typography variant="body1" color="white">
+          <Typography variant="body1" color="white"
+            sx={{
+              color: "#C0C0C0",
+              fontWeight: 500,
+              fontSize: "25px",
+            }}
+          >
             In a global workforce, remote teams are the norm—not the exception.
             Whether you're paying freelancers in Brasil, developers in India, or
             consultants across Europe, Centspay ensures seamless and secure
             peer-to-peer (P2P) payments across borders.
           </Typography>
-          <Typography variant="body1" color="white">
+          <Typography variant="body1" color="white" 
+               sx={{
+              color: "#C0C0C0",
+              fontWeight: 500,
+              fontSize: "25px",
+            }}
+          >
             With multi-currency wallet support and real-time processing,
             businesses can pay remote team members instantly—without delays,
             hidden fees, or third-party complexities.
@@ -66,6 +78,11 @@ export const RemoteTeams = () => {
           fontSize={"15px"}
           color="white"
           textAlign={"center"}
+               sx={{
+              color: "#C0C0C0",
+              fontWeight: 500,
+              fontSize: "25px",
+            }}
         >
           Manual accounts payable and receivable processes often lead to lost
           invoices, payment delays, and inefficient reconciliation. Cash flow
@@ -90,7 +107,9 @@ export const RemoteTeams = () => {
                   </Typography>
                 }
                 secondary={
-                  <Typography color="white">
+                  <Typography color="white"
+                  
+                  >
                     Empower your team with digital wallets that support multiple
                     fiat currencies. Manage local payouts in their native
                     currency while maintaining full control from a single

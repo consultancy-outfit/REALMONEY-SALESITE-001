@@ -3,8 +3,10 @@ import Image from "next/image";
 import { FrictionlessOnboardingImage, SmarterlendingImage } from "../../assets";
 import SlideSidewayInView from "@/components/animations/animation-scroll/slide-sideway-in-view";
 import { HoverScaleUpDown } from "@/components/animations/hover-scale-up-down";
+import { useRouter } from "next/navigation";
 
 const UseCasesHome = () => {
+    const router = useRouter();
   const data = [
     {
       id: 1,
@@ -50,6 +52,7 @@ const UseCasesHome = () => {
                   p: 2,
                   borderRadius: "2.5rem",
                 }}
+                onClick={() => router.push("/use-cases")}
               >
                 View More
               </Button>

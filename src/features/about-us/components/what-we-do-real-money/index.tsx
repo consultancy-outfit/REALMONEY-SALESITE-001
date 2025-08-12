@@ -39,7 +39,9 @@ export const WhatWeDoRealMoney = () => {
             fontWeight: 400,
             lineHeight: pxToRem(60),
             letterSpacing: pxToRem(0.48),
+            fontSize:"24px"
           }}
+
         >
           Real Money is a comprehensive open finance infrastructure designed to
           empower fintechs, banks, and businesses with intelligent financial

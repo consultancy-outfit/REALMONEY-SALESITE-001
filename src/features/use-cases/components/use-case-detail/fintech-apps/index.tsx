@@ -20,7 +20,13 @@ export const FinTechApps = () => {
           <Typography variant="h2" color="white" fontWeight={600}>
             Frictionless Onboarding for Fintech Apps
           </Typography>
-          <Typography variant="body1" color="white">
+          <Typography variant="body1" color="white"  
+          sx={{
+              color: "#C0C0C0",
+              fontWeight: 500,
+              fontSize: "25px",
+            }}
+            >
             A growing fintech app seeks to streamline its onboarding and KYC
             process while meeting UK regulatory standards. The app aims to
             deliver a fast and user-friendly onboarding journey that builds user
@@ -50,6 +56,11 @@ export const FinTechApps = () => {
           fontSize={"15px"}
           color="white"
           textAlign={"center"}
+          sx={{
+              color: "#C0C0C0",
+              fontWeight: 500,
+              fontSize: "25px",
+            }}
         >
           Lengthy onboarding experiences requiring multiple document uploads or
           physical verification steps discourage users from completing
@@ -78,6 +89,11 @@ export const FinTechApps = () => {
           fontSize={"15px"}
           color="white"
           textAlign={"center"}
+           sx={{
+              color: "#C0C0C0",
+              fontWeight: 500,
+              fontSize: "25px",
+            }}
         >
           With Bank-Based Identity Verification, Centspay allows customers to
           verify their identity by logging into their bank. The process is

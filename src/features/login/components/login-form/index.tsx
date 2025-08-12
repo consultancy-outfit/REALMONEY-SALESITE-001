@@ -26,7 +26,7 @@ const LoginForm = () => {
         <BodyText
           variant="body2"
           color="grey.400"
-          customStyles={{ lineHeight: 2.5 }}
+          customStyles={{ lineHeight: 2, fontSize:"18px" }}
         >
           Your gateway to powerful tools, personalised services, and secure
           management. Enter your credentials below to continue.

@@ -29,6 +29,7 @@ const ContactForm = () => {
         customStyles={{
           width: { md: "90%", xs: "100%" },
           mt: 1,
+          fontSize:"18px"
         }}
       >
         Whether you're ready to integrate, want a demo, or just have
