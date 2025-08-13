@@ -41,7 +41,8 @@ export const PrecisionConsent = () => {
             alt="HeroSection5"
             style={{
               width: "100%",
-              height: "524px",
+              height:" auto",
+              maxHeight: "524px",
             }}
           />
         </Box>

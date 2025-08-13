@@ -39,7 +39,8 @@ export const PaymentWithAhs = () => {
             alt="HeroSection3"
             style={{
               width: "100%",
-              height: "640px",
+              height: "auto",
+              maxHeight: "640px",
             }}
           />
         </Box>

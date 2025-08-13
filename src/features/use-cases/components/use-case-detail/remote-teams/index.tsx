@@ -51,7 +51,8 @@ export const RemoteTeams = () => {
             alt="HeroSection4"
             style={{
               width: "100%",
-              height: "560px",
+              height:" auto",
+              maxHeight: "560px",
             }}
           />
         </Box>

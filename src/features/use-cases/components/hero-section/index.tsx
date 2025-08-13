@@ -16,7 +16,13 @@ export const HeroSection = () => {
         px={2}
         m={2}
       >
-        <Typography variant="h2" fontWeight={600} width={'60%'} textAlign={'center'} color="white">
+        <Typography
+          variant="h2"
+          fontWeight={600}
+          width={"60%"}
+          textAlign={"center"}
+          color="white"
+        >
           Real Solutions for Real-Time Finance
         </Typography>
         <Image
@@ -24,7 +30,8 @@ export const HeroSection = () => {
           alt="HeroSection"
           style={{
             width: "100%",
-            height: "780px",
+            height: "auto",
+            maxHeight: "780px",
           }}
         />
       </Box>
