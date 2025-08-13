@@ -73,7 +73,8 @@ export const FinTechApps = () => {
           alt="HeroSection2"
           style={{
             width: "100%",
-            height: "640px",
+            height:"auto",
+            maxHeight: "640px",
           }}
         />
         <Typography

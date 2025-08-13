@@ -18,13 +18,15 @@ import { useScroll } from "framer-motion";
 // Import MUI Icons
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
+import * as MuiIcons from "@mui/icons-material";
 
 // Assuming these paths are correct for your project structure
 import { navLinksData } from "./header.data";
 import { LinkButton } from "@/components/buttons/link-button";
 import { APP_ROUTES } from "@/constants/routes";
-import { MobileHeader } from "./mobile-header";
+// import { MobileHeader } from "./mobile-header";
 import { LogoAvatar } from "@/components/avatars/logo-avatar";
+import { MobileHeader } from "@/layouts/main-layout/header/mobile-header";
 
 // Define a type for your nav link items, especially for children
 interface NavLinkItem {
@@ -86,6 +88,25 @@ export const Header = () => {
     });
     return () => unsubscribe();
   }, [controls, scrollYProgress, theme]);
+
+  const getIconComponent = (
+    icon?: string | React.FC<any>,
+    marginRight: string = "8px",
+  ) => {
+    if (!icon) return null;
+  
+    if (typeof icon === "string") {
+      const MuiIconComponent = MuiIcons[icon as keyof typeof MuiIcons];
+      return MuiIconComponent ? (
+        <MuiIconComponent sx={{ fontSize: 18, marginRight }} />
+      ) : null;
+    } else if (typeof icon === "function") {
+      const CustomIconComponent = icon;
+      return <CustomIconComponent sx={{ fontSize: 18, marginRight }} />;
+    }
+    return null;
+  };
+  
 
   return (
     <>
@@ -265,7 +286,7 @@ export const Header = () => {
               display: { xs: "block", lg: "none" },
             }}
           >
-            <MobileHeader />
+            <MobileHeader getIconComponent={getIconComponent} />
           </Box>
         </Stack>
       </motion.div>

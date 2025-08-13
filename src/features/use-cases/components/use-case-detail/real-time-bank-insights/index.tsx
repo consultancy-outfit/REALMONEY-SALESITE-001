@@ -20,11 +20,11 @@ export const RealTimeBankInsights = () => {
           <Typography
             variant="body1"
             color="white"
-             sx={{
+            sx={{
               color: "#C0C0C0",
               fontWeight: 500,
               fontSize: "25px",
-              letterSpacing:"1px"
+              letterSpacing: "1px",
             }}
           >
             Centspay enables lenders to assess borrower creditworthiness using
@@ -37,7 +37,8 @@ export const RealTimeBankInsights = () => {
             alt="HeroSection1"
             style={{
               width: "100%",
-              height: "640px",
+              height: "auto",
+              maxHeight: "640px",
             }}
           />
         </Box>
@@ -64,12 +65,12 @@ export const RealTimeBankInsights = () => {
           fontSize={"15px"}
           color="white"
           textAlign={"center"}
-           sx={{
-              color: "#C0C0C0",
-              fontWeight: 500,
-              fontSize: "25px",
-              letterSpacing:"1px"
-            }}
+          sx={{
+            color: "#C0C0C0",
+            fontWeight: 500,
+            fontSize: "25px",
+            letterSpacing: "1px",
+          }}
         >
           Many potential borrowers, such as freelancers or first-time
           applicants, lack traditional credit histories. Financial institutions
@@ -88,12 +89,12 @@ export const RealTimeBankInsights = () => {
           fontSize={"15px"}
           color="white"
           textAlign={"center"}
-           sx={{
-              color: "#C0C0C0",
-              fontWeight: 500,
-              fontSize: "25px",
-              letterSpacing:"1px"
-            }}
+          sx={{
+            color: "#C0C0C0",
+            fontWeight: 500,
+            fontSize: "25px",
+            letterSpacing: "1px",
+          }}
         >
           By integrating Centspays Account Information Services (AIS), lenders
           securely access bank transactions across institutions. The system
