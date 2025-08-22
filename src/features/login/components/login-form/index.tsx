@@ -1,18 +1,20 @@
 import { CommonButton } from "@/components/buttons/common-button";
 import { BodyText } from "@/components/text/body-text";
 import { HeadingText } from "@/components/text/heading-text";
-import { Box, Container, Divider } from "@mui/material";
+import {  Container, Divider } from "@mui/material";
 import { GoogleIcon } from "../../assets";
 import { useLoginForm } from "../../hooks/useLoginForm";
 import { CustomFormProvider } from "@/providers/custom-form-provider";
-import TextFormFields from "@/components/form-fields/text-form-field";
 import { CustomText } from "@/components/text/custom-text";
 import Link from "next/link";
+import { loginFormFields } from "./login-form.data";
+import { FormGrid } from "@/components/grids/form-grid";
 
 const LoginForm = () => {
-  const { methods, onSubmit, handleSubmit } = useLoginForm();
+  const { methods, handleSubmit, submitLogin, isLoading } = useLoginForm();
+
   return (
-    <CustomFormProvider methods={methods} onSubmit={handleSubmit(onSubmit)}>
+    <CustomFormProvider methods={methods} onSubmit={handleSubmit(submitLogin)}>
       <Container
         maxWidth="md"
         sx={{
@@ -26,10 +28,11 @@ const LoginForm = () => {
         <BodyText
           variant="body2"
           color="grey.400"
-          customStyles={{ lineHeight: 2, fontSize:"18px" }}
+          customStyles={{ lineHeight: 2, fontSize: "18px" }}
         >
           Your gateway to powerful tools, personalised services, and secure
-          management. Enter your credentials below to continue.
+          management. <br />
+          Enter your credentials below to continue.
         </BodyText>
         <CommonButton
           startIcon={<GoogleIcon />}
@@ -58,7 +61,7 @@ const LoginForm = () => {
         >
           Or
         </Divider>
-        <TextFormFields
+        {/* <TextFormFields
           name="email"
           label="Email"
           required
@@ -72,7 +75,17 @@ const LoginForm = () => {
             required
             sx={{ mt: 2 }}
           />
-        </Box>
+        </Box> */}
+        {/* {loginFormFields.map(
+          ({ _id, component: Component, componentProps }) => (
+            <Box key={_id} sx={{ mt: 2 }}>
+              <Component {...componentProps} />
+            </Box>
+          ),
+        )} */}
+
+        <FormGrid formFieldsList={loginFormFields} size="large" />
+
         <BodyText
           variant="body2"
           color="primary.main"
@@ -88,7 +101,7 @@ const LoginForm = () => {
           fullWidth
           type="submit"
         >
-          Sign in
+          {isLoading ? "Sign in" : "Sign in"}
         </CommonButton>
         <BodyText
           variant="body2"

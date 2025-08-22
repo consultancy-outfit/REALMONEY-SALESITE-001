@@ -1,26 +1,33 @@
 "use client";
 import { useForm } from "react-hook-form";
-import {
-  contactUsFormDefaultValues,
-  contactUsFormValidationSchema,
-} from "./contact-form.data";
 import { yupResolver } from "@hookform/resolvers/yup";
 // import { API_ENDPOINTS } from "@/constants/api-endpoints";
 // import { API_KEY } from "@/configs/env";
 // import { postDataAPI } from "@/libs/api-call";
 import { errorSnackbar, successSnackbar } from "@/libs/snackbar.lib";
 import { useState } from "react";
+import {
+  loginFormDefaultValues,
+  LoginFormValidationSchema,
+} from "../components/login-form/login-form.data";
 
-export const useContactUs = () => {
+export const useLoginForm = () => {
   const [isLoading, setIsLoading] = useState(false);
+  const [submittedEmails, setSubmittedEmails] = useState<string[]>([]);
+
   const methods = useForm({
-    defaultValues: contactUsFormDefaultValues,
-    resolver: yupResolver(contactUsFormValidationSchema),
+    defaultValues: loginFormDefaultValues,
+    resolver: yupResolver(LoginFormValidationSchema),
   });
 
-  const { handleSubmit, reset } = methods;
+  const { handleSubmit, reset, watch } = methods;
+  const email = watch("email");
 
-  const submitContactUs = async () => {
+  const submitLogin = async () => {
+    if (submittedEmails.includes(email)) {
+      errorSnackbar("This email has already been used!");
+      return;
+    }
     setIsLoading(true);
     // const apiDataParameter = {
     //   url: API_ENDPOINTS?.ENQUIRIES,
@@ -37,10 +44,12 @@ export const useContactUs = () => {
 
     try {
       // const response: any = await postDataAPI(apiDataParameter);
-      successSnackbar("Message sent ! Our team will be in touch shortly");
+      successSnackbar("Form Submitted Successfully!");
+      setSubmittedEmails((prev) => [...prev, email]);
+
       reset?.();
     } catch (error: any) {
-      errorSnackbar(error?.data?.message);
+      errorSnackbar(error?.data?.message || "Invalid Credentials");
     }
     setIsLoading(false);
   };
@@ -48,7 +57,7 @@ export const useContactUs = () => {
   return {
     methods,
     handleSubmit,
-    submitContactUs,
+    submitLogin,
     isLoading,
   };
 };

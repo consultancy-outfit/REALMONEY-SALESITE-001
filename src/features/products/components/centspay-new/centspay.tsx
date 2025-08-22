@@ -19,7 +19,7 @@ import {
   cp4,
   cp5,
   cp6,
-  productBanner
+  productBanner,
 } from "../../assets/images";
 
 import { APP_ROUTES } from "@/constants/routes";
@@ -74,7 +74,7 @@ function CentspayFeature() {
                     backgroundImage: `url(${cp1.src})`,
                     backgroundSize: "cover",
                     backgroundPosition: "center",
-                    borderRadius: 2,
+                    borderRadius: "32px",
                     boxShadow: 3,
                     display: "block",
                     margin: { xs: "auto", md: "unset" },
@@ -192,7 +192,7 @@ function CentspayFeature() {
                       backgroundImage: `url(${cp2.src})`,
                       backgroundSize: "cover",
                       backgroundPosition: "center",
-                      borderRadius: 2,
+                      borderRadius: "32px",
                       boxShadow: 3,
                       display: "block",
                       margin: { xs: "auto", md: "unset" },
@@ -340,7 +340,7 @@ function CentspayFeature() {
                       backgroundImage: `url(${cp3.src})`,
                       backgroundSize: "cover",
                       backgroundPosition: "center",
-                      borderRadius: 2,
+                      borderRadius: "32px",
                       boxShadow: 3,
                       display: "block",
                       margin: { xs: "auto", md: "unset" },
@@ -487,7 +487,7 @@ function CentspayFeature() {
                       backgroundImage: `url(${cp4.src})`,
                       backgroundSize: "cover",
                       backgroundPosition: "center",
-                      borderRadius: 2,
+                      borderRadius: "32px",
                       boxShadow: 3,
                       display: "block",
                       margin: { xs: "auto", md: "unset" },
@@ -633,7 +633,7 @@ function CentspayFeature() {
                       backgroundImage: `url(${cp5.src})`,
                       backgroundSize: "cover",
                       backgroundPosition: "center",
-                      borderRadius: 2,
+                      borderRadius: "32px",
                       boxShadow: 3,
                       display: "block",
                       margin: { xs: "auto", md: "unset" },
@@ -775,11 +775,11 @@ function CentspayFeature() {
                   <Box
                     sx={{
                       width: "100%",
-                      height: { xs: 250, sm: 350, md: 600 },
+                      height: { xs: 250, sm: 350, md: 700 },
                       backgroundImage: `url(${cp6.src})`,
                       backgroundSize: "cover",
                       backgroundPosition: "center",
-                      borderRadius: 2,
+                      borderRadius: "32px",
                       boxShadow: 3,
                       display: "block",
                       margin: { xs: "auto", md: "unset" },
