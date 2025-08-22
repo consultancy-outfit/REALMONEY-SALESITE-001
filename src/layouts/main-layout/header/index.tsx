@@ -611,12 +611,13 @@ export const Header = () => {
               link={APP_ROUTES?.PARTNER_WITH_US}
               variant="outlined"
               color="secondary"
+              size="large"
               customStyles={{
-                borderRadius: "999px",
-                border: "2px solid #464646",
+                borderRadius: "40px",
+                border: "1px solid #464646",
                 px: "30px",
                 py: "8px",
-                height: "50px",
+                height: "40px",
                 display: "flex",
                 alignItems: "center",
                 justifyContent: "center",
@@ -629,14 +630,15 @@ export const Header = () => {
             </LinkButton>
             <LinkButton
               link={APP_ROUTES?.Get_STARTED}
+              size="large"
               customStyles={{
-                borderRadius: "999px",
+                borderRadius: "40px",
                 border: `1.5px solid linear-gradient(0deg, #009BCC 0%, #47D3FF 100%)`,
                 px: "24px",
                 py: "8px",
                 background: "linear-gradient(0deg, #009BCC 0%, #47D3FF 100%)",
                 color: theme?.palette?.common?.white,
-                height: "50px",
+                height: "40px",
                 display: "flex",
                 alignItems: "center",
                 justifyContent: "center",

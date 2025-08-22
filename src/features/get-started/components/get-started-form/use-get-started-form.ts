@@ -37,7 +37,7 @@ export const useGetStarted = () => {
 
     try {
       // const response: any = await postDataAPI(apiDataParameter);
-      successSnackbar("Submitted Successfully!");
+      successSnackbar("An email will be sent to you for verification!");
       reset?.();
     } catch (error: any) {
       errorSnackbar(error?.data?.message);

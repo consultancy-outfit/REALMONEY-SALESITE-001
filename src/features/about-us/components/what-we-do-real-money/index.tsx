@@ -33,15 +33,13 @@ export const WhatWeDoRealMoney = () => {
       <br />
       <SlideUpInView>
         <HeadingText
-          variant="h3"
+          variant="h6"
           customStyles={{
             color: "#C0C0C0",
             fontWeight: 400,
             lineHeight: pxToRem(60),
             letterSpacing: pxToRem(0.48),
-            fontSize:"24px"
           }}
-
         >
           Real Money is a comprehensive open finance infrastructure designed to
           empower fintechs, banks, and businesses with intelligent financial
@@ -52,7 +50,7 @@ export const WhatWeDoRealMoney = () => {
       </SlideUpInView>
       <SlideUpInView>
         <HeadingText
-          variant="h3"
+          variant="h6"
           customStyles={{
             color: "#C0C0C0",
             fontWeight: 400,
@@ -103,7 +101,7 @@ export const WhatWeDoRealMoney = () => {
           >
             <SlideUpInView>
               <HeadingText
-                variant="h3"
+                variant="h6"
                 customStyles={{
                   color: "#C0C0C0",
                   lineHeight: pxToRem(60),
@@ -117,7 +115,7 @@ export const WhatWeDoRealMoney = () => {
               <Typography
                 sx={{
                   color: "#C0C0C0",
-                  fontSize: pxToRem(18),
+                  fontSize: pxToRem(24),
                   lineHeight: pxToRem(28),
                   letterSpacing: "2%",
                 }}

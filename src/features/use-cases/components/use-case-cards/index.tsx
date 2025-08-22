@@ -23,9 +23,17 @@ export const UseCaseCards = () => {
       my={5}
     >
       {cardData.map((item: any) => (
-        <Card sx={{ maxWidth: 420, bgcolor:'black' }} key={item.id}>
+        <Card
+          sx={{
+            maxWidth: 420,
+            bgcolor: "black",
+            display: "flex",
+            flexDirection: "column",
+          }}
+          key={item.id}
+        >
           <SlideUpInView>
-            <CardActionArea>
+            <CardActionArea sx={{ flexGrow: 1 }}>
               <CardMedia
                 component="img"
                 height="250"
@@ -42,14 +50,14 @@ export const UseCaseCards = () => {
               </CardContent>
             </CardActionArea>
           </SlideUpInView>
-          <CardActions>
+          <CardActions sx={{ mt: "auto" }}>
             <ScaleInView>
               <LinkButton
                 link={item.readMoreUrl}
                 customStyles={{
                   borderRadius: "5px",
-                  border: `1.5px solid ${'rgba(108, 1, 255, 1)'}`,
-                  color:'rgba(108, 1, 255, 1)',
+                  border: `1.5px solid ${"rgba(108, 1, 255, 1)"}`,
+                  color: "rgba(108, 1, 255, 1)",
                   px: "24px",
                   py: "8px",
                   height: "50px",

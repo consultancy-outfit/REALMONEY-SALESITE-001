@@ -13,7 +13,7 @@ import {
 } from "@mui/material";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 import { APP_ROUTES } from "@/constants/routes";
 
@@ -245,7 +245,7 @@ export const MobileHeader: React.FC<MobileHeaderProps> = ({
         <Box
           sx={{
             position: "fixed",
-            top: active ? "90px" : "-600px",
+            top: active ? "0" : "-600px",
             left: 0,
             right: 0,
             opacity: active ? 1 : 0,
