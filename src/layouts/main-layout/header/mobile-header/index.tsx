@@ -245,7 +245,7 @@ export const MobileHeader: React.FC<MobileHeaderProps> = ({
         <Box
           sx={{
             position: "fixed",
-            top: active ? "0" : "-600px",
+            top: active ? "0" : "-100vh",
             left: 0,
             right: 0,
             opacity: active ? 1 : 0,
@@ -253,7 +253,7 @@ export const MobileHeader: React.FC<MobileHeaderProps> = ({
             transition: "0.7s",
             backgroundColor: theme?.palette?.background.paper,
             width: "100vw",
-            height: "calc(100vh - 90px)",
+            height: "100vh",
             overflowY: "auto",
             p: 2,
             boxShadow: theme.shadows[4],
