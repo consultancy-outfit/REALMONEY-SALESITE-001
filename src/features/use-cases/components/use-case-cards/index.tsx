@@ -1,5 +1,5 @@
 "use client";
-import { Box, Typography } from "@mui/material";
+import { Box, Tooltip, Typography } from "@mui/material";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
@@ -44,9 +44,22 @@ export const UseCaseCards = () => {
                 <Typography fontSize={"22px"} fontWeight={600} color="white">
                   {item.heading}
                 </Typography>
-                <Typography fontSize={"16px"} fontWeight={400} color="white">
-                  {item.description}
-                </Typography>
+                <Tooltip title={item.description} placement="top-start" arrow>
+                  <Typography
+                    fontSize={"16px"}
+                    fontWeight={400}
+                    color="white"
+                    sx={{
+                      display: "-webkit-box",
+                      WebkitLineClamp: 3,
+                      WebkitBoxOrient: "vertical",
+                      overflow: "hidden",
+                      textOverflow: "ellipsis",
+                    }}
+                  >
+                    {item.description}
+                  </Typography>
+                </Tooltip>
               </CardContent>
             </CardActionArea>
           </SlideUpInView>

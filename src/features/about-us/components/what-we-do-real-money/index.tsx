@@ -37,7 +37,7 @@ export const WhatWeDoRealMoney = () => {
           customStyles={{
             color: "#C0C0C0",
             fontWeight: 400,
-            lineHeight: pxToRem(60),
+            lineHeight: pxToRem(50),
             letterSpacing: pxToRem(0.48),
           }}
         >
@@ -54,7 +54,7 @@ export const WhatWeDoRealMoney = () => {
           customStyles={{
             color: "#C0C0C0",
             fontWeight: 400,
-            lineHeight: pxToRem(60),
+            lineHeight: pxToRem(50),
             letterSpacing: pxToRem(0.48),
             my: 3,
           }}
@@ -104,7 +104,7 @@ export const WhatWeDoRealMoney = () => {
                 variant="h6"
                 customStyles={{
                   color: "#C0C0C0",
-                  lineHeight: pxToRem(60),
+                  lineHeight: pxToRem(50),
                   letterSpacing: pxToRem(1),
                 }}
               >

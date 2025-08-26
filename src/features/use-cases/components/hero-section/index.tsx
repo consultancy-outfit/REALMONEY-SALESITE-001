@@ -3,6 +3,7 @@ import SlideUpInView from "@/components/animations/animation-scroll/slide-up-in-
 import { Box, Typography } from "@mui/material";
 import Image from "next/image";
 import { HeroSectionImage } from "../../assets";
+import { pxToRem } from "@/utils/styles";
 
 export const HeroSection = () => {
   return (
@@ -31,7 +32,8 @@ export const HeroSection = () => {
           style={{
             width: "100%",
             height: "auto",
-            maxHeight: "780px",
+            maxHeight: "789px",
+            borderRadius: pxToRem(32),
           }}
         />
       </Box>
