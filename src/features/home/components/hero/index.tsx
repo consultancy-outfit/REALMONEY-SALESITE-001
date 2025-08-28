@@ -36,7 +36,7 @@ const Hero = () => {
           intelligent financial services. Our Open Banking solutions help you
           move faster, stay compliant, and serve your customers better.
         </Typography>
-        <Stack direction="row" spacing={2}>
+        <Stack direction={{xs:"column",md:"row"}} spacing={2} >
           <Button
             variant="contained"
             sx={{
