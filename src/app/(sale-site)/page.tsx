@@ -17,7 +17,7 @@ export default function Home() {
         <HomeThirdSection />
         <UseCasesHome />
         <WhyChooseRealMoney />
-        <TestimonialSectionHome />
+        {/* <TestimonialSectionHome /> */}
         <LastSectionHome />
       </Stack>
     </>

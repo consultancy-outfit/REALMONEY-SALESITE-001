@@ -26,7 +26,7 @@ export const AboutUsFeature = () => {
           <AboutUsList />
         </Box>
         <Box sx={{ my: { xs: 5, md: 10 } }}>
-          <RealMoneyMeetTeam />
+          {/* <RealMoneyMeetTeam /> */}
         </Box>
         <Box
           sx={{
